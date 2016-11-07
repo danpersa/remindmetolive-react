@@ -6,7 +6,7 @@ const OneImage = (props) => {
   return (
     <Row mb={40} mbXs={24}>
       <Col sm={12} someClass="text-center">
-        <img alt="Project Image" src={props.src} />
+        <img className="border" alt="Project Image" src={props.src} />
       </Col>
     </Row>
   );
