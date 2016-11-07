@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import FuelSavingsPage from './containers/FuelSavingsPage'; // eslint-disable-line import/no-named-as-default
 import AboutPage from './components/AboutPage.js';
 import CasinoPage from './components/CasinoPage.js';
+import PisaPage from './components/PisaPage.js';
 import NotFoundPage from './components/NotFoundPage.js';
 
 export default (
@@ -14,6 +15,7 @@ export default (
     <Route path="fuel-savings" component={FuelSavingsPage}/>
     <Route path="about" component={AboutPage}/>
     <Route path="casino" component={CasinoPage}/>
+    <Route path="pisa" component={PisaPage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );

@@ -16,9 +16,9 @@ const Row = (props) => {
 };
 
 Row.propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.element
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.element
   ]),
   someClass: PropTypes.string,
   mb: PropTypes.number,

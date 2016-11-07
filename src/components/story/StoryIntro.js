@@ -1,0 +1,28 @@
+import React, {PropTypes} from 'react';
+import Row from '../base/Row';
+import Col from '../base/Col';
+import Container from '../base/Container';
+
+const StoryIntro = (props) => {
+
+  return (
+    <section className="pt24 pb0">
+      <Container>
+          <Row mb={0} mbXs={0}>
+            <Col md={8} mdOffset={2} sm={10} smOffset={1}>
+              <h6 className="lead">{props.children}</h6>
+            </Col>
+          </Row>
+      </Container>
+    </section>
+  );
+};
+
+StoryIntro.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.element
+  ]).isRequired
+};
+
+export default StoryIntro;

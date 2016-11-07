@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
-import Row from './Row';
-import Col from './Col';
+import Row from '../base/Row';
+import Col from '../base/Col';
 
 const TwoImages = (props) => {
   return (
