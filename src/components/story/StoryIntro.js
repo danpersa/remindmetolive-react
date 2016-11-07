@@ -6,7 +6,7 @@ import Container from '../base/Container';
 const StoryIntro = (props) => {
 
   return (
-    <section className="pt24 pb0">
+    <section className="pt24 pb24">
       <Container>
           <Row mb={0} mbXs={0}>
             <Col md={8} mdOffset={2} sm={10} smOffset={1}>
