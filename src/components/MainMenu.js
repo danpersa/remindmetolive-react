@@ -35,9 +35,7 @@ const MainMenu = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="/">
-                                    Stories
-                                </a>
+                              <Link to="/stories">Stories</Link>
                             </li>
                             <li>
                                 <a href="/">

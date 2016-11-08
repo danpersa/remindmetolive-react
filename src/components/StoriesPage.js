@@ -4,6 +4,7 @@ import Container from './base/Container.js';
 import Row from './base/Row.js';
 import Col from './base/Col.js';
 import StoryIntro from './story/StoryIntro.js';
+import StoryHover from './stories/StoryHover.js';
 
 class StoriesPage extends React.Component {
 
@@ -26,50 +27,41 @@ class StoriesPage extends React.Component {
           Discover stories about love, travel, people, and our lives and culture through photography. Let the stories flow in your veins!
         </StoryIntro>
 
-        <div className="col-sm-6 text-center p8">
-          <div className="image-tile hover-tile text-center mb24 border">
-            <img alt="image" className="background-image" src="http://static.remindmetolive.com/images/stories/2016-06-30-bridges-of-florence/teaser-02-800.jpg" />
-            <div className="hover-state">
-              <a href="#">
-                <h3 className="uppercase mb8">Bridges of Florence</h3>
-                <h6 className="uppercase">Read the story</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-6 text-center p8">
-          <div className="image-tile hover-tile text-center mb24 border">
-            <img alt="image" className="background-image" src="http://static.remindmetolive.com/images/stories/2016-06-11-tenerife-the-land-of-eternal-spring/teaser-01-800.jpg" />
-            <div className="hover-state">
-              <a href="#">
-                <h3 className="uppercase mb8">Tenerife, Land Of Eternal Spring</h3>
-                <h6 className="uppercase">Read the story</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-6 text-center p8">
-          <div className="image-tile hover-tile text-center mb24 border">
-            <img alt="image" className="background-image" src="http://static.remindmetolive.com/images/stories/2016-05-17-lanzarote-beaches/teaser-01-800.jpg" />
-            <div className="hover-state">
-              <a href="#">
-                <h3 className="uppercase mb8">Lanzarote - Beaches</h3>
-                <h6 className="uppercase">Read the story</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-6 text-center p8">
-          <div className="image-tile hover-tile text-center mb24 border">
-            <img alt="image" className="background-image" src="http://static.remindmetolive.com/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-800.jpg" />
-            <div className="hover-state">
-              <a href="#">
-                <h3 className="uppercase mb8">Winter Fairy Tale in Salzburg</h3>
-                <h6 className="uppercase">Read the story</h6>
-              </a>
-            </div>
-          </div>
-        </div>
+        <StoryHover title="Pisa Afterglow"
+                    href="/pisa"
+                    src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
+
+        <StoryHover title="London After Brexit"
+                    href="/london"
+                    src="http://static.remindmetolive.com/images/stories/2016-09-10-london-after-brexit/teaser-01-800.jpg" />
+
+        <StoryHover title="Bridges of Florence"
+                    href="/florence"
+                    src="http://static.remindmetolive.com/images/stories/2016-06-30-bridges-of-florence/teaser-02-800.jpg" />
+
+        <StoryHover title="Tenerife, Land Of Eternal Spring"
+                    href="/florence"
+                    src="http://static.remindmetolive.com/images/stories/2016-06-11-tenerife-the-land-of-eternal-spring/teaser-01-800.jpg" />
+
+        <StoryHover title="Lanzarote - Beaches"
+                    href="/florence"
+                    src="http://static.remindmetolive.com/images/stories/2016-05-17-lanzarote-beaches/teaser-01-800.jpg" />
+
+        <StoryHover title="Winter Fairy Tale in Salzburg"
+                    href="/florence"
+                    src="http://static.remindmetolive.com/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-800.jpg" />
+
+        <StoryHover title="The Casino Of Constanta"
+                    href="/casino"
+                    src="http://static.remindmetolive.com/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
+
+        <StoryHover title="Love at the Gardens Of The World"
+                    href="/casino"
+                    src="http://static.remindmetolive.com/images/stories/2015-09-30-love-at-the-gardens-of-the-world/teaser-01-800.jpg" />
+
+        <StoryHover title="Lunar Landscapes of Lanzarote"
+                    href="/casino"
+                    src="http://static.remindmetolive.com/images/stories/2015-09-29-lunar-landscapes-of-lanzarote/teaser-01-800.jpg" />
       </section>
     );
   }
