@@ -30,9 +30,7 @@ const MainMenu = () => {
                     <div className="module left">
                         <ul className="menu">
                             <li>
-                                <a href="/">
-                                    Home
-                                </a>
+                              <Link to="/">Home</Link>
                             </li>
                             <li>
                               <Link to="/stories">Stories</Link>
