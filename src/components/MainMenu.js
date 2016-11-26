@@ -55,12 +55,6 @@ const MainMenu = () => {
                                     Contact
                                 </a>
                             </li>
-                            <li>
-                              <Link to="/casino">Casino</Link>
-                            </li>
-                            <li>
-                              <Link to="/pisa">Pisa</Link>
-                            </li>
                         </ul>
                     </div>
                 </div>
