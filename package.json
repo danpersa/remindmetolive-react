@@ -12,7 +12,9 @@
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message remove-dist",
     "start": "npm-run-all --parallel test:watch open:src lint:watch",
+    "startExpress": "npm-run-all --parallel openExpress lint:watch",
     "open:src": "babel-node tools/srcServer.js",
+    "openExpress": "babel-node tools/srcServerExpress.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
     "lint:watch": "npm run lint -- --watch",
@@ -37,7 +39,9 @@
     "react-router-redux": "4.0.6",
     "redux": "3.6.0",
     "redux-thunk": "2.1.0",
-    "react-image-gallery": "0.7.3"
+    "react-image-gallery": "0.7.3",
+    "express": "4.14.0",
+    "ejs": "~2.5.2"
   },
   "devDependencies": {
     "autoprefixer": "6.5.1",
