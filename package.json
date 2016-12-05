@@ -22,7 +22,7 @@
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run clean-dist && npm run lint && npm run test",
     "build": "babel-node tools/build.js && npm run open:dist",
-    "buildExpress": "babel-node tools/buildExpress.js && npm run openExpress",
+    "build:express": "babel-node tools/buildExpress.js && npm run openExpress",
     "test": "mocha tools/testSetup.js \"./{,!(node_modules)/**/}*.spec.js\" --reporter progress",
     "test:cover": "babel-node node_modules/isparta/bin/isparta cover --root src --report html node_modules/mocha/bin/_mocha -- --require ./tools/testSetup.js \"./{,!(node_modules)/**/}*.spec.js\" --reporter progress",
     "test:cover:travis": "babel-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require ./tools/testSetup.js \"./{,!(node_modules)/**/}*.spec.js\" && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
@@ -35,6 +35,8 @@
   "dependencies": {
     "ejs": "2.5.3",
     "express": "4.14.0",
+    "express-handlebars": "3.0.0",
+    "handlebars": "4.0.6",
     "object-assign": "4.1.0",
     "react": "15.3.2",
     "react-dom": "15.3.2",

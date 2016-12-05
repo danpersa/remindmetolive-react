@@ -1,4 +1,6 @@
+
 import express from 'express';
+import exphbs from 'express-handlebars';
 
 import path from 'path';
 
@@ -19,10 +21,18 @@ export default function startExpress() {
 
 
   // view engine setup
-  //theapp.set('views', path.join(__dirname, '../src/views'));
+
   //theapp.set('view engine', 'ejs');
 
-  theapp.use(express.static(path.join(__dirname, '.')));
+  theapp.engine('handlebars', exphbs({defaultLayout: 'main'}));
+  theapp.set('view engine', 'handlebars');
+//  theapp.set('views', path.join(__dirname, 'src/views'));
+  const currentDir = path.resolve(path.dirname(''));
+  const staticDir = path.join(currentDir, 'dist');
+
+  console.log('static dir: XX' + staticDir);
+
+  theapp.use(express.static(staticDir));
 
   theapp.get('*', (req, res) => {
     match(
@@ -54,18 +64,15 @@ export default function startExpress() {
         // render the index template with the embedded React markup
         console.log('XXX matched!!! ' + markup + 'end');
 
-        return res.send(markup);
+        return res.render('path', {
+            reactOutput: markup
+        });
+
+        //return res.send(markup);
         //return res.render('index', { title: 'Express', reactOutput: markup});
       }
     );
   });
-
-  theapp.get('/xx', function(req, res) {
-    console.log('request for xxx');
-    res.render('index', { title: 'Express', reactOutput: 'AAAA'});
-  });
-
-
 
   theapp.listen(port, function(err) {
     if (err) {
