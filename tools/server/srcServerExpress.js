@@ -2,8 +2,8 @@
 // on your local machine.
 
 
-import {chalkProcessing} from './chalkConfig';
-import startExpress from '../dist/app.js';
+import {chalkProcessing} from '../chalkConfig';
+import startExpress from '../../dist/app.js';
 
 /* eslint-disable no-console */
 

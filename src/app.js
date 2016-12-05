@@ -38,7 +38,6 @@ export default function startExpress() {
     match(
       {routes, location: req.url },
       (err, redirectLocation, renderProps) => {
-        console.log('XXX matched!!! ');
 
         // // in case of error display the error message
         if (err) {
@@ -62,14 +61,9 @@ export default function startExpress() {
         }
 
         // render the index template with the embedded React markup
-        console.log('XXX matched!!! ' + markup + 'end');
-
         return res.render('path', {
             reactOutput: markup
         });
-
-        //return res.send(markup);
-        //return res.render('index', { title: 'Express', reactOutput: markup});
       }
     );
   });

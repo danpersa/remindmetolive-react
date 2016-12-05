@@ -1,8 +1,10 @@
 import React from 'react';
+import SampleGallery from './SampleGallery.js';
 
 const HomePage = () => {
   return (
     <section className="pt0 pb0">
+      <SampleGallery className="pt0" />
 
       <section className="pt120 pb120 pt-xs-80 pb-xs-80">
         <div className="container">
