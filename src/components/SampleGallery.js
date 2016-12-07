@@ -27,7 +27,7 @@ class SampleGallery extends React.Component {
        return (
          <div className="image-gallery-image">
            {
-               <a>
+               <div>
                  <img src={item.original}/>
                  {
                    item.description &&
@@ -38,22 +38,16 @@ class SampleGallery extends React.Component {
                        <div className="row">
                          <div className="col-sm-12 text-center">
                            <h4 className="uppercase mb16">Buttons On Image</h4>
-                             <p className="lead mb64">
-                                    Default buttons will appear with white borders.
-                             </p>
-                         </div>
-                       </div>
-                       item.href &&
-                       <div className="row">
-                         <div className="col-sm-12 text-center">
-                           <Link className="btn btn-white btn-lg" to={item.href}>Explore</Link>
+                             <p className="lead mb32">{item.description}</p>
+                             {item.href &&
+                               <Link className="btn btn-white btn-lg" to={item.href}>Explore</Link>
+                             }
                          </div>
                        </div>
                      </div>
-                     {item.description}
                    </span>
                  }
-               </a>
+               </div>
            }
          </div>
        );
