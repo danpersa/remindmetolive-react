@@ -27,6 +27,10 @@ class StoriesPage extends React.Component {
           Discover stories about love, travel, people, and our lives and culture through photography. Let the stories flow in your veins!
         </StoryIntro>
 
+        <StoryHover title="Florence"
+                    href="/florence"
+                    src="images/teaser-01-2048.jpg" />
+
         <StoryHover title="Pisa Afterglow"
                     href="/pisa"
                     src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
