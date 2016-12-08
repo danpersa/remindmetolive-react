@@ -1,5 +1,6 @@
 import React from 'react';
 import SampleGallery from './SampleGallery.js';
+import StoryHover from './stories/StoryHover.js';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,6 @@ const HomePage = () => {
         </div>
       </section>
 
-// http://foundry.mediumra.re/home-architecture.html -> use tabs for the vision
       <section className="pt24 pb0 bg-secondary">
           <div className="container">
               <div className="row">
@@ -74,60 +74,15 @@ const HomePage = () => {
       <section className="pt40 pb0">
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
-              <div className="image-tile inner-title title-center text-center">
-                <a hrefName="#">
-                  <img alt="Pic" src="http://static.remindmetolive.com/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
-                    <div className="title">
-                      <h4 className="uppercase mb0">The Casino Of Constanta</h4>
-                    </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="image-tile inner-title title-center text-center">
-                <a hrefName="#">
-                  <img alt="Pic" src="http://static.remindmetolive.com/images/streets-of-berlin/2015-11-20-lady-in-red-with-white-dog/teaser-01-800.jpg" />
-                    <div className="title">
-                      <h4 className="uppercase mb0">Lady In Red With White Dog</h4>
-                    </div>
-                </a>
-              </div>
-            </div>
+            <StoryHover title="Florence"
+                        href="/florence"
+                        src="images/teaser-01-2048.jpg" />
+            <StoryHover title="Lady In Red With White Dog"
+                        href="/florence"
+                        src="http://static.remindmetolive.com/images/streets-of-berlin/2015-11-20-lady-in-red-with-white-dog/teaser-01-800.jpg" />
           </div>
         </div>
       </section>
-
-      <section className="projects">
-           <div className="container">
-               <div className="row">
-                   <div className="col-sm-6 masonry-item project" data-filter="People">
-                       <div className="image-tile hover-tile text-center">
-                           <img alt="image" className="background-image" src="http://static.remindmetolive.com/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
-                           <div className="hover-state">
-                               <a href="#">
-                                   <h3 className="uppercase mb8">The Casino of Constanta</h3>
-                                   <h6 className="uppercase">Travel</h6>
-                               </a>
-                           </div>
-                       </div>
-
-                   </div>
-                   <div className="col-sm-6 masonry-item project" data-filter="People">
-                       <div className="image-tile hover-tile text-center">
-                           <img alt="image" className="background-image" src="http://static.remindmetolive.com/images/streets-of-berlin/2015-11-20-lady-in-red-with-white-dog/teaser-01-800.jpg" />
-                           <div className="hover-state">
-                               <a href="#">
-                                   <h3 className="uppercase mb8">Lady In Red With White Dog</h3>
-                                   <h6 className="uppercase">Streets of Berlin</h6>
-                               </a>
-                           </div>
-                       </div>
-
-                   </div>
-               </div>
-           </div>
-       </section>
     </section>
 
 

@@ -7,47 +7,9 @@ class AboutPage extends React.Component {
 
   constructor() {
     super();
-    this.state = {
-      showIndex: false,
-      slideOnThumbnailHover: false,
-      showBullets: true,
-      infinite: true,
-      showThumbnails: true,
-      showFullscreenButton: true,
-      showGalleryFullscreenButton: true,
-      showPlayButton: true,
-      showGalleryPlayButton: true,
-      showNav: true,
-      slideInterval: 2000,
-      showVideo: {},
-    };
   }
 
-  _renderItem(item) {
-     return (
-       <div className="image-gallery-image">
-         {
-             <a>
-               <div className="play-button" />
-               <img src={item.original}/>
-               {
-                 item.description &&
-                   <span
-                     className="image-gallery-description"
-                     style={{right: '0', left: 'initial'}}
-                   >
-                     {item.description}
-                   </span>
-               }
-             </a>
-         }
-       </div>
-     );
-   }
-
-
   render() {
-
     return (
         <div>
           <h2 className="alt-header">About</h2>

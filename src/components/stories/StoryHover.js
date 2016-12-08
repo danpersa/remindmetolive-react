@@ -6,15 +6,15 @@ const StoryHover = (props) => {
 
   return (
     <div className="col-sm-6 text-center p8">
-      <div className="image-tile hover-tile text-center mb24 border">
-        <img alt="image" className="background-image" src={props.src} />
-        <div className="hover-state">
-          <Link to={props.href}>
+      <Link to={props.href}>
+        <div className="image-tile hover-tile text-center mb24 border">
+          <img alt="image" className="background-image" src={props.src} />
+          <div className="hover-state">
             <h3 className="uppercase mb8">{props.title}</h3>
             <h6 className="uppercase">Read the story</h6>
-          </Link>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
