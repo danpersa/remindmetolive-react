@@ -24,7 +24,8 @@ const StoryTextBlock = (props) => {
 StoryTextBlock.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
-    PropTypes.element
+    PropTypes.element,
+    PropTypes.string
   ]).isRequired,
   title: PropTypes.string
 };
