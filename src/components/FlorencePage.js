@@ -1,6 +1,7 @@
 import React from 'react';
 import TwoImages from './story/TwoImages';
 import OneImage from './story/OneImage';
+import ThreeImages from './story/ThreeImages';
 import FullImage from './story/FullImage';
 import StoryPage from './story/StoryPage';
 import StoryTextBlock from './story/StoryTextBlock';
@@ -15,7 +16,7 @@ class PisaPage extends React.Component {
 
   render() {
     return (
-      <StoryPage logo="images/wide-01-2048.jpg"
+      <StoryPage logo="images/wide-10-2048.jpg"
                  title="Flornce Rulz">
 
         <StoryIntro>
@@ -27,68 +28,112 @@ class PisaPage extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-01-1200.jpg" />
 
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-02-1200.jpg" />
+          <OneImage src="images/image-02-1200.jpg" />
 
-          <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-03-1200.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-04-1200.jpg"/>
-
-          <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-05-800.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-06-800.jpg"/>
-
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-07-1200.jpg" />
+          <ThreeImages
+            src1="images/image-03-1200.jpg"
+            src2="images/image-04-1200.jpg"
+            src3="images/image-05-1200.jpg"/>
 
           <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-08-800.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-09-800.jpg"/>
+            src1="images/image-06-1200.jpg"
+            src2="images/image-07-1200.jpg"/>
+
+          <OneImage src="images/image-08-1200.jpg" />
+
+          <ThreeImages
+            src1="images/image-09-1200.jpg"
+            src2="images/image-10-1200.jpg"
+            src3="images/image-11-1200.jpg"/>
 
           <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-10-800.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-11-800.jpg"/>
+            src1="images/image-12-1200.jpg"
+            src2="images/image-13-1200.jpg"/>
+
+        </StoryImages>
+        <FullImage src="images/wide-02-2048.jpg"/>
+        <StoryImages>
+
+          <OneImage src="images/image-15-1200.jpg" />
+
+          <TwoImages
+            src1="images/image-16-1200.jpg"
+            src2="images/image-17-1200.jpg"/>
+
+          <OneImage src="images/image-18-1200.jpg" />
+
+          <TwoImages
+            src1="images/image-19-1200.jpg"
+            src2="images/image-20-1200.jpg"/>
+
+          <TwoImages
+            src1="images/image-21-1200.jpg"
+            src2="images/image-22-1200.jpg"/>
+        </StoryImages>
+        <StoryTextBlock title="Bridges of Florence">
+          Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
+        </StoryTextBlock>
+        <FullImage src="images/wide-03-2048.jpg"/>
+        <StoryImages>
+
+          <TwoImages
+            src1="images/image-24-1200.jpg"
+            src2="images/image-25-1200.jpg"/>
+
+          <TwoImages
+            src1="images/image-26-1200.jpg"
+            src2="images/image-27-1200.jpg"/>
+
+        </StoryImages>
+        <StoryTextBlock title="Climb up the Tower">
+          Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
+        </StoryTextBlock>
+        <FullImage src="images/wide-04-2048.jpg"/>
+        <StoryImages>
+
+          <TwoImages
+            src1="images/image-29-1200.jpg"
+            src2="images/image-30-1200.jpg"/>
+
+          <OneImage src="images/image-31-1200.jpg" />
+        </StoryImages>
+
+        <StoryTextBlock title="Michelangelo Square">
+          Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
+        </StoryTextBlock>
+        <FullImage src="images/wide-11-2048.jpg"/>
+
+        <StoryImages>
+          <OneImage src="images/image-33-1200.jpg" />
         </StoryImages>
 
         <StoryTextBlock title="Climb up the Tower">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-
-        <FullImage src="images/wide-02-2048.jpg"/>
-
-        <StoryImages>
-          <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-13-1200.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-14-1200.jpg"/>
-
-          <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-15-800.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-16-800.jpg"/>
-
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-17-1200.jpg" />
-        </StoryImages>
-
-        <StoryTextBlock title="Much more than the Tower">
-          The Leaning Tower has made Pisa famous all over the world, but in addition to the amazing Square of Miracles, the city offers many other beautiful places to see. Here are some for inspiration.
-        </StoryTextBlock>
-
-        <FullImage src="images/wide-03-2048.jpg"/>
+        <FullImage src="images/wide-05-2048.jpg"/>
 
         <StoryImages>
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-19-1200.jpg" />
-
           <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-20-800.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-21-800.jpg"/>
-
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-22-1200.jpg" />
-
+            src1="images/image-35-1200.jpg"
+            src2="images/image-36-1200.jpg"/>
+          <OneImage src="images/image-37-1200.jpg" />
+          <OneImage src="images/image-38-1200.jpg" />
+          <OneImage src="images/image-39-1200.jpg" />
           <TwoImages
-            src1="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-25-1200.jpg"
-            src2="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-24-1200.jpg"/>
+            src1="images/image-40-1200.jpg"
+            src2="images/image-41-1200.jpg"/>
 
-          <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-23-1200.jpg" />
         </StoryImages>
+        <FullImage src="images/wide-08-2048.jpg"/>
+        <StoryImages>
+          <TwoImages
+            src1="images/image-43-1200.jpg"
+            src2="images/image-44-1200.jpg"/>
+          <OneImage src="images/image-45-1200.jpg" />
+          <OneImage src="images/image-46-1200.jpg" />
+        </StoryImages>
+
       </StoryPage>);
   }
 }
