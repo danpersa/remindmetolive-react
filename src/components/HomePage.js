@@ -76,16 +76,15 @@ const HomePage = () => {
           <div className="row">
             <StoryHover title="Florence"
                         href="/florence"
-                        src="images/teaser-01-2048.jpg" />
-            <StoryHover title="Lady In Red With White Dog"
+                        src="images/stories/2016-12-15-florence-rulz/teaser-03-2048.jpg" />
+
+            <StoryHover title="Florence"
                         href="/florence"
-                        src="http://static.remindmetolive.com/images/streets-of-berlin/2015-11-20-lady-in-red-with-white-dog/teaser-01-800.jpg" />
+                        src="images/stories/2016-12-15-florence-rulz/teaser-05-2048.jpg" />
           </div>
         </div>
       </section>
     </section>
-
-
 
     // use http://foundry.mediumra.re/home-default-4.html for latest stories
     // http://foundry.mediumra.re/home-fashion.html

@@ -1,23 +1,36 @@
 import React from 'react';
-import TwoImages from './story/TwoImages';
-import OneImage from './story/OneImage';
-import ThreeImages from './story/ThreeImages';
-import FullImage from './story/FullImage';
-import StoryPage from './story/StoryPage';
-import StoryTextBlock from './story/StoryTextBlock';
-import StoryImages from './story/StoryImages';
-import StoryIntro from './story/StoryIntro';
+import TwoImages from '../components/story/TwoImages';
+import OneImage from '../components/story/OneImage';
+import ThreeImages from '../components/story/ThreeImages';
+import FullImage from '../components/story/FullImage';
+import StoryPage from '../components/story/StoryPage';
+import StoryTextBlock from '../components/story/StoryTextBlock';
+import StoryImages from '../components/story/StoryImages';
+import StoryIntro from '../components/story/StoryIntro';
 
-class PisaPage extends React.Component {
+const imgDir = "images/stories/2016-12-15-florence-rulz/";
+
+class FlorenceStory extends React.Component {
 
   constructor() {
     super();
   }
 
+  image(number) {
+    return imgDir + "image-" + number + "-1200.jpg";
+  }
+
+  wide(number) {
+    return imgDir + "wide-" + number + "-2048.jpg";
+  }
+
   render() {
     return (
-      <StoryPage logo="images/wide-10-2048.jpg"
-                 title="Flornce Rulz">
+      <StoryPage logo={this.wide("10")}
+                 title="Flornce Rulz"
+                 author="Dan & Ade"
+                 location="Florence, Italy"
+                 tags="travel, Florence, Italy">
 
         <StoryIntro>
          When I close my eyes and visualize our time in Italy, I see everything in slow-motion. It's definitely a place that I am in love with. Falling in love with a place it's a unique feeling, it is a constant desire for more, more of the beautiful skylines, sunrises, sunsets, delicious food, different culture and new adventures. And the more you take in, the deeper you fall and the more you wish to see. It all started with Rome, continued with Venice, then mesmarizing Tuscany. Now it is time for Pisa, a small and enchanting city in Tuscany.
@@ -29,113 +42,113 @@ class PisaPage extends React.Component {
 
         <StoryImages>
 
-          <OneImage src="images/image-02-1200.jpg" />
+          <OneImage src={this.image("02")} />
 
           <ThreeImages
-            src1="images/image-03-1200.jpg"
-            src2="images/image-04-1200.jpg"
-            src3="images/image-05-1200.jpg"/>
+            src1={this.image("03")}
+            src2={this.image("04")}
+            src3={this.image("05")}/>
 
           <TwoImages
-            src1="images/image-06-1200.jpg"
-            src2="images/image-07-1200.jpg"/>
+            src1={this.image("06")}
+            src2={this.image("07")}/>
 
-          <OneImage src="images/image-08-1200.jpg" />
+          <OneImage src={this.image("08")} />
 
           <ThreeImages
-            src1="images/image-09-1200.jpg"
-            src2="images/image-10-1200.jpg"
-            src3="images/image-11-1200.jpg"/>
+            src1={this.image("09")}
+            src2={this.image("10")}
+            src3={this.image("11")}/>
 
           <TwoImages
-            src1="images/image-12-1200.jpg"
-            src2="images/image-13-1200.jpg"/>
+            src1={this.image("12")}
+            src2={this.image("13")}/>
 
         </StoryImages>
-        <FullImage src="images/wide-02-2048.jpg"/>
+        <FullImage src={this.wide("02")}/>
         <StoryImages>
 
-          <OneImage src="images/image-15-1200.jpg" />
+          <OneImage src={this.image("15")} />
 
           <TwoImages
-            src1="images/image-16-1200.jpg"
-            src2="images/image-17-1200.jpg"/>
+            src1={this.image("16")}
+            src2={this.image("17")}/>
 
-          <OneImage src="images/image-18-1200.jpg" />
-
-          <TwoImages
-            src1="images/image-19-1200.jpg"
-            src2="images/image-20-1200.jpg"/>
+          <OneImage src={this.image("18")} />
 
           <TwoImages
-            src1="images/image-21-1200.jpg"
-            src2="images/image-22-1200.jpg"/>
+            src1={this.image("19")}
+            src2={this.image("20")}/>
+
+          <TwoImages
+            src1={this.image("21")}
+            src2={this.image("22")}/>
         </StoryImages>
         <StoryTextBlock title="Bridges of Florence">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src="images/wide-03-2048.jpg"/>
+        <FullImage src={this.wide("03")}/>
         <StoryImages>
 
           <TwoImages
-            src1="images/image-24-1200.jpg"
-            src2="images/image-25-1200.jpg"/>
+            src1={this.image("24")}
+            src2={this.image("25")}/>
 
           <TwoImages
-            src1="images/image-26-1200.jpg"
-            src2="images/image-27-1200.jpg"/>
+            src1={this.image("26")}
+            src2={this.image("27")}/>
 
         </StoryImages>
         <StoryTextBlock title="Climb up the Tower">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src="images/wide-04-2048.jpg"/>
+        <FullImage src={this.wide("04")}/>
         <StoryImages>
 
           <TwoImages
-            src1="images/image-29-1200.jpg"
-            src2="images/image-30-1200.jpg"/>
+            src1={this.image("29")}
+            src2={this.image("30")}/>
 
-          <OneImage src="images/image-31-1200.jpg" />
+          <OneImage src={this.image("31")} />
         </StoryImages>
 
         <StoryTextBlock title="Michelangelo Square">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src="images/wide-11-2048.jpg"/>
+        <FullImage src={this.wide("11")}/>
 
         <StoryImages>
-          <OneImage src="images/image-33-1200.jpg" />
+          <OneImage src={this.image("33")} />
         </StoryImages>
 
         <StoryTextBlock title="Climb up the Tower">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src="images/wide-05-2048.jpg"/>
+        <FullImage src={this.wide("05")}/>
 
         <StoryImages>
           <TwoImages
-            src1="images/image-35-1200.jpg"
-            src2="images/image-36-1200.jpg"/>
-          <OneImage src="images/image-37-1200.jpg" />
-          <OneImage src="images/image-38-1200.jpg" />
-          <OneImage src="images/image-39-1200.jpg" />
+            src1={this.image("35")}
+            src2={this.image("36")}/>
+          <OneImage src={this.image("37")} />
+          <OneImage src={this.image("38")} />
+          <OneImage src={this.image("39")} />
           <TwoImages
-            src1="images/image-40-1200.jpg"
-            src2="images/image-41-1200.jpg"/>
+            src1={this.image("40")}
+            src2={this.image("41")}/>
 
         </StoryImages>
-        <FullImage src="images/wide-08-2048.jpg"/>
+        <FullImage src={this.wide("40")}/>
         <StoryImages>
           <TwoImages
-            src1="images/image-43-1200.jpg"
-            src2="images/image-44-1200.jpg"/>
-          <OneImage src="images/image-45-1200.jpg" />
-          <OneImage src="images/image-46-1200.jpg" />
+            src1={this.image("43")}
+            src2={this.image("44")}/>
+          <OneImage src={this.image("45")} />
+          <OneImage src={this.image("46")} />
         </StoryImages>
 
       </StoryPage>);
   }
 }
 
-export default PisaPage;
+export default FlorenceStory;

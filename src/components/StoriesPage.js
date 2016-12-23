@@ -29,7 +29,11 @@ class StoriesPage extends React.Component {
 
         <StoryHover title="Florence"
                     href="/florence"
-                    src="images/teaser-01-2048.jpg" />
+                    src="images/stories/2016-12-15-florence-rulz/teaser-02-2048.jpg" />
+
+        <StoryHover title="Bridges of Florence"
+                    href="/bridges-of-florence"
+                    src="images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
 
         <StoryHover title="Pisa Afterglow"
                     href="/pisa"
@@ -38,10 +42,6 @@ class StoriesPage extends React.Component {
         <StoryHover title="London After Brexit"
                     href="/london"
                     src="http://static.remindmetolive.com/images/stories/2016-09-10-london-after-brexit/teaser-01-800.jpg" />
-
-        <StoryHover title="Bridges of Florence"
-                    href="/florence"
-                    src="http://static.remindmetolive.com/images/stories/2016-06-30-bridges-of-florence/teaser-02-800.jpg" />
 
         <StoryHover title="Tenerife, Land Of Eternal Spring"
                     href="/florence"
@@ -56,7 +56,7 @@ class StoriesPage extends React.Component {
                     src="http://static.remindmetolive.com/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-800.jpg" />
 
         <StoryHover title="The Casino Of Constanta"
-                    href="/casino"
+                    href="/the-casino-of-constanta"
                     src="http://static.remindmetolive.com/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
 
         <StoryHover title="Love at the Gardens Of The World"

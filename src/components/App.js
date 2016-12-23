@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
-
 import MainMenu from './MainMenu';
+import Footer from './Footer';
 
 
 const App = (props) => {
@@ -9,19 +8,7 @@ const App = (props) => {
     <div>
       <MainMenu />
       {props.children}
-
-      <div className="main-container">
-        <div>
-          <IndexLink to="/">Home</IndexLink>
-          {' | '}
-          <Link to="/fuel-savings">Demo App</Link>
-          {' | '}
-          <Link to="/about">About</Link>
-          {' | '}
-          <Link to="/casino">Casino</Link>
-          <br/>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };
