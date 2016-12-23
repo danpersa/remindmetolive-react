@@ -10,7 +10,7 @@ const StoryTextBlock = (props) => {
       <Container>
         <Row mb={0} mbXs={0}>
           <Col md={8} mdOffset={2} sm={10} smOffset={1}>
-            {props.title && <h2 className="uppercase mb16">{props.title}</h2>}
+            {props.title && <h2 className="uppercase mb16 text-center">{props.title}</h2>}
             <p className="lead">
                 {props.children}
             </p>

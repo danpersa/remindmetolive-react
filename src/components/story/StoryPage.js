@@ -14,31 +14,31 @@ class StoryPage extends React.Component {
     return (
     <div className="main-container">
       <FullImage src={this.props.logo}/>
-      <section>
+      <section className="pt0 pb0 mb32 mb-xs-32 mt32 mt-xs-16 text-center">
         <Container>
           <Row>
             <Col sm={8} smOffset={2} someClass="text-center">
-              <h1 className="uppercase mb64 mb-xs-32">{this.props.title}</h1>
+              <h1 className="uppercase">{this.props.title}</h1>
             </Col>
           </Row>
         </Container>
       </section>
-      <section className="pt0 pb40">
+      <section className="pt0 pb0 text-center">
         <Container>
-          <Row>
-            <Col sm={3} xs={6} mbXs={24}>
-                <span>Tags:</span>
-                <h6 className="uppercase mb0">{this.props.tags}</h6>
-            </Col>
-            <Col sm={3} xs={6} mbXs={24}>
-                <span>Location:</span>
-                <h6 className="uppercase mb0">{this.props.location}</h6>
-            </Col>
-            <Col sm={3} xs={6} mbXs={24}>
-                <span>Author:</span>
-                <h6 className="uppercase mb0">{this.props.author}</h6>
-            </Col>
-          </Row>
+          <ul className="post-meta">
+            <li>
+              <i className="ti-user"/>
+              <span>Author: {this.props.author}</span>
+            </li>
+            <li>
+              <i className="ti-tag"/>
+              <span>Tags: {this.props.tags}</span>
+            </li>
+            <li>
+              <i className="ti-map"/>
+              <span>Location: {this.props.location}</span>
+            </li>
+          </ul>
         </Container>
       </section>
 
