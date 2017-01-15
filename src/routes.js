@@ -4,7 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import HomePage from './components/HomePage';
 // import FuelSavingsPage from './containers/FuelSavingsPage'; // eslint-disable-line import/no-named-as-default
-import AboutPage from './components/AboutPage.js';
+import AboutPage from './containers/AboutPage.js';
 import ContactPage from './containers/ContactPage.js';
 import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory.js';
 import PisaPage from './components/PisaPage.js';
