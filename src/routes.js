@@ -5,6 +5,7 @@ import App from './components/App';
 import HomePage from './components/HomePage';
 // import FuelSavingsPage from './containers/FuelSavingsPage'; // eslint-disable-line import/no-named-as-default
 import AboutPage from './components/AboutPage.js';
+import ContactPage from './containers/ContactPage.js';
 import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory.js';
 import PisaPage from './components/PisaPage.js';
 import FlorenceStory from './stories/FlorenceStory.js';
@@ -21,6 +22,7 @@ export default (
     <Route path="bridges-of-florence" component={BridgesOfFlorenceStory}/>
     <Route path="the-casino-of-constanta" component={CasinoOfConstantaStory}/>
     <Route path="about" component={AboutPage}/>
+    <Route path="contact" component={ContactPage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );

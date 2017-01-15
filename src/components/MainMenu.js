@@ -35,9 +35,7 @@ const MainMenu = () => {
                               <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <a href="/">
-                                    Contact
-                                </a>
+                                <Link to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>

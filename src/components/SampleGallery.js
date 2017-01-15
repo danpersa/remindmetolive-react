@@ -73,7 +73,7 @@ class SampleGallery extends React.Component {
            {
              original: 'images/stories/2016-12-15-florence-rulz/wide-06-2048.jpg',
              description: 'Optional description...',
-             href: '/casino',
+             href: '/the-casino-of-constanta',
              renderItem: this._renderItem.bind(this)
            },
            {
