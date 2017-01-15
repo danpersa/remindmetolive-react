@@ -21,16 +21,15 @@ ADD nginx/secret_key.conf /etc/nginx/main.d/secret_key.conf
 ADD nginx/gzip_max.conf /etc/nginx/conf.d/gzip_max.conf
 ADD nginx/00_app_env.conf /etc/nginx/conf.d/00_app_env.conf
 
-EXPOSE 80 443 3000
+EXPOSE 3000
 
 USER app
 ENV HOME /home/app
 
 # copy the app and give permissions
 RUN mkdir -p /home/app/webapp/public
-COPY ./dist /home/app/webapp/public
+COPY ./dist/client /home/app/webapp/public
+COPY ./dist/server /home/app/webapp/
 WORKDIR /home/app/webapp
-USER root
-RUN chown -R app:app /home/app/webapp/public
 
-USER root
+CMD passenger start

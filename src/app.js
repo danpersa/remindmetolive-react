@@ -14,23 +14,19 @@ import routes from '../src/routes';
 /* eslint-disable no-console */
 export default function startExpress() {
 
-  const port = 3005;
+  const port = 3000;
   const theapp = express();
 
-  console.log("XXXX starting");
-
+  console.log("Starting in production");
 
   // view engine setup
-
-  //theapp.set('view engine', 'ejs');
-
   theapp.engine('handlebars', exphbs({defaultLayout: 'main'}));
   theapp.set('view engine', 'handlebars');
 //  theapp.set('views', path.join(__dirname, 'src/views'));
   const currentDir = path.resolve(path.dirname(''));
-  const staticDir = path.join(currentDir, 'dist');
+  const staticDir = path.join(currentDir, 'dist/client');
 
-  console.log('static dir: XX' + staticDir);
+  console.log('static dir: ' + staticDir);
 
   theapp.use(express.static(staticDir));
 
@@ -76,3 +72,5 @@ export default function startExpress() {
     }
   });
 }
+
+startExpress();
