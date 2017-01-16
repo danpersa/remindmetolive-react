@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Container from './base/Container.js';
 import Row from './base/Row.js';
 import Col from './base/Col.js';
@@ -28,15 +27,15 @@ class StoriesPage extends React.Component {
         </StoryIntro>
 
         <StoryHover title="Florence"
-                    href="/florence"
+                    href="/stories/florence-theme-park-of-renaissance.html"
                     src="images/stories/2016-12-15-florence-rulz/teaser-02-2048.jpg" />
 
         <StoryHover title="Bridges of Florence"
-                    href="/bridges-of-florence"
+                    href="/stories/bridges-of-florence.html"
                     src="images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
 
         <StoryHover title="Pisa Afterglow"
-                    href="/pisa"
+                    href="/stories/pisa-afterglow.html"
                     src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
 
         <StoryHover title="London After Brexit"
@@ -56,7 +55,7 @@ class StoriesPage extends React.Component {
                     src="http://static.remindmetolive.com/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-800.jpg" />
 
         <StoryHover title="The Casino Of Constanta"
-                    href="/the-casino-of-constanta"
+                    href="/stories/the-casino-of-constanta.html"
                     src="http://static.remindmetolive.com/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
 
         <StoryHover title="Love at the Gardens Of The World"

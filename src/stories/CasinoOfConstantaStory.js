@@ -7,7 +7,7 @@ import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 
-const imgDir = "images/stories/2015-10-15-the-casino-of-constanta/";
+const imgDir = "/images/stories/2015-10-15-the-casino-of-constanta/";
 
 class CasinoOfConstantaStory extends React.Component {
 

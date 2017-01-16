@@ -7,7 +7,7 @@ import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 
-const imgDir = "images/stories/2016-06-30-bridges-of-florence/";
+const imgDir = "/images/stories/2016-06-30-bridges-of-florence/";
 
 class BridgesOfFlorence extends React.Component {
 

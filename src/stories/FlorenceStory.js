@@ -8,7 +8,7 @@ import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 
-const imgDir = "images/stories/2016-12-15-florence-rulz/";
+const imgDir = "/images/stories/2016-12-15-florence-rulz/";
 
 class FlorenceStory extends React.Component {
 

@@ -48,7 +48,7 @@ class StoryPage extends React.Component {
         <Container>
           <Row>
             <Col>
-              <img src="images/cocos.png" />
+              <img src="/images/cocos.png" />
             </Col>
           </Row>
         </Container>

@@ -1,13 +1,13 @@
 import React from 'react';
-import TwoImages from './story/TwoImages';
-import OneImage from './story/OneImage';
-import FullImage from './story/FullImage';
-import StoryPage from './story/StoryPage';
-import StoryTextBlock from './story/StoryTextBlock';
-import StoryImages from './story/StoryImages';
-import StoryIntro from './story/StoryIntro';
+import TwoImages from '../components/story/TwoImages';
+import OneImage from '../components/story/OneImage';
+import FullImage from '../components/story/FullImage';
+import StoryPage from '../components/story/StoryPage';
+import StoryTextBlock from '../components/story/StoryTextBlock';
+import StoryImages from '../components/story/StoryImages';
+import StoryIntro from '../components/story/StoryIntro';
 
-class PisaPage extends React.Component {
+class PisaAfterglowStory extends React.Component {
 
   constructor() {
     super();
@@ -93,4 +93,4 @@ class PisaPage extends React.Component {
   }
 }
 
-export default PisaPage;
+export default PisaAfterglowStory;

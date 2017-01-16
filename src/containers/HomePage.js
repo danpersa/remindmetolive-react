@@ -1,6 +1,6 @@
 import React from 'react';
-import SampleGallery from './SampleGallery.js';
-import StoryHover from './stories/StoryHover.js';
+import SampleGallery from '../components/SampleGallery.js';
+import StoryHover from '../components/stories/StoryHover.js';
 
 const HomePage = () => {
   return (
