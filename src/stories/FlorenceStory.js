@@ -8,7 +8,7 @@ import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 
-const imgDir = "/images/stories/2016-12-15-florence-rulz/";
+const imgDir = "/images/stories/2017-01-15-florence-theme-park-of-renaissance/";
 
 class FlorenceStory extends React.Component {
 
@@ -138,7 +138,7 @@ class FlorenceStory extends React.Component {
             src2={this.image("41")}/>
 
         </StoryImages>
-        <FullImage src={this.wide("40")}/>
+        <FullImage src={this.wide("08")}/>
         <StoryImages>
           <TwoImages
             src1={this.image("43")}

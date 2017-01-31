@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import Row from '../base/Row';
 import Col from '../base/Col';
 import Container from '../base/Container';
-import FullImage from './FullImage';
+import TeaserImage from './TeaserImage';
 
 class StoryPage extends React.Component {
 
@@ -13,7 +13,7 @@ class StoryPage extends React.Component {
   render() {
     return (
     <div className="main-container">
-      <FullImage src={this.props.logo}/>
+      <TeaserImage src={this.props.logo}/>
       <section className="pt0 pb0 mb32 mb-xs-32 mt32 mt-xs-16 text-center">
         <Container>
           <Row>

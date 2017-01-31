@@ -15,8 +15,8 @@ const MainMenu = () => {
             <div className="nav-bar">
                 <div className="module left">
                     <IndexLink to="/">
-                        <img className="logo logo-light" alt="remindmetolive" src="images/logo.svg" />
-                        <img className="logo logo-dark" alt="remindmetolive" src="images/logo.svg" />
+                        <img className="logo logo-light" alt="remindmetolive" src="/images/logo.svg" />
+                        <img className="logo logo-dark" alt="remindmetolive" src="/images/logo.svg" />
                     </IndexLink>
                 </div>
                 <div className="module widget-handle mobile-toggle right visible-sm visible-xs">

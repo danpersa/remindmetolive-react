@@ -10,8 +10,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 import routes from '../src/routes';
-import fs from 'fs';
-import properties from 'properties';
+import Meta from './meta';
 
 /* eslint-disable no-console */
 export default function startExpress() {
@@ -27,23 +26,11 @@ export default function startExpress() {
 //  theapp.set('views', path.join(__dirname, 'src/views'));
   const currentDir = path.resolve(path.dirname(''));
 
-  const metaDir = path.join(currentDir, 'meta');
-
-  const data = fs.readFileSync (path.join(metaDir, 'index.meta'), { encoding: "utf8" });
-  const options = {
-    sections: false,
-    comments: ";",
-    separators: "=",
-    strict: true
-  };
-
-  const obj = properties.parse (data, options);
-
-  console.log (obj);
+  const meta = new Meta();
 
   const staticDir = path.join(currentDir, 'dist/client');
 
-  console.log('static dir: ' + staticDir);
+  console.log('Static dir: ' + staticDir);
 
   theapp.use(express.static(staticDir));
 
@@ -51,6 +38,9 @@ export default function startExpress() {
     match(
       {routes, location: req.url },
       (err, redirectLocation, renderProps) => {
+
+        console.log("request url: ");
+        console.log(req.url);
 
         // // in case of error display the error message
         if (err) {
@@ -76,9 +66,7 @@ export default function startExpress() {
         // render the index template with the embedded React markup
         return res.render('path', {
             reactOutput: markup,
-            description: "This is some description",
-            keywords: "one, two, three",
-            title: "This is the title"
+            meta: meta.getMetaForPath(req.url)
         });
       }
     );

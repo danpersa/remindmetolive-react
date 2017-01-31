@@ -6,12 +6,12 @@
   <link rel="stylesheet" type="text/css" href="/main.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 
-  {{> meta}}
+  {{> meta }}
 
-  <title>{{title}}</title>
+  <title>{{ meta.title }}</title>
 </head>
 <body>
-  <div id="app">{{{body}}}</div>
+  <div id="app">{{{ body }}}</div>
   <script src='/main.js'></script>
 </body>
 </html>

@@ -57,27 +57,27 @@ class SampleGallery extends React.Component {
 
        const images = [
            {
-             original: 'images/stories/2016-12-15-florence-rulz/wide-03-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
              thumbnail: 'http://placekitten.com/g/250/150'
            },
            {
-             original: 'images/stories/2016-12-15-florence-rulz/wide-04-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-04-2048.jpg',
              thumbnail: 'http://placekitten.com/g/250/150'
            },
            {
-             original: 'images/2016-12-15-florence-rulz/wide-05-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-05-2048.jpg',
              thumbnail: 'http://placekitten.com/g/250/150',
              description: 'Optional description...',
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: 'images/stories/2016-12-15-florence-rulz/wide-06-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-06-2048.jpg',
              description: 'Optional description...',
              href: '/the-casino-of-constanta',
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: 'images/stories/2016-12-15-florence-rulz/wide-07-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-07-2048.jpg',
              thumbnail: ''
            }
          ];
