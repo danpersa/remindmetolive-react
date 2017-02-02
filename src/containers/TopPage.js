@@ -12,9 +12,7 @@ class TopPage extends React.Component {
       <section className="pt0 pb0">
         <ImageWithTextTeaser src={this.props.teaser}
                              text={this.props.title} />
-        <section>
-          {this.props.children}
-        </section>
+        {this.props.children}
       </section>
     );
   }

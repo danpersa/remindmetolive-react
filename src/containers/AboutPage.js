@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <TopPageTwoColumns teaser="images/stories/2016-12-15-florence-rulz/wide-01-2048.jpg"
+      <TopPageTwoColumns teaser="/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-02-2048.jpg"
                          title="About Us">
         <div>
           <h2>Who we are</h2>
@@ -37,7 +37,7 @@ class AboutPage extends React.Component {
             We started the <strong>remindmetolive</strong> project to share stories
             of people and places through photography.
             <p />
-            We believe that a photography is a really powerful form of art, in the
+            We believe that photography is a really powerful form of art, in the
             sense that it has the ability to transmit emotions, mood, ideas and
             messages—all of which are also important elements of story telling.
             <p />

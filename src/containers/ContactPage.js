@@ -10,16 +10,16 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <TopPageTwoColumns teaser="images/stories/2016-12-15-florence-rulz/wide-07-2048.jpg"
+      <TopPageTwoColumns teaser="/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-07-2048.jpg"
                          title="Contact Us">
         <div>
           <h4 className="uppercase">Get In Touch</h4>
-          <p>
+          <p className="lead">
             We would love to hear from you!
             <br/>Be part of the journey and share your thoughts about our project. Tell us which stories you like. Tell us your story.
           </p>
           <hr />
-          <p className="lead">
+          <p>
             <i className="ti-map"/> Berlin, Germany
             <br />
             <br />

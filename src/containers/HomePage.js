@@ -76,11 +76,11 @@ const HomePage = () => {
           <div className="row">
             <StoryHover title="Florence"
                         href="/florence"
-                        src="images/stories/2016-12-15-florence-rulz/teaser-03-2048.jpg" />
+                        src="/images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-03-2048.jpg" />
 
             <StoryHover title="Florence"
                         href="/florence"
-                        src="images/stories/2016-12-15-florence-rulz/teaser-05-2048.jpg" />
+                        src="/images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-05-2048.jpg" />
           </div>
         </div>
       </section>

@@ -898,21 +898,21 @@ nav .btn,
   top: 1px;
 }
 .nav-bar {
-  height: 55px;
-  max-height: 55px;
-  line-height: 53px;
+  height: 110px;
+  max-height: 110px;
+  line-height: 106px;
   border-bottom: 1px solid #ccc;
 }
 .nav-bar .module,
 .nav-bar .module-group {
-  height: 55px;
+  height: 110px;
 }
 .nav-bar a {
   display: inline-block;
-  height: 55px;
+  height: 110px;
 }
 .logo {
-  max-height: 60%;
+  max-height: 90%;
 }
 .logo-light {
   display: none;
@@ -1303,6 +1303,15 @@ nav .cart-overview a {
     transform: translate3d(0, 0px, 0) !important;
     -webkit-transform: translate3d(0, 0px, 0) !important;
     -moz-transform: translate3d(0, 0px, 0) !important;
+  }
+  .nav-bar {
+    height: 55px;
+    max-height: 55px;
+    line-height: 53px;
+  }
+  .nav-bar a {
+    display: inline-block;
+    height: 55px;
   }
   .nav-bar,
   .nav-bar .module-group,

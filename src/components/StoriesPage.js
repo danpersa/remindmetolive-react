@@ -28,11 +28,11 @@ class StoriesPage extends React.Component {
 
         <StoryHover title="Florence"
                     href="/stories/florence-theme-park-of-renaissance.html"
-                    src="images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-02-2048.jpg" />
+                    src="/images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-02-2048.jpg" />
 
         <StoryHover title="Bridges of Florence"
                     href="/stories/bridges-of-florence.html"
-                    src="images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
+                    src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
 
         <StoryHover title="Pisa Afterglow"
                     href="/stories/pisa-afterglow.html"

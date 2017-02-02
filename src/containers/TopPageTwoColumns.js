@@ -2,7 +2,8 @@ import React, {PropTypes} from 'react';
 import Row from '../components/base/Row';
 import Col from '../components/base/Col';
 import Container from '../components/base/Container';
-import TopPage from './TopPage.js';
+import TopPage from './TopPage';
+import SocialList from '../components/SocialList';
 
 class TopPageTwoColumns extends React.Component {
 
@@ -16,7 +17,7 @@ class TopPageTwoColumns extends React.Component {
                title={this.props.title}>
         <Container>
           <Row>
-            <Col sm={6} md={5}>
+            <Col sm={6} md={5} mdOffset={1}>
               {this.props.children[0]}
             </Col>
             <Col sm={6} md={5} mdOffset={1}>
@@ -24,6 +25,9 @@ class TopPageTwoColumns extends React.Component {
              </Col>
           </Row>
         </Container>
+        <section className="pt32 pb48 text-center" >
+          <SocialList/>
+        </section>
       </TopPage>
     );
   }
