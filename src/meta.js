@@ -1,9 +1,10 @@
 import fs from 'fs';
 import properties from 'properties';
 import path from 'path';
+import DirWalker from './dirWalker';
 
 /* eslint-disable no-console */
-export default class MetaParser {
+export default class Meta {
 
   constructor() {
     this.pathToMeta = {};
@@ -24,28 +25,18 @@ export default class MetaParser {
     return this.pathToMeta[path];
   }
 
-  walk(currentDirPath) {
-    const self = this;
-    fs.readdirSync(currentDirPath).forEach(function (name) {
-      const filePath = path.join(currentDirPath, name);
-      const stat = fs.statSync(filePath);
-      if (stat.isFile()) {
-        const data = fs.readFileSync(filePath, { encoding: "utf8" });
-        const meta = properties.parse(data, self.options);
-        console.log("Found metas for: " + meta['path']);
-
-        self.addMeta(meta['path'], meta);
-      } else if (stat.isDirectory()) {
-        self.walk(filePath);
-      }
-    });
-  }
-
   init() {
-    console.log("");
     const currentDir = path.resolve(path.dirname(''));
     const metaDir = path.join(currentDir, 'meta');
+    const self = this;
+    const dirWalker = new DirWalker(metaDir, filePath => {
+      const data = fs.readFileSync(filePath, { encoding: "utf8" });
+      const meta = properties.parse(data, self.options);
+      // console.log("Found metas for: " + meta['path']);
 
-    this.walk(metaDir);
+      self.addMeta(meta['path'], meta);
+    });
+
+    dirWalker.walk();
   }
 }
