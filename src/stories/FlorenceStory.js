@@ -2,13 +2,13 @@ import React from 'react';
 import TwoImages from '../components/story/TwoImages';
 import OneImage from '../components/story/OneImage';
 import ThreeImages from '../components/story/ThreeImages';
-import FullImage from '../components/story/FullImage';
+import WideFullImage from '../components/story/WideFullImage';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 
-const imgDir = "/images/stories/2017-01-15-florence-theme-park-of-renaissance/";
+const imgDirPath = "/images/stories/2017-01-15-florence-theme-park-of-renaissance/";
 
 class FlorenceStory extends React.Component {
 
@@ -17,11 +17,11 @@ class FlorenceStory extends React.Component {
   }
 
   image(number) {
-    return imgDir + "image-" + number + "-1200.jpg";
+    return imgDirPath + "image-" + number + "-1200.jpg";
   }
 
   wide(number) {
-    return imgDir + "wide-" + number + "-2048.jpg";
+    return `${imgDirPath}"wide-${number}-2048.jpg`;
   }
 
   render() {
@@ -65,7 +65,9 @@ class FlorenceStory extends React.Component {
             src2={this.image("13")}/>
 
         </StoryImages>
-        <FullImage src={this.wide("02")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="02" />
+
         <StoryImages>
 
           <OneImage src={this.image("15")} />
@@ -87,7 +89,9 @@ class FlorenceStory extends React.Component {
         <StoryTextBlock title="Bridges of Florence">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src={this.wide("03")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="03" />
+
         <StoryImages>
 
           <TwoImages
@@ -102,7 +106,9 @@ class FlorenceStory extends React.Component {
         <StoryTextBlock title="Climb up the Tower">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src={this.wide("04")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="04" />
+
         <StoryImages>
 
           <TwoImages
@@ -115,7 +121,8 @@ class FlorenceStory extends React.Component {
         <StoryTextBlock title="Michelangelo Square">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src={this.wide("11")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="11" />
 
         <StoryImages>
           <OneImage src={this.image("33")} />
@@ -124,7 +131,8 @@ class FlorenceStory extends React.Component {
         <StoryTextBlock title="Climb up the Tower">
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
-        <FullImage src={this.wide("05")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="05" />
 
         <StoryImages>
           <TwoImages
@@ -138,7 +146,9 @@ class FlorenceStory extends React.Component {
             src2={this.image("41")}/>
 
         </StoryImages>
-        <FullImage src={this.wide("08")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="08" />
+
         <StoryImages>
           <TwoImages
             src1={this.image("43")}
