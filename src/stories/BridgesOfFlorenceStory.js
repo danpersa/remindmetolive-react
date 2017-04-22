@@ -1,13 +1,13 @@
 import React from 'react';
-import TwoImages from '../components/story/TwoImages';
-import OneImage from '../components/story/OneImage';
-import FullImage from '../components/story/FullImage';
+import PostImage from '../components/story/PostImage';
+import TwoPostImages from '../components/story/TwoPostImages';
+import WideFullImage from '../components/story/WideFullImage';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 
-const imgDir = "/images/stories/2016-06-30-bridges-of-florence/";
+const imgDirPath = "/images/stories/2016-06-30-bridges-of-florence/";
 
 class BridgesOfFlorence extends React.Component {
 
@@ -16,15 +16,15 @@ class BridgesOfFlorence extends React.Component {
   }
 
   image(number) {
-    return imgDir + "image-" + number + "-1200.jpg";
+    return imgDirPath + "image-" + number + "-1200.jpg";
   }
 
   wide(number) {
-    return imgDir + "wide-" + number + "-2048.jpg";
+    return imgDirPath + "wide-" + number + "-2048.jpg";
   }
 
   teaser(number) {
-    return imgDir + "teaser-" + number + "-2048.jpg";
+    return imgDirPath + "teaser-" + number + "-2048.jpg";
   }
 
   render() {
@@ -43,7 +43,7 @@ class BridgesOfFlorence extends React.Component {
           I took the next photo from the Michelangelo Square. From here you can have a nice overview of the bridges. The colorful Ponte Vecchio is the first in line, followed by the others.
         </StoryTextBlock>
 
-        <FullImage src={this.image("01")}/>
+        <WideFullImage dirPath={imgDirPath} number="01" />
 
         <StoryTextBlock title="Ponte Vecchio">
           The most iconic bridge in Florence is Ponte Vecchio, the Old Bridge.
@@ -54,13 +54,13 @@ class BridgesOfFlorence extends React.Component {
 
         <StoryImages>
 
-          <OneImage src={this.image("02")} />
+          <PostImage dirPath={imgDirPath} number="02" />
 
-          <TwoImages
-            src1={this.image("03")}
-            src2={this.image("04")}/>
+          <TwoPostImages dirPath={imgDirPath}
+                         number1="03"
+                         number2="04" />
 
-          <OneImage src={this.image("05")} />
+          <PostImage dirPath={imgDirPath} number="05" />
         </StoryImages>
 
         <StoryTextBlock title="Ponte Santa Trinita">
@@ -71,17 +71,18 @@ class BridgesOfFlorence extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <OneImage src={this.image("06")} />
+          <PostImage dirPath={imgDirPath} number="06" />
 
-          <TwoImages
-            src1={this.image("07")}
-            src2={this.image("08")}/>
+          <TwoPostImages dirPath={imgDirPath}
+                         number1="07"
+                         number2="08" />
 
-          <OneImage src={this.image("09")} />
+          <PostImage dirPath={imgDirPath} number="09" />
 
-          <TwoImages
-            src1={this.image("10")}
-            src2={this.image("11")}/>
+          <TwoPostImages dirPath={imgDirPath}
+                         number1="10"
+                         number2="11" />
+
         </StoryImages>
 
 
@@ -92,28 +93,30 @@ class BridgesOfFlorence extends React.Component {
 
         <StoryImages>
 
-          <OneImage src={this.image("12")} />
+          <PostImage dirPath={imgDirPath} number="12" />
 
-          <TwoImages
-            src1={this.image("13")}
-            src2={this.image("14")}/>
+          <TwoPostImages dirPath={imgDirPath}
+                         number1="13"
+                         number2="14" />
 
-          <TwoImages
-            src1={this.image("15")}
-            src2={this.image("16")}/>
+          <TwoPostImages dirPath={imgDirPath}
+                         number1="15"
+                         number2="16" />
 
-          <OneImage src={this.image("17")} />
+          <PostImage dirPath={imgDirPath} number="17" />
+
         </StoryImages>
         <StoryTextBlock title="Ponte Amerigo Vespucci">
           It seems that drivers prefer this bridge, as there are always lots of cars using it to cross
           the river.
         </StoryTextBlock>
-        <FullImage src={this.image("18")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="18" />
+
         <StoryTextBlock title="Ponte alle Grazie" />
         <StoryImages>
-          <OneImage src={this.image("19")} />
-
-          <OneImage src={this.image("20")} />
+          <PostImage dirPath={imgDirPath} number="19" />
+          <PostImage dirPath={imgDirPath} number="20" />
         </StoryImages>
 
         <StoryTextBlock title="Other Bridges">
@@ -122,9 +125,9 @@ class BridgesOfFlorence extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <TwoImages
-            src1={this.image("21")}
-            src2={this.image("22")}/>
+          <TwoPostImages dirPath={imgDirPath}
+                         number1="21"
+                         number2="22" />
         </StoryImages>
 
         <StoryTextBlock title="Overview">
@@ -132,7 +135,9 @@ class BridgesOfFlorence extends React.Component {
           and how the bridges bring more personality to the city. Florence is for sure a city worth
           visiting, an architectural beauty!
         </StoryTextBlock>
-        <FullImage src={this.image("23")}/>
+
+        <WideFullImage dirPath={imgDirPath} number="23" />
+
       </StoryPage>);
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import TwoImages from '../components/story/TwoImages';
 import OneImage from '../components/story/OneImage';
-import ThreeImages from '../components/story/ThreeImages';
+import ThreePostImages from '../components/story/ThreePostImages';
 import WideFullImage from '../components/story/WideFullImage';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
@@ -44,10 +44,10 @@ class FlorenceStory extends React.Component {
 
           <OneImage src={this.image("02")} />
 
-          <ThreeImages
-            src1={this.image("03")}
-            src2={this.image("04")}
-            src3={this.image("05")}/>
+          <ThreePostImages dirPath={imgDirPath}
+                           number1="03"
+                           number2="04"
+                           number3="05" />
 
           <TwoImages
             src1={this.image("06")}
@@ -55,10 +55,10 @@ class FlorenceStory extends React.Component {
 
           <OneImage src={this.image("08")} />
 
-          <ThreeImages
-            src1={this.image("09")}
-            src2={this.image("10")}
-            src3={this.image("11")}/>
+          <ThreePostImages dirPath={imgDirPath}
+                           number1="09"
+                           number2="10"
+                           number3="11" />
 
           <TwoImages
             src1={this.image("12")}

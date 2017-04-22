@@ -54,7 +54,9 @@ class PisaAfterglowStory extends React.Component {
           Don’t just admire the square from below: the climb up the tower is a once in a lifetime opportunity that I highly encourage you to experience. You will enjoy both the incredible climb as well as the amazing views from the top.
         </StoryTextBlock>
 
-        <FullImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-12-1200.jpg"/>
+        <FullImage dirPath="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/"
+                   prefix="teaser"
+                   number="02" />
 
         <StoryImages>
           <TwoImages
@@ -72,7 +74,9 @@ class PisaAfterglowStory extends React.Component {
           The Leaning Tower has made Pisa famous all over the world, but in addition to the amazing Square of Miracles, the city offers many other beautiful places to see. Here are some for inspiration.
         </StoryTextBlock>
 
-        <FullImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-18-1200.jpg"/>
+        <FullImage dirPath="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/"
+                   prefix="teaser"
+                   number="01" />
 
         <StoryImages>
           <OneImage src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/image-19-1200.jpg" />

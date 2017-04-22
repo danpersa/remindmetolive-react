@@ -1,13 +1,13 @@
 import React from 'react';
 import TwoImages from '../components/story/TwoImages';
 import OneImage from '../components/story/OneImage';
-import FullImage from '../components/story/FullImage';
+import WideFullImage from '../components/story/WideFullImage';
 import StoryPage from '../components/story/StoryPage';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 
-const imgDir = "/images/stories/2015-10-15-the-casino-of-constanta/";
+const imgDirPath = "/images/stories/2015-10-15-the-casino-of-constanta/";
 
 class CasinoOfConstantaStory extends React.Component {
 
@@ -16,11 +16,11 @@ class CasinoOfConstantaStory extends React.Component {
   }
 
   image(number) {
-    return imgDir + "image-" + number + "-1200.jpg";
+    return imgDirPath + "image-" + number + "-1200.jpg";
   }
 
   teaser(number) {
-    return imgDir + "teaser-" + number + "-2048.jpg";
+    return imgDirPath + "teaser-" + number + "-2048.jpg";
   }
 
   render() {
@@ -105,7 +105,7 @@ class CasinoOfConstantaStory extends React.Component {
             src2={this.image("22")}/>
         </StoryImages>
 
-        <FullImage src={this.image("32")}/>
+        <WideFullImage dirPath={imgDirPath} number="32" />
 
         <StoryImages>
           <TwoImages
