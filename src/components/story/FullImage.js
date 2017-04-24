@@ -24,7 +24,7 @@ FullImage.propTypes = {
   dirPath: PropTypes.string.isRequired,
   prefix: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
+  alt: PropTypes.string
 };
 
 export default FullImage;

@@ -15,16 +15,18 @@ class TopPageTwoColumns extends React.Component {
     return (
       <TopPage teaser={this.props.teaser}
                title={this.props.title}>
-        <Container>
-          <Row>
-            <Col sm={6} md={5} mdOffset={1}>
-              {this.props.children[0]}
-            </Col>
-            <Col sm={6} md={5} mdOffset={1}>
-              {this.props.children[1]}
-             </Col>
-          </Row>
-        </Container>
+        <section className="pt32 mt32 mt-xs-16 pb0 mb0 mb-xs-0">
+          <Container>
+            <Row>
+              <Col sm={6} md={5} mdOffset={1}>
+                {this.props.children[0]}
+              </Col>
+              <Col sm={6} md={5} mdOffset={1}>
+                {this.props.children[1]}
+               </Col>
+            </Row>
+          </Container>
+        </section>
         <section className="pt32 pb48 text-center" >
           <SocialList/>
         </section>
