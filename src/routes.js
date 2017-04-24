@@ -3,14 +3,15 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
 import HomePage from './containers/HomePage';
-import AboutPage from './containers/AboutPage.js';
-import ContactPage from './containers/ContactPage.js';
-import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory.js';
-import PisaAfterglowStory from './stories/PisaAfterglowStory.js';
-import FlorenceStory from './stories/FlorenceStory.js';
-import BridgesOfFlorenceStory from './stories/BridgesOfFlorenceStory.js';
-import StoriesPage from './components/StoriesPage.js';
-import NotFoundPage from './components/NotFoundPage.js';
+import AboutPage from './containers/AboutPage';
+import ContactPage from './containers/ContactPage';
+import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory';
+import PisaAfterglowStory from './stories/PisaAfterglowStory';
+import FlorenceStory from './stories/FlorenceStory';
+import BridgesOfFlorenceStory from './stories/BridgesOfFlorenceStory';
+import LisbonStory from './stories/LisbonStory';
+import StoriesPage from './components/StoriesPage';
+import NotFoundPage from './components/NotFoundPage';
 
 export default (
   <Route path="/" component={App}>
@@ -20,6 +21,7 @@ export default (
     <Route path="stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
     <Route path="stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
     <Route path="stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
+    <Route path="stories/lisbon.html" component={LisbonStory}/>
     <Route path="about" component={AboutPage}/>
     <Route path="contact" component={ContactPage}/>
     <Route path="*" component={NotFoundPage}/>

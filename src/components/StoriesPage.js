@@ -26,7 +26,11 @@ class StoriesPage extends React.Component {
           Discover stories about love, travel, people, and our lives and culture through photography. Let the stories flow in your veins!
         </StoryIntro>
 
-        <StoryHover title="Florence"
+        <StoryHover title="Lisbon"
+                    href="/stories/lisbon.html"
+                    src="/images/stories/2017-03-05-lisbon/teaser-02-2048.jpg" />
+
+        <StoryHover title="Florence‚ The Theme Park Of Renaissance"
                     href="/stories/florence-theme-park-of-renaissance.html"
                     src="/images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-02-2048.jpg" />
 

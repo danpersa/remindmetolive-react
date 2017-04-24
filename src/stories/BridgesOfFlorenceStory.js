@@ -6,6 +6,7 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
+import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2016-06-30-bridges-of-florence/";
 
@@ -15,21 +16,9 @@ class BridgesOfFlorence extends React.Component {
     super();
   }
 
-  image(number) {
-    return imgDirPath + "image-" + number + "-1200.jpg";
-  }
-
-  wide(number) {
-    return imgDirPath + "wide-" + number + "-2048.jpg";
-  }
-
-  teaser(number) {
-    return imgDirPath + "teaser-" + number + "-2048.jpg";
-  }
-
   render() {
     return (
-      <StoryPage logo={this.teaser("05")}
+      <StoryPage logo={buildSrc(imgDirPath, "teaser", "01", "2048")}
                  title="Bridges of Florence"
                  author="Dan & Ade"
                  location="Florence, Italy"
