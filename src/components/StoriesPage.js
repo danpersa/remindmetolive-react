@@ -67,8 +67,8 @@ class StoriesPage extends React.Component {
                     src="http://static.remindmetolive.com/images/stories/2015-09-30-love-at-the-gardens-of-the-world/teaser-01-800.jpg" />
 
         <StoryHover title="Lunar Landscapes of Lanzarote"
-                    href="/casino"
-                    src="http://static.remindmetolive.com/images/stories/2015-09-29-lunar-landscapes-of-lanzarote/teaser-01-800.jpg" />
+                    href="/stories/lunar-landscapes-of-lanzarote.html"
+                    src="/images/stories/2015-09-29-lunar-landscapes-of-lanzarote/teaser-01-800.jpg" />
       </section>
     );
   }
