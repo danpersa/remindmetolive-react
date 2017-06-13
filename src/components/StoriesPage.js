@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from './base/Container.js';
-import Row from './base/Row.js';
-import Col from './base/Col.js';
-import StoryIntro from './story/StoryIntro.js';
-import StoryHover from './stories/StoryHover.js';
+import Container from './base/Container';
+import Row from './base/Row';
+import Col from './base/Col';
+import StoryIntro from './story/StoryIntro';
+import StoryHover from './stories/StoryHover';
 
 class StoriesPage extends React.Component {
 

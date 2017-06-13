@@ -1,4 +1,3 @@
-import {expect} from 'chai';
 import DirWalker from './dirWalker';
 import path from 'path';
 
@@ -13,7 +12,7 @@ describe('DirWalker', () => {
         foundFiles.push(filePath);
       });
       dirWalker.walk(metaDirPath);
-      expect(foundFiles.length).to.equal(4);
+      expect(foundFiles.length).toEqual(4);
     });
   });
 });

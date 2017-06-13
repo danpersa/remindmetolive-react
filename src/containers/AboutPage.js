@@ -1,5 +1,5 @@
 import React from 'react';
-import TopPageTwoColumns from './TopPageTwoColumns.js';
+import TopPageTwoColumns from './TopPageTwoColumns';
 
 // Since this component is simple and static, there's no parent container for it.
 class AboutPage extends React.Component {

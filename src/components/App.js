@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import MainMenu from './MainMenu';
 import Footer from './Footer';
 
-
 const App = (props) => {
   return (
     <div>

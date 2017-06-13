@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import ImageWithTextTeaser from '../components/ImageWithTextTeaser.js';
+import ImageWithTextTeaser from '../components/ImageWithTextTeaser';
 
 class TopPage extends React.Component {
 
