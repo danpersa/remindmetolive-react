@@ -12,6 +12,8 @@ import { match, RouterContext } from 'react-router';
 import routes from '../src/routes';
 import Meta from './meta';
 
+import sm from 'sitemap';
+
 /* eslint-disable no-console */
 export default function startExpress() {
 
@@ -33,6 +35,18 @@ export default function startExpress() {
   console.log('Static dir: ' + staticDir);
 
   theapp.use(express.static(staticDir));
+
+  const sitemap = sm.createSitemap ({
+    hostname: 'http://example.com',
+    cacheTime: 600000
+  });
+
+  sitemap.add({url: '/page-1/'});
+  sitemap.add({url: '/page-2/', changefreq: 'monthly', priority: 0.7});
+  theapp.get('/sitemap.xml', function(req, res) {
+    res.header('Content-Type', 'application/xml');
+    res.send( sitemap.toString() );
+  });
 
   theapp.get('*', (req, res) => {
     match(
