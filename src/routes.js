@@ -10,7 +10,9 @@ import PisaAfterglowStory from './stories/PisaAfterglowStory';
 import FlorenceStory from './stories/FlorenceStory';
 import BridgesOfFlorenceStory from './stories/BridgesOfFlorenceStory';
 import LunarLandscapesOfLanzaroteStory from './stories/LunarLandscapesOfLanzaroteStory';
-import LisbonStory from './stories/LisbonStory';
+import SummerInAmsterdamStory from './stories/SummerInAmsterdamStory';
+import LisbonACharmingCityStory from './stories/LisbonACharmingCityStory';
+import LanzaroteBeachesStory from './stories/LanzaroteBeachesStory';
 import StoriesPage from './components/StoriesPage';
 import NotFoundPage from './components/NotFoundPage';
 
@@ -26,8 +28,10 @@ export default (
     <Route path="stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
     <Route path="stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
     <Route path="stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
-    <Route path="stories/lisbon.html" component={LisbonStory}/>
     <Route path="stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
+    <Route path="stories/summer-in-amsterdam.html" component={SummerInAmsterdamStory}/>
+    <Route path="stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
+    <Route path="stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
     <Route path="about" component={AboutPage}/>
     <Route path="contact" component={ContactPage}/>
     <Route path="*" component={NotFoundPage}/>

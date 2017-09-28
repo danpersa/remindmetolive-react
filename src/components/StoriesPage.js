@@ -25,6 +25,13 @@ class StoriesPage extends React.Component {
         <StoryIntro>
           Discover stories about love, travel, people, and our lives and culture through photography. Let the stories flow in your veins!
         </StoryIntro>
+        <StoryHover title="Summer In Amsterdam"
+                    href="/stories/summer-in-amsterdam.html"
+                    src="/images/stories/2017-06-17-summer-in-amsterdam/teaser-03-2048.jpg" />
+
+        <StoryHover title="Lisbon, A Charming City"
+                    href="/stories/lisbon-a-charming-city.html"
+                    src="/images/stories/2017-06-05-lisbon-a-charming-city/teaser-01-2048.jpg" />
 
         <StoryHover title="Lisbon"
                     href="/stories/lisbon.html"
@@ -40,31 +47,23 @@ class StoriesPage extends React.Component {
 
         <StoryHover title="Pisa Afterglow"
                     href="/stories/pisa-afterglow.html"
-                    src="http://static.remindmetolive.com/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
+                    src="/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
 
-        <StoryHover title="London After Brexit"
-                    href="/london"
-                    src="http://static.remindmetolive.com/images/stories/2016-09-10-london-after-brexit/teaser-01-800.jpg" />
-
-        <StoryHover title="Tenerife, Land Of Eternal Spring"
-                    href="/florence"
-                    src="http://static.remindmetolive.com/images/stories/2016-06-11-tenerife-the-land-of-eternal-spring/teaser-01-800.jpg" />
-
-        <StoryHover title="Lanzarote - Beaches"
-                    href="/florence"
-                    src="http://static.remindmetolive.com/images/stories/2016-05-17-lanzarote-beaches/teaser-01-800.jpg" />
+        <StoryHover title="Lanzarote-Beaches"
+                    href="/stories/lanzarote-beaches.html"
+                    src="/images/stories/2016-05-17-lanzarote-beaches/teaser-01-1600.jpg" />
 
         <StoryHover title="Winter Fairy Tale in Salzburg"
-                    href="/florence"
-                    src="http://static.remindmetolive.com/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-800.jpg" />
+                    href="/stories/winter-fairy-tale-in-salzburg.html"
+                    src="/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-800.jpg" />
 
         <StoryHover title="The Casino Of Constanta"
                     href="/stories/the-casino-of-constanta.html"
-                    src="http://static.remindmetolive.com/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
+                    src="/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
 
         <StoryHover title="Love at the Gardens Of The World"
-                    href="/casino"
-                    src="http://static.remindmetolive.com/images/stories/2015-09-30-love-at-the-gardens-of-the-world/teaser-01-800.jpg" />
+                    href="/stories/love-at-the-gardens-of-the-world.html"
+                    src="/images/stories/2015-09-30-love-at-the-gardens-of-the-world/teaser-01-800.jpg" />
 
         <StoryHover title="Lunar Landscapes of Lanzarote"
                     href="/stories/lunar-landscapes-of-lanzarote.html"

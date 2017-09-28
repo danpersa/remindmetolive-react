@@ -8,9 +8,9 @@ import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 import buildSrc from '../components/story/buildSrc';
 
-const imgDirPath = "/images/stories/2017-03-05-lisbon/";
+const imgDirPath = "/images/stories/2017-06-05-lisbon-a-charming-city/";
 
-class LisbonStory extends React.Component {
+class LisbonACharmingCityStory extends React.Component {
 
   constructor() {
     super();
@@ -142,4 +142,4 @@ class LisbonStory extends React.Component {
   }
 }
 
-export default LisbonStory;
+export default LisbonACharmingCityStory;
