@@ -49,13 +49,13 @@ class StoriesPage extends React.Component {
                     href="/stories/siena-the-tuscan-beauty.html"
                     src="/images/stories/2016-11-12-siena-the-tuscan-beauty/teaser-03-800.jpg" />
 
-        <StoryHover title="Bridges of Florence"
-                    href="/stories/bridges-of-florence.html"
-                    src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
-
         <StoryHover title="Pisa Afterglow"
                     href="/stories/pisa-afterglow.html"
                     src="/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
+
+        <StoryHover title="Bridges of Florence"
+                    href="/stories/bridges-of-florence.html"
+                    src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
 
         <StoryHover title="Lanzarote-Beaches"
                     href="/stories/lanzarote-beaches.html"
