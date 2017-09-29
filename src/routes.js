@@ -16,10 +16,11 @@ import PisaAfterglowStory from './stories/2016-10-08-pisa-afterglow';
 import LondonAfterBrexitStory from './stories/2016-09-10-london-after-brexit';
 import BridgesOfFlorenceStory from './stories/2016-06-30-bridges-of-florence';
 import TenerifeTheLandOfEternalSpringStory from './stories/2016-06-11-tenerife-the-land-of-eternal-spring';
+import LanzaroteBeachesStory from './stories/2016-05-17-lanzarote-beaches';
 
 import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory';
-import LunarLandscapesOfLanzaroteStory from './stories/LunarLandscapesOfLanzaroteStory';
-import LanzaroteBeachesStory from './stories/LanzaroteBeachesStory';
+import LunarLandscapesOfLanzaroteStory from './stories/2015-09-29-lunar-landscapes-of-lanzarote';
+
 
 import StoriesPage from './components/StoriesPage';
 import NotFoundPage from './components/NotFoundPage';
@@ -42,11 +43,11 @@ export default (
     <Route path="stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
     <Route path="stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
     <Route path="stories/tenerife-the-land-of-eternal-spring.html" component={TenerifeTheLandOfEternalSpringStory}/>
+    <Route path="stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
 
     <Route path="stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
     <Route path="stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
-    <Route path="stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
-    <Route path="stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
+
     <Route path="about" component={AboutPage}/>
     <Route path="contact" component={ContactPage}/>
     <Route path="*" component={NotFoundPage}/>

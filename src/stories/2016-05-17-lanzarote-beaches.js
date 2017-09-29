@@ -6,6 +6,7 @@ import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 import buildSrc from '../components/story/buildSrc';
+import {Link} from 'react-router';
 
 const imgDirPath = "/images/stories/2016-05-17-lanzarote-beaches/";
 
@@ -25,7 +26,7 @@ class LanzaroteBeachesStory extends React.Component {
 
         <StoryIntro>
           After spending a day driving around the island and being mesmerized by
-          the <a href="/stories/lunar-landscapes-of-lanzarote.html">volcanic landscape</a> we
+          the <Link to="/stories/lunar-landscapes-of-lanzarote.html">volcanic landscape</Link> we
           were totally in full holiday mode.
           No wonder next day the question that popped was: what sort of beach do we fancy today?
           When you are on holiday in Lanzarote, this is the sort of problem you need to solve!
