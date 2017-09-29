@@ -14,6 +14,7 @@ import SummerInAmsterdamStory from './stories/SummerInAmsterdamStory';
 import LisbonACharmingCityStory from './stories/LisbonACharmingCityStory';
 import LanzaroteBeachesStory from './stories/LanzaroteBeachesStory';
 import IrinaAndLucianMaternityPhotoSessionStory from './stories/IrinaAndLucianMaternityPhotoSessionStory';
+import MidsummerInHelsinkiStory from './stories/2017-08-20-midsummer-in-helsinki';
 import StoriesPage from './components/StoriesPage';
 import NotFoundPage from './components/NotFoundPage';
 
@@ -25,6 +26,7 @@ export default (
     }}>
     <IndexRoute component={HomePage}/>
     <Route path="stories" component={StoriesPage}/>
+    <Route path="stories/midsummer-in-helsinki.html" component={MidsummerInHelsinkiStory}/>
     <Route path="stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
     <Route path="stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
     <Route path="stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
