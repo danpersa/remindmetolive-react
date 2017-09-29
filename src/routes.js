@@ -10,7 +10,7 @@ import MidsummerInHelsinkiStory from './stories/2017-08-20-midsummer-in-helsinki
 import SummerInAmsterdamStory from './stories/2017-06-17-summer-in-amsterdam';
 import LisbonACharmingCityStory from './stories/2017-06-05-lisbon-a-charming-city';
 import FlorenceStory from './stories/2017-01-15-florence-theme-park-of-renaissance';
-import IrinaAndLucianMaternityPhotoSessionStory from './stories/IrinaAndLucianMaternityPhotoSessionStory';
+import IrinaAndLucianMaternityPhotoSessionStory from './stories/2016-11-20-irina-and-lucian-maternity-photo-session';
 import SienaTheTuscanBeautyStory from './stories/2016-11-12-siena-the-tuscan-beauty';
 import PisaAfterglowStory from './stories/2016-10-08-pisa-afterglow';
 import LondonAfterBrexitStory from './stories/2016-09-10-london-after-brexit';
