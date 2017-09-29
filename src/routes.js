@@ -7,9 +7,9 @@ import AboutPage from './containers/AboutPage';
 import ContactPage from './containers/ContactPage';
 
 import MidsummerInHelsinkiStory from './stories/2017-08-20-midsummer-in-helsinki';
-import SummerInAmsterdamStory from './stories/SummerInAmsterdamStory';
-import LisbonACharmingCityStory from './stories/LisbonACharmingCityStory';
-import FlorenceStory from './stories/FlorenceStory';
+import SummerInAmsterdamStory from './stories/2017-06-17-summer-in-amsterdam';
+import LisbonACharmingCityStory from './stories/2017-06-05-lisbon-a-charming-city';
+import FlorenceStory from './stories/2017-01-15-florence-theme-park-of-renaissance';
 import IrinaAndLucianMaternityPhotoSessionStory from './stories/IrinaAndLucianMaternityPhotoSessionStory';
 import SienaTheTuscanBeautyStory from './stories/2016-11-12-siena-the-tuscan-beauty';
 import PisaAfterglowStory from './stories/2016-10-08-pisa-afterglow';
