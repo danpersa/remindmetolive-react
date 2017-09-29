@@ -15,6 +15,7 @@ import SienaTheTuscanBeautyStory from './stories/2016-11-12-siena-the-tuscan-bea
 import PisaAfterglowStory from './stories/2016-10-08-pisa-afterglow';
 import LondonAfterBrexitStory from './stories/2016-09-10-london-after-brexit';
 import BridgesOfFlorenceStory from './stories/2016-06-30-bridges-of-florence';
+import TenerifeTheLandOfEternalSpringStory from './stories/2016-06-11-tenerife-the-land-of-eternal-spring';
 
 import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory';
 import LunarLandscapesOfLanzaroteStory from './stories/LunarLandscapesOfLanzaroteStory';
@@ -39,8 +40,9 @@ export default (
     <Route path="stories/siena-the-tuscan-beauty.html" component={SienaTheTuscanBeautyStory}/>
     <Route path="stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
     <Route path="stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
-
     <Route path="stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
+    <Route path="stories/tenerife-the-land-of-eternal-spring.html" component={TenerifeTheLandOfEternalSpringStory}/>
+
     <Route path="stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
     <Route path="stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
     <Route path="stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>

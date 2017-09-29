@@ -61,6 +61,10 @@ class StoriesPage extends React.Component {
                     href="/stories/bridges-of-florence.html"
                     src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
 
+        <StoryHover title="Tenerife, Land Of Eternal Spring"
+                    href="/stories/tenerife-the-land-of-eternal-spring.html"
+                    src="/images/stories/2016-06-11-tenerife-the-land-of-eternal-spring/teaser-01-800.jpg" />
+
         <StoryHover title="Lanzarote-Beaches"
                     href="/stories/lanzarote-beaches.html"
                     src="/images/stories/2016-05-17-lanzarote-beaches/teaser-01-1600.jpg" />
