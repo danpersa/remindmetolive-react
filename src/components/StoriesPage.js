@@ -61,6 +61,10 @@ class StoriesPage extends React.Component {
                     href="/stories/the-casino-of-constanta.html"
                     src="/images/stories/2015-10-15-the-casino-of-constanta/teaser-01-800.jpg" />
 
+        <StoryHover title="Irina & Lucian Maternity Photos"
+                    href="/stories/irina-and-lucian-maternity-photo-session.html"
+                    src="/images/stories/2016-11-20-irina-and-lucian-maternity-photo-session/teaser-03-800.jpg" />
+
         <StoryHover title="Love at the Gardens Of The World"
                     href="/stories/love-at-the-gardens-of-the-world.html"
                     src="/images/stories/2015-09-30-love-at-the-gardens-of-the-world/teaser-01-800.jpg" />

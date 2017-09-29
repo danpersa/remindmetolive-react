@@ -13,6 +13,7 @@ import LunarLandscapesOfLanzaroteStory from './stories/LunarLandscapesOfLanzarot
 import SummerInAmsterdamStory from './stories/SummerInAmsterdamStory';
 import LisbonACharmingCityStory from './stories/LisbonACharmingCityStory';
 import LanzaroteBeachesStory from './stories/LanzaroteBeachesStory';
+import IrinaAndLucianMaternityPhotoSessionStory from './stories/IrinaAndLucianMaternityPhotoSessionStory';
 import StoriesPage from './components/StoriesPage';
 import NotFoundPage from './components/NotFoundPage';
 
@@ -32,6 +33,7 @@ export default (
     <Route path="stories/summer-in-amsterdam.html" component={SummerInAmsterdamStory}/>
     <Route path="stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
     <Route path="stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
+    <Route path="stories/irina-and-lucian-maternity-photo-session.html" component={IrinaAndLucianMaternityPhotoSessionStory}/>
     <Route path="about" component={AboutPage}/>
     <Route path="contact" component={ContactPage}/>
     <Route path="*" component={NotFoundPage}/>
