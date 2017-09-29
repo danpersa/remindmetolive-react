@@ -2,9 +2,9 @@ import React from 'react';
 import PostImage from '../components/story/PostImage';
 import TwoPostImages from '../components/story/TwoPostImages';
 import StoryPage from '../components/story/StoryPage';
+import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import StoryTextBlock from '../components/story/StoryTextBlock';
 import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2015-10-15-the-casino-of-constanta/";

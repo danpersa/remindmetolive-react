@@ -23,8 +23,11 @@ class StoriesPage extends React.Component {
         </Container>
 
         <StoryIntro>
-          Discover stories about love, travel, people, and our lives and culture through photography. Let the stories flow in your veins!
+          Discover <strong>stories</strong> about love, travel, people, and our
+          lives and culture through <strong>photography</strong>. Let the stories
+          flow in your veins!
         </StoryIntro>
+
         <StoryHover title="Midsummer in Helsinki"
                     href="/stories/midsummer-in-helsinki.html"
                     src="/images/stories/2017-08-20-midsummer-in-helsinki/teaser-02-800.jpg" />

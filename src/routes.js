@@ -19,7 +19,7 @@ import TenerifeTheLandOfEternalSpringStory from './stories/2016-06-11-tenerife-t
 import LanzaroteBeachesStory from './stories/2016-05-17-lanzarote-beaches';
 import WinterFairyTaleInSalzburgStory from './stories/2016-01-06-winter-fairy-tale-in-salzburg';
 import CasinoOfConstantaStory from './stories/2015-10-15-the-casino-of-constanta';
-
+import LoveAtTheGardensOfTheWorldStory from './stories/2015-09-30-love-at-the-gardens-of-the-world';
 import LunarLandscapesOfLanzaroteStory from './stories/2015-09-29-lunar-landscapes-of-lanzarote';
 
 
@@ -47,7 +47,7 @@ export default (
     <Route path="stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
     <Route path="stories/winter-fairy-tale-in-salzburg.html" component={WinterFairyTaleInSalzburgStory}/>
     <Route path="stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
-
+    <Route path="stories/love-at-the-gardens-of-the-world.html" component={LoveAtTheGardensOfTheWorldStory}/>
     <Route path="stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
 
     <Route path="about" component={AboutPage}/>
