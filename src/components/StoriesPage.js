@@ -31,15 +31,15 @@ class StoriesPage extends React.Component {
 
         <StoryHover title="Summer in Amsterdam"
                     href="/stories/summer-in-amsterdam.html"
-                    src="/images/stories/2017-06-17-summer-in-amsterdam/teaser-03-2048.jpg" />
+                    src="/images/stories/2017-06-17-summer-in-amsterdam/teaser-03-800.jpg" />
 
         <StoryHover title="Lisbon, A Charming City"
                     href="/stories/lisbon-a-charming-city.html"
-                    src="/images/stories/2017-06-05-lisbon-a-charming-city/teaser-01-2048.jpg" />
+                    src="/images/stories/2017-06-05-lisbon-a-charming-city/teaser-01-800.jpg" />
 
         <StoryHover title="Florence‚ The Theme Park Of Renaissance"
                     href="/stories/florence-theme-park-of-renaissance.html"
-                    src="/images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-02-2048.jpg" />
+                    src="/images/stories/2017-01-15-florence-theme-park-of-renaissance/teaser-01-1200.jpg" />
 
         <StoryHover title="Irina & Lucian Maternity Photos"
                     href="/stories/irina-and-lucian-maternity-photo-session.html"
@@ -59,7 +59,7 @@ class StoriesPage extends React.Component {
 
         <StoryHover title="Bridges of Florence"
                     href="/stories/bridges-of-florence.html"
-                    src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />
+                    src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-800.jpg" />
 
         <StoryHover title="Tenerife, Land Of Eternal Spring"
                     href="/stories/tenerife-the-land-of-eternal-spring.html"
@@ -67,7 +67,7 @@ class StoriesPage extends React.Component {
 
         <StoryHover title="Lanzarote-Beaches"
                     href="/stories/lanzarote-beaches.html"
-                    src="/images/stories/2016-05-17-lanzarote-beaches/teaser-01-1600.jpg" />
+                    src="/images/stories/2016-05-17-lanzarote-beaches/teaser-01-800.jpg" />
 
         <StoryHover title="Winter Fairy Tale in Salzburg"
                     href="/stories/winter-fairy-tale-in-salzburg.html"
