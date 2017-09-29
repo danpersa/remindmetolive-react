@@ -53,6 +53,10 @@ class StoriesPage extends React.Component {
                     href="/stories/pisa-afterglow.html"
                     src="/images/stories/2016-10-08-pisa-afterglow/teaser-02-800.jpg" />
 
+        <StoryHover title="London After Brexit"
+                    href="/stories/london-after-brexit.html"
+                    src="/images/stories/2016-09-10-london-after-brexit/teaser-01-800.jpg" />
+
         <StoryHover title="Bridges of Florence"
                     href="/stories/bridges-of-florence.html"
                     src="/images/stories/2016-06-30-bridges-of-florence/teaser-02-2048.jpg" />

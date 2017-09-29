@@ -13,6 +13,7 @@ import FlorenceStory from './stories/FlorenceStory';
 import IrinaAndLucianMaternityPhotoSessionStory from './stories/IrinaAndLucianMaternityPhotoSessionStory';
 import SienaTheTuscanBeautyStory from './stories/2016-11-12-siena-the-tuscan-beauty';
 import PisaAfterglowStory from './stories/2016-10-08-pisa-afterglow';
+import LondonAfterBrexitStory from './stories/2016-09-10-london-after-brexit';
 
 import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory';
 import BridgesOfFlorenceStory from './stories/BridgesOfFlorenceStory';
@@ -37,6 +38,7 @@ export default (
     <Route path="stories/irina-and-lucian-maternity-photo-session.html" component={IrinaAndLucianMaternityPhotoSessionStory}/>
     <Route path="stories/siena-the-tuscan-beauty.html" component={SienaTheTuscanBeautyStory}/>
     <Route path="stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
+    <Route path="stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
 
     <Route path="stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
     <Route path="stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
