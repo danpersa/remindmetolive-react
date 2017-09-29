@@ -1,7 +1,6 @@
 import React from 'react';
 import PostImage from '../components/story/PostImage';
 import TwoPostImages from '../components/story/TwoPostImages';
-import WideFullImage from '../components/story/WideFullImage';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
@@ -10,29 +9,31 @@ import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2016-06-30-bridges-of-florence/";
 
-class BridgesOfFlorence extends React.Component {
-
-  constructor() {
-    super();
-  }
+class BridgesOfFlorenceStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "01", "2048")}
+      <StoryPage logo={buildSrc(imgDirPath, "teaser", "05", "2048")}
                  title="Bridges of Florence"
                  author="Dan & Ade"
                  location="Florence, Italy"
                  tags="travel, Florence, Italy">
 
         <StoryIntro>
-         The <a href="https://en.wikipedia.org/wiki/Arno_River" target="_blank">Arno River</a> naturally splits Florence in two sides. It's now surprise that the two sides of the city are linked through bridges. What's interesting is how beautiful most of the bridges are and the way they dominate Florence's cityscape.
+         The <a href="https://en.wikipedia.org/wiki/Arno_River" target="_blank">Arno River</a> naturally
+         splits Florence in two sides. It's now surprise that the two sides of
+         the city are linked through bridges. What's interesting is how beautiful
+         most of the bridges are and the way they dominate Florence's cityscape.
         </StoryIntro>
 
         <StoryTextBlock>
-          I took the next photo from the Michelangelo Square. From here you can have a nice overview of the bridges. The colorful Ponte Vecchio is the first in line, followed by the others.
+          I took the next photo from the Michelangelo Square. From here you can
+          have a nice overview of the bridges. The colorful Ponte Vecchio is the first in line, followed by the others.
         </StoryTextBlock>
 
-        <WideFullImage dirPath={imgDirPath} number="01" />
+        <StoryImages>
+          <PostImage dirPath={imgDirPath} number="01" />
+        </StoryImages>
 
         <StoryTextBlock title="Ponte Vecchio">
           The most iconic bridge in Florence is Ponte Vecchio, the Old Bridge.
@@ -74,7 +75,6 @@ class BridgesOfFlorence extends React.Component {
 
         </StoryImages>
 
-
         <StoryTextBlock title="Ponte alla Carraia">
           The Ponte alla Carraia is a five-arched bridge spanning the River Arno and linking the
           district of Oltrarno to the rest of the city of Florence.
@@ -100,7 +100,9 @@ class BridgesOfFlorence extends React.Component {
           the river.
         </StoryTextBlock>
 
-        <WideFullImage dirPath={imgDirPath} number="18" />
+        <StoryImages>
+          <PostImage dirPath={imgDirPath} number="18" />
+        </StoryImages>
 
         <StoryTextBlock title="Ponte alle Grazie" />
         <StoryImages>
@@ -125,10 +127,12 @@ class BridgesOfFlorence extends React.Component {
           visiting, an architectural beauty!
         </StoryTextBlock>
 
-        <WideFullImage dirPath={imgDirPath} number="23" />
+        <StoryImages>
+          <PostImage dirPath={imgDirPath} number="23" />
+        </StoryImages>
 
       </StoryPage>);
   }
 }
 
-export default BridgesOfFlorence;
+export default BridgesOfFlorenceStory;

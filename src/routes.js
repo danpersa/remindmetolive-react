@@ -14,9 +14,9 @@ import IrinaAndLucianMaternityPhotoSessionStory from './stories/IrinaAndLucianMa
 import SienaTheTuscanBeautyStory from './stories/2016-11-12-siena-the-tuscan-beauty';
 import PisaAfterglowStory from './stories/2016-10-08-pisa-afterglow';
 import LondonAfterBrexitStory from './stories/2016-09-10-london-after-brexit';
+import BridgesOfFlorenceStory from './stories/2016-06-30-bridges-of-florence';
 
 import CasinoOfConstantaStory from './stories/CasinoOfConstantaStory';
-import BridgesOfFlorenceStory from './stories/BridgesOfFlorenceStory';
 import LunarLandscapesOfLanzaroteStory from './stories/LunarLandscapesOfLanzaroteStory';
 import LanzaroteBeachesStory from './stories/LanzaroteBeachesStory';
 
