@@ -10,9 +10,8 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 import routes from '../src/routes';
-import Meta from './meta';
-
-import sm from 'sitemap';
+import Meta from './server/meta';
+import SitemapBuilder from './server/sitemapBuilder';
 
 /* eslint-disable no-console */
 export default function startExpress() {
@@ -36,13 +35,8 @@ export default function startExpress() {
 
   theapp.use(express.static(staticDir));
 
-  const sitemap = sm.createSitemap ({
-    hostname: 'http://example.com',
-    cacheTime: 600000
-  });
+  const sitemap = new SitemapBuilder(meta.getMetaPaths()).getSitemap();
 
-  sitemap.add({url: '/page-1/'});
-  sitemap.add({url: '/page-2/', changefreq: 'monthly', priority: 0.7});
   theapp.get('/sitemap.xml', function(req, res) {
     res.header('Content-Type', 'application/xml');
     res.send( sitemap.toString() );

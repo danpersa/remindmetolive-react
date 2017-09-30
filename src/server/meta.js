@@ -8,6 +8,7 @@ export default class Meta {
 
   constructor() {
     this.pathToMeta = {};
+    this.paths = [];
     this.options = {
       sections: false,
       comments: ";",
@@ -19,10 +20,15 @@ export default class Meta {
 
   addMeta(path, meta) {
     this.pathToMeta[path] = meta;
+    this.paths.push(path);
   }
 
   getMetaForPath(path) {
     return this.pathToMeta[path];
+  }
+
+  getMetaPaths() {
+    return this.paths;
   }
 
   init() {
