@@ -1,0 +1,55 @@
+.gallery-title {
+  font-weight: 900;
+}
+
+.gallery-sub-title {
+  font-weight: 900;
+}
+
+.navy-bg {
+  background-color: rgba(52,73,94, 0.6) !important;
+	color: #FFF !important;
+	padding: 2px 8px 4px;
+	margin-top: -2px;
+}
+
+$ig-background-black: rgba(0, 0, 0, 0.4) !default;
+$ig-white: #fff !default;
+$ig-screen-sm-min: 768px !default;
+
+.image-gallery {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.image-gallery-slide {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	&.center {
+		position: relative;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.image-gallery-description {
+		background: $ig-background-black;
+		bottom: 70px;
+		color: $ig-white;
+		left: 0;
+		line-height: 1;
+		padding: 10px 20px;
+		position: absolute;
+		white-space: normal;
+
+		@media (max-width: $ig-screen-sm-min) {
+			bottom: 45px;
+			font-size: .8em;
+			padding: 8px 15px;
+		}
+	}
+}

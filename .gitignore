@@ -41,3 +41,4 @@ dist
 
 # Story Images
 src/images/stories
+src/store/*

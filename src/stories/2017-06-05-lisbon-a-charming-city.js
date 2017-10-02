@@ -18,14 +18,20 @@ class LisbonACharmingCityStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "wide", "01", "4096")}
-                 title="Lisbon"
+      <StoryPage logo={buildSrc(imgDirPath, "teaser", "02", "2048")}
+                 title="Lisbon, A Charming City"
                  author="Dan & Ade"
                  location="Lisbon, Portugal"
                  tags="travel, Lisbon, Portugal">
 
         <StoryIntro>
-         The world’s most well-respected travel magazine, Condé Nast Traveller describes Lisbon as the coolest city in Europe. The editor of the magazine, Steve King says that Lisbon’s character is unique, and that you’ll find none of “Berlin’s angst or Paris’s hauteur or Rome’s braggadocio” in the city. Expect instead to find “a modesty that borders on reticence, a wistful humour tinged with melancholy”. We found Lisbon a charming city and we will invite you to see it through our eyes.
+         The world’s most well-respected travel magazine, Condé Nast Traveller
+         describes Lisbon as the coolest city in Europe. The editor of the magazine,
+         Steve King says that Lisbon’s character is unique, and that you’ll find
+         none of “Berlin’s angst or Paris’s hauteur or Rome’s braggadocio” in the city.
+         Expect instead to find “a modesty that borders on reticence, a wistful humour
+         tinged with melancholy”. We found Lisbon a charming city and we will invite
+         you to see it through our eyes.
         </StoryIntro>
 
         <StoryTextBlock title="The Seven Hills of Lisbon">

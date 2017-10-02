@@ -30,18 +30,22 @@ class SampleGallery extends React.Component {
                <div>
                  <img src={item.original}/>
                  {
-                   item.description &&
+                   item.title &&
                    <span
                      className="image-gallery-description image-bg"
-                     style={{right: '0', left: 'initial'}}>
+                     style={{right: '0', left: '0'}}>
                      <div className="container" style={{right: '0', left: 'initial'}}>
                        <div className="row">
                          <div className="col-sm-12 text-center">
-                           <h4 className="uppercase mb16">Buttons On Image</h4>
-                             <p className="lead mb32">{item.description}</p>
-                             {item.href &&
-                               <Link className="btn btn-white btn-lg" to={item.href}>Explore</Link>
-                             }
+                           {item.title &&
+                             <h2 className="uppercase mb16 stroke-1 gallery-title">{item.title}</h2>
+                           }
+                           {item.subTitle &&
+                             <h3 className="lead mb32 gallery-sub-title">{item.subTitle}</h3>
+                           }
+                           {item.href &&
+                             <Link className="btn btn-white btn-lg" to={item.href}>{item.hrefTitle}</Link>
+                           }
                          </div>
                        </div>
                      </div>
@@ -58,39 +62,45 @@ class SampleGallery extends React.Component {
        const images = [
            {
              original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
-             thumbnail: 'http://placekitten.com/g/250/150'
-           },
-           {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-04-2048.jpg',
-             thumbnail: 'http://placekitten.com/g/250/150'
-           },
-           {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-05-2048.jpg',
-             thumbnail: 'http://placekitten.com/g/250/150',
-             description: 'Optional description...',
+             title: 'Midsummer',
+             subTitle: 'in Helsinki',
+             href: '/stories/midsummer-in-helsinki.html',
+             hrefTitle: 'Discover Helsinki',
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-06-2048.jpg',
-             description: 'Optional description...',
-             href: '/the-casino-of-constanta',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             title: 'Summer in Amsterdam',
+             href: '/stories/summer-in-amsterdam.html',
+             hrefTitle: 'Read The Story',
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-07-2048.jpg',
-             thumbnail: ''
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             title: 'Lisbon',
+             subTitle: "A Charming City",
+             href: '/stories/lisbon-a-charming-city.html',
+             hrefTitle: 'Take a Look',
+             renderItem: this._renderItem.bind(this)
+           },
+           {
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             title: 'Florence',
+             subTitle: 'Theme Park Of Renaissance',
+             href: '/stories/florence-theme-park-of-renaissance.html',
+             hrefTitle: 'Discover Florence',
+             renderItem: this._renderItem.bind(this)
            }
          ];
        return (
            <ImageGallery
              ref={i => this._imageGallery = i}
              items={images}
-             slideInterval={6000}
+             slideInterval={12000}
              infinite={true}
              autoPlay={true}
              showBullets={true}
-             showThumbnails={false}
-              />
+             showThumbnails={false} />
          );
      }
 }
