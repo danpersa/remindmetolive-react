@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, IndexLink} from 'react-router';
+import {Link} from 'react-router-dom';
 
 const MainMenu = () => {
   return (
@@ -14,10 +14,10 @@ const MainMenu = () => {
             </div>
             <div className="nav-bar">
                 <div className="module left">
-                    <IndexLink to="/">
+                    <Link to="/">
                         <img className="logo logo-light" alt="remindmetolive" src="/images/logo.svg" />
                         <img className="logo logo-dark" alt="remindmetolive" src="/images/logo.svg" />
-                    </IndexLink>
+                    </Link>
                 </div>
                 <div className="module widget-handle mobile-toggle right visible-sm visible-xs">
                     <i className="ti-menu" />

@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import ThreeImages from './ThreeImages';
 import buildSrc from './buildSrc';
+import PropTypes from 'prop-types';
 
 const TwoPostImages = (props) => {
 

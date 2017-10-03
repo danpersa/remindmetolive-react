@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import Row from '../base/Row';
 import Col from '../base/Col';
 import Container from '../base/Container';
+import PropTypes from 'prop-types';
 
 const StoryTextBlock = (props) => {
 

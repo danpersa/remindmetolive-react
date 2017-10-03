@@ -8,10 +8,10 @@ import open from 'open';
 
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { match, RouterContext } from 'react-router';
-import routes from '../src/routes';
+import { StaticRouter } from 'react-router-dom';
 import Meta from './server/meta';
 import SitemapBuilder from './server/sitemapBuilder';
+import App from './components/App';
 
 /* eslint-disable no-console */
 export default function startExpress() {
@@ -43,41 +43,23 @@ export default function startExpress() {
   });
 
   theapp.get('*', (req, res) => {
-    match(
-      {routes, location: req.url },
-      (err, redirectLocation, renderProps) => {
 
-        console.log("request url: ");
-        console.log(req.url);
+    console.log("request url: ");
+    console.log(req.url);
 
-        // // in case of error display the error message
-        if (err) {
-          return res.status(500).send(err.message);
-        }
-
-        // in case of redirect propagate the redirect to the browser
-        if (redirectLocation) {
-          return res.redirect(302, redirectLocation.pathname + redirectLocation.search);
-        }
-
-        // generate the React markup for the current route
-        let markup;
-        if (renderProps) {
-          // if the current route matched we have renderProps
-          markup = renderToString(<RouterContext {...renderProps}/>);
-        } else {
-          // otherwise we can render a 404 page
-          //markup = renderToString(<NotFoundPage/>);
-          res.status(404);
-        }
-
-        // render the index template with the embedded React markup
-        return res.render('path', {
-            reactOutput: markup,
-            meta: meta.getMetaForPath(req.url)
-        });
-      }
+    const context = {};
+    const markup = renderToString(
+      <StaticRouter location={req.url} context={context}>
+        <App />
+      </StaticRouter>
     );
+
+    // render the index template with the embedded React markup
+    return res.render('path', {
+      reactOutput: markup,
+      meta: meta.getMetaForPath(req.url)
+    });
+
   });
 
   theapp.listen(port, function(err) {

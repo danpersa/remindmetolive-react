@@ -6,7 +6,7 @@ import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
 import buildSrc from '../components/story/buildSrc';
-import {Link} from 'react-router';
+import { Link } from 'react-router-dom';
 
 const imgDirPath = "/images/stories/2016-06-30-bridges-of-florence/";
 

@@ -1,8 +1,9 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import Row from '../base/Row';
 import Col from '../base/Col';
 import Container from '../base/Container';
 import TeaserImage from './TeaserImage';
+import PropTypes from 'prop-types';
 
 class StoryPage extends React.Component {
 

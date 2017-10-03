@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 
 class SampleGallery extends React.Component {
 

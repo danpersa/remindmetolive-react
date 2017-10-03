@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Row from '../components/base/Row';
 import Col from '../components/base/Col';
 import Container from '../components/base/Container';

@@ -1,5 +1,6 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import FullImage from './FullImage';
+import PropTypes from 'prop-types';
 
 const WideFullImage = (props) => {
   return (

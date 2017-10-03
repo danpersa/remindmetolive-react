@@ -1,5 +1,6 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import Container from '../base/Container';
+import PropTypes from 'prop-types';
 
 const StoryImages = (props) => {
   return (
