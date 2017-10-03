@@ -1,0 +1,30 @@
+$ig-screen-sm-min: 768px !default;
+$ig-screen-md-min: 1200px !default;
+$ig-background-black: rgba(0, 0, 0, 0.3) !default;
+
+.parallax-image {
+  padding: 10px 20px;
+  color: #FFF !important;
+  height: 400px;
+  background: $ig-background-black;
+
+  @media (min-width: $ig-screen-md-min) {
+    height: 600px;
+  }
+  @media (max-width: $ig-screen-sm-min) {
+    height: 200px;
+  }
+
+  .parallax-image-description {
+		bottom: 100px;
+		left: 0;
+    right: 0;
+		position: absolute;
+
+		@media (max-width: $ig-screen-sm-min) {
+			bottom: 15px;
+			font-size: .8em;
+			padding: 8px 0px;
+		}
+	}
+}
