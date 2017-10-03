@@ -60,7 +60,7 @@ class SampleGallery extends React.Component {
 
        const images = [
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             original: '/images/stories/2017-08-20-midsummer-in-helsinki/wide-02-2048.jpg',
              title: 'Midsummer',
              subTitle: 'in Helsinki',
              href: '/stories/midsummer-in-helsinki.html',
@@ -68,14 +68,14 @@ class SampleGallery extends React.Component {
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             original: '/images/stories/2017-06-17-summer-in-amsterdam/wide-02-2048.jpg',
              title: 'Summer in Amsterdam',
              href: '/stories/summer-in-amsterdam.html',
              hrefTitle: 'Read The Story',
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             original: '/images/stories/2017-06-05-lisbon-a-charming-city/wide-02-2048.jpg',
              title: 'Lisbon',
              subTitle: "A Charming City",
              href: '/stories/lisbon-a-charming-city.html',
@@ -83,7 +83,7 @@ class SampleGallery extends React.Component {
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-03-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-02-2048.jpg',
              title: 'Florence',
              subTitle: 'Theme Park Of Renaissance',
              href: '/stories/florence-theme-park-of-renaissance.html',
