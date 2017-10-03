@@ -83,7 +83,7 @@ class SampleGallery extends React.Component {
              renderItem: this._renderItem.bind(this)
            },
            {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-02-2048.jpg',
+             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-09-2048.jpg',
              title: 'Florence',
              subTitle: 'Theme Park Of Renaissance',
              href: '/stories/florence-theme-park-of-renaissance.html',
