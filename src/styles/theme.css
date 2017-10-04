@@ -1289,177 +1289,26 @@ nav .cart-overview a {
   }
 }
 @media all and (max-width: 990px) {
-  nav.fixed {
-    position: absolute !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-  nav.outOfSight {
-    transform: translate3d(0, 0px, 0) !important;
-    -webkit-transform: translate3d(0, 0px, 0) !important;
-    -moz-transform: translate3d(0, 0px, 0) !important;
-  }
   .nav-bar {
-    height: 55px;
-    max-height: 55px;
-    line-height: 53px;
+    height: 80px;
+    max-height: 80px;
+    min-width: 400px;
+    line-height: 75px;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-bar .module,
+  .nav-bar .module-group {
+    height: 80px;
   }
   .nav-bar a {
     display: inline-block;
-    height: 55px;
+    height: 80px;
   }
-  .nav-bar,
-  .nav-bar .module-group,
-  .nav-bar .module {
-    height: auto;
-    overflow: hidden;
+  .logo {
+    max-height: 90%;
   }
-  .nav-bar .module {
-    padding: 0 16px;
-  }
-  .nav-bar .module-group {
-    width: 100%;
-    padding: 16px 0;
-  }
-  .nav-bar .module-group .module {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-  nav.nav-centered .logo {
-    margin: 24px 0 16px 0;
-    max-height: 40px;
-  }
-  .menu {
-    height: auto;
-  }
-  .menu.inline-block {
-    width: 100%;
-  }
-  .menu a {
-    height: auto;
-    line-height: 24px;
-    padding: 4px 0;
-  }
-  .menu li {
-    line-height: 24px;
-    float: none;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-  }
-  .menu > li ul {
-    position: relative;
-    width: 100%;
-    opacity: 1;
-    visibility: visible;
-    transform: translate3d(0, 0px, 0);
-    -webkit-transform: translate3d(0, 0px, 0);
-    -moz-transform: translate3d(0, 0px, 0);
-    left: 0;
-  }
-  .menu > li > ul {
-    position: relative;
-    opacity: 1;
-    visibility: visible;
+  .logo-light {
     display: none;
-    transform: translate3d(0, 0px, 0);
-    -webkit-transform: translate3d(0, 0px, 0);
-    -moz-transform: translate3d(0, 0px, 0);
-  }
-  .menu > li > ul > .has-dropdown:after {
-    content: "\e64b";
-  }
-  .menu > li > ul > li > ul {
-    left: 0;
-    display: none;
-    padding: 0;
-  }
-  .menu > li > ul li a,
-  .mega-menu .title {
-    padding: 4px 16px;
-  }
-  .has-dropdown .has-dropdown li {
-    padding-left: 18px;
-  }
-  .has-dropdown {
-    padding-right: 0;
-  }
-  .mega-menu {
-    margin-left: 0 !important;
-  }
-  .mega-menu li {
-    width: 100% !important;
-  }
-  .toggle-sub > ul,
-  .toggle-sub .mega-menu ul {
-    display: block !important;
-  }
-  .module.widget-handle {
-    border-left: none;
-    border-top: 1px solid #ccc;
-    line-height: 40px;
-    min-height: 40px;
-  }
-  .module.widget-handle .menu {
-    line-height: 40px;
-  }
-  .module.widget-handle .menu li {
-    line-height: 40px;
-  }
-  .module.widget-handle i {
-    line-height: 40px;
-  }
-  .module.widget-handle .title {
-    display: inline-block;
-    position: relative;
-    bottom: 3px;
-    margin-left: 8px;
-  }
-  .widget-handle .function {
-    width: 100%;
-    position: relative;
-    opacity: 1;
-    transform: translate3d(0, 0px, 0);
-    -webkit-transform: translate3d(0, 0px, 0);
-    -moz-transform: translate3d(0, 0px, 0);
-    visibility: visible;
-    margin-top: 0;
-    display: none;
-    box-shadow: none !important;
-  }
-  .toggle-widget-handle .function {
-    display: block !important;
-  }
-  .widget-handle .cart .label {
-    width: 22px;
-    height: 22px;
-    font-size: 12px;
-    line-height: 22px;
-    top: 18px;
-  }
-  .mobile-toggle {
-    border-left: 1px solid #ccc !important;
-    border-bottom: none !important;
-  }
-  .mobile-toggle i {
-    line-height: 53px !important;
-  }
-  .mobile-toggle.absolute-xs {
-    position: absolute;
-    top: 0;
-  }
-  nav.nav-centered .mobile-toggle {
-    width: 100%;
-  }
-  nav.bg-dark .module.widget-handle {
-    border-top: 1px solid #444;
-  }
-  nav.bg-dark .mobile-toggle {
-    border-left: 1px solid #444 !important;
-  }
-  nav.bg-dark .nav-open .mobile-toggle {
-    border-bottom: 1px solid #444;
   }
 }
 nav.outOfSight {
