@@ -1,5 +1,6 @@
 import React from 'react';
 import SampleGallery from '../components/SampleGallery';
+import SignupForm from '../components/SignupForm';
 import StoryHover from '../components/stories/StoryHover';
 import SocialList from '../components/SocialList';
 import ParallaxTeaser from '../components/ParallaxTeaser';
@@ -25,14 +26,16 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="pt32 pb">
+      <SignupForm />
+
+      <section className="pt0 pb0">
         <ParallaxTeaser img="/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-2048.jpg"
                         href="/stories/winter-fairy-tale-in-salzburg.html"
                         title="Winter Fairy Tale in Salzburg"
                         button="Read The Story"/>
       </section>
 
-      <section className="pt24 pb0 bg-secondary">
+      <section className="pt32 pb0 bg-secondary">
           <div className="container">
               <div className="row pb0">
                   <div className="col-md-8 col-md-offset-2 col-sm-12 text-center mb32 mb-xs-24">

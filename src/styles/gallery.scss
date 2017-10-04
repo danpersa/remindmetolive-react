@@ -13,7 +13,7 @@
 	margin-top: -2px;
 }
 
-$ig-background-black: rgba(0, 0, 0, 0.4) !default;
+$ig-background-black: rgba(0, 0, 0, 0.3) !default;
 $ig-white: #fff !default;
 $ig-screen-sm-min: 768px !default;
 
@@ -47,9 +47,9 @@ $ig-screen-sm-min: 768px !default;
 		white-space: normal;
 
 		@media (max-width: $ig-screen-sm-min) {
-			bottom: 45px;
-			font-size: .8em;
-			padding: 8px 15px;
+			bottom: 0px;
+			font-size: .5em;
+			padding: 15px;
 		}
 	}
 }

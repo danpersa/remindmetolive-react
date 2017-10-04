@@ -1814,8 +1814,8 @@ input[type="submit"],
 button[type="submit"] {
   height: 50px;
   line-height: 48px;
-  border: 2px solid #47b475;
-  background: #47b475;
+  border: 2px solid rgb(54, 137, 184);
+  background: rgb(54, 137, 184);
   color: #fff;
   width: 100%;
   font-size: 11px;
@@ -1827,7 +1827,7 @@ button[type="submit"] {
 .bg-primary input[type="submit"],
 .bg-primary button[type="submit"] {
   background: #fff;
-  color: #47b475;
+  color: rgb(54, 137, 184);
 }
 input[type="submit"]:focus,
 button[type="submit"]:focus {
@@ -1836,15 +1836,15 @@ button[type="submit"]:focus {
 input[type="submit"].hollow,
 button[type="submit"].hollow {
   background: none;
-  border: 2px solid #47b475;
-  color: #47b475;
+  border: 2px solid rgb(54, 137, 184);
+  color: rgb(54, 137, 184);
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 input[type="submit"].hollow:hover,
 button[type="submit"].hollow:hover {
-  background: #47b475;
+  background: rgb(54, 137, 184);
   color: #fff;
 }
 .select-option {
@@ -1906,7 +1906,7 @@ select:hover {
   width: 50px;
   height: 25px;
   border-radius: 25px;
-  border: 1px solid #47b475;
+  border: 1px solid rgb(54, 137, 184);
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1922,7 +1922,7 @@ select:hover {
   height: 19px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #47b475;
+  border: 1px solid rgb(54, 137, 184);
   position: relative;
   top: 2px;
   left: 2px;
@@ -1935,7 +1935,7 @@ select:hover {
   transform: translate3d(25px, 0, 0);
   -webkit-transform: translate3d(25px, 0, 0);
   -moz-transform: translate3d(25px, 0, 0);
-  background: #47b475;
+  background: rgb(54, 137, 184);
 }
 .checkbox-option input {
   width: 0;
