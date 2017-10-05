@@ -75,17 +75,15 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="The Lake">
-          <p>Moving away from "the forest", we chose the nearby lake is our third location.</p>
-          <p>
-            In the next photo, the contrast between the blue lake and Irina's orange
-            pullover is just amazing.
-          </p>
-          <p>
-            You might already know that the bridge in the Charlottenburg Garden is
-            one of our <a href="/streets-of-berlin/charlottenburg-bridge-in-autumn.html">favorite
-            places</a>. Like always, it gave me a really nice opportunity to play
-            with reflections.
-          </p>
+          Moving away from "the forest", we chose the nearby lake is our third location.
+          <br/>
+          In the next photo, the contrast between the blue lake and Irina's orange
+          pullover is just amazing.
+          <br/>
+          You might already know that the bridge in the Charlottenburg Garden is
+          one of our <a href="/streets-of-berlin/charlottenburg-bridge-in-autumn.html">favorite
+          places</a>. Like always, it gave me a really nice opportunity to play
+          with reflections.
         </StoryTextBlock>
 
         <StoryImages>

@@ -34,23 +34,20 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
         </StoryIntro>
 
         <StoryTextBlock>
-          <p>
-            <a href="https://en.wikipedia.org/wiki/Florence_Cathedral">The Cathedral of Saint Mary of the Flower</a>,
-            or Duomo di Firenze, as it is called in Italy, is one of the most amazing
-            works of architecture in the world. I still remember the first time
-            we saw it. We were strolling towards the center through the narrow streets,
-            enjoying aromas of Italian coffee and cuisine when the Duomo unexpectedly
-            appeared. It really stands out by its size. It is simply oversized! It has
-            definitely preserved its height supremacy and volumetric domination of the
-            rest of the city.
-          </p>
-          <p>
-            Its Building commenced in 1296 and the exterior is decorated in pink,
-            green and white marble. Entering the cathedral through the tremendous
-            bronze doors that depict the life of "The Madonna" you will find a
-            modest and calm setting where you admire the hand painted Dome showing
-            "The Final Judgement".
-          </p>
+          <a href="https://en.wikipedia.org/wiki/Florence_Cathedral">The Cathedral of Saint Mary of the Flower</a>,
+          or Duomo di Firenze, as it is called in Italy, is one of the most amazing
+          works of architecture in the world. I still remember the first time
+          we saw it. We were strolling towards the center through the narrow streets,
+          enjoying aromas of Italian coffee and cuisine when the Duomo unexpectedly
+          appeared. It really stands out by its size. It is simply oversized! It has
+          definitely preserved its height supremacy and volumetric domination of the
+          rest of the city.
+          <br/><br/>
+          Its Building commenced in 1296 and the exterior is decorated in pink,
+          green and white marble. Entering the cathedral through the tremendous
+          bronze doors that depict the life of "The Madonna" you will find a
+          modest and calm setting where you admire the hand painted Dome showing
+          "The Final Judgement".
         </StoryTextBlock>
 
         <StoryImages>
