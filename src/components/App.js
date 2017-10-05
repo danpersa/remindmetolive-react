@@ -37,7 +37,7 @@ class App extends React.Component {
       <div>
         <MainMenu />
         <TransitionGroup>
-          <CSSTransition key={this.props.location.key} timeout={5000} classNames="fade">
+          <CSSTransition key={this.props.location.key} timeout={500} classNames="fade">
             <Switch location={this.props.location}>
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/stories/" component={StoriesPage}/>
