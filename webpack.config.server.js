@@ -12,6 +12,11 @@ export default {
     path.resolve(__dirname, 'src/app') // Defining path seems necessary for this to work consistently on Windows machines.
   ],
   target: 'node', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
+  externals: {
+    // define newrelic as an external library
+    // http://webpack.github.io/docs/configuration.html#externals
+    newrelic: true
+  },
   output: {
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist/server'), // Note: Physical files are only output by the production build task `npm run build`.
