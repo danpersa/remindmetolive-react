@@ -24,24 +24,21 @@ class SienaTheTuscanBeautyStory extends React.Component {
                  tags="travel, Siena, Italy, monuments, medieval">
 
         <StoryIntro>
-          <p>
-            <a href="https://en.wikipedia.org/wiki/Siena">Siena</a> is a
-            gloriously beautiful medieval town built upon three hills
-            in the heart of scenic Tuscany. It is a city full of churches,
-            museums, and great views over the surrounding countryside.
-          </p>
-          <p>
-            In the center of the town, you will
-            find <a href="https://en.wikipedia.org/wiki/Piazza_del_Campo">Piazza del Campo</a>,
-            a spectacular shell-shaped piazza that is simply mesmerizing.
-            It is famous for the
-            <a href="https://en.wikipedia.org/wiki/Palio_di_Siena">Palio</a>,
-            which is a horse race running here twice a year,
-            in the summer time. These races put the 17 different neighborhoods of
-            Siena against each other.
-            You can’t go anywhere in Siena without hearing about the Palio, it is
-            what unites, but at the same time divides the Sienese more than anything else.
-          </p>
+          <a href="https://en.wikipedia.org/wiki/Siena">Siena</a> is a
+          gloriously beautiful medieval town built upon three hills
+          in the heart of scenic Tuscany. It is a city full of churches,
+          museums, and great views over the surrounding countryside.
+          <br/><br/>
+          In the center of the town, you will
+          find <a href="https://en.wikipedia.org/wiki/Piazza_del_Campo">Piazza del Campo</a>,
+          a spectacular shell-shaped piazza that is simply mesmerizing.
+          It is famous for the
+          <a href="https://en.wikipedia.org/wiki/Palio_di_Siena">Palio</a>,
+          which is a horse race running here twice a year,
+          in the summer time. These races put the 17 different neighborhoods of
+          Siena against each other.
+          You can’t go anywhere in Siena without hearing about the Palio, it is
+          what unites, but at the same time divides the Sienese more than anything else.
         </StoryIntro>
 
         <StoryImages>

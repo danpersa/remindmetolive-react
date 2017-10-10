@@ -54,6 +54,10 @@ export default function startExpress() {
       </StaticRouter>
     );
 
+    if(context.status === 404) {
+      res.status(404);
+    }
+
     // render the index template with the embedded React markup
     return res.render('path', {
       reactOutput: markup,

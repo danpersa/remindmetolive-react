@@ -1,7 +1,8 @@
 /* eslint-disable import/no-named-as-default */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Switch, Route } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import MainMenu from './MainMenu';
 import Footer from './Footer';
 
@@ -35,29 +36,33 @@ class App extends React.Component {
     return (
       <div>
         <MainMenu />
-        <Switch>
-          <Route exact path="/" component={HomePage}/>
-          <Route exact path="/stories/" component={StoriesPage}/>
-          <Route path="/stories/midsummer-in-helsinki.html" component={MidsummerInHelsinkiStory}/>
-          <Route path="/stories/summer-in-amsterdam.html" component={SummerInAmsterdamStory}/>
-          <Route path="/stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
-          <Route path="/stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
-          <Route path="/stories/irina-and-lucian-maternity-photo-session.html" component={IrinaAndLucianMaternityPhotoSessionStory}/>
-          <Route path="/stories/siena-the-tuscan-beauty.html" component={SienaTheTuscanBeautyStory}/>
-          <Route path="/stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
-          <Route path="/stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
-          <Route path="/stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
-          <Route path="/stories/tenerife-the-land-of-eternal-spring.html" component={TenerifeTheLandOfEternalSpringStory}/>
-          <Route path="/stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
-          <Route path="/stories/winter-fairy-tale-in-salzburg.html" component={WinterFairyTaleInSalzburgStory}/>
-          <Route path="/stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
-          <Route path="/stories/love-at-the-gardens-of-the-world.html" component={LoveAtTheGardensOfTheWorldStory}/>
-          <Route path="/stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
+        <TransitionGroup>
+          <CSSTransition key={this.props.location.key} timeout={500} classNames="fade">
+            <Switch location={this.props.location}>
+              <Route exact path="/" component={HomePage}/>
+              <Route exact path="/stories/" component={StoriesPage}/>
+              <Route path="/stories/midsummer-in-helsinki.html" component={MidsummerInHelsinkiStory}/>
+              <Route path="/stories/summer-in-amsterdam.html" component={SummerInAmsterdamStory}/>
+              <Route path="/stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
+              <Route path="/stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
+              <Route path="/stories/irina-and-lucian-maternity-photo-session.html" component={IrinaAndLucianMaternityPhotoSessionStory}/>
+              <Route path="/stories/siena-the-tuscan-beauty.html" component={SienaTheTuscanBeautyStory}/>
+              <Route path="/stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
+              <Route path="/stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
+              <Route path="/stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
+              <Route path="/stories/tenerife-the-land-of-eternal-spring.html" component={TenerifeTheLandOfEternalSpringStory}/>
+              <Route path="/stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
+              <Route path="/stories/winter-fairy-tale-in-salzburg.html" component={WinterFairyTaleInSalzburgStory}/>
+              <Route path="/stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
+              <Route path="/stories/love-at-the-gardens-of-the-world.html" component={LoveAtTheGardensOfTheWorldStory}/>
+              <Route path="/stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
 
-          <Route path="/about" component={AboutPage}/>
-          <Route path="/contact" component={ContactPage}/>
-          <Route path="*" component={NotFoundPage}/>
-        </Switch>
+              <Route path="/about" component={AboutPage}/>
+              <Route path="/contact" component={ContactPage}/>
+              <Route path="*" component={NotFoundPage}/>
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
         <Footer />
       </div>
     );
@@ -65,7 +70,8 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.element,
+  location: PropTypes.object
 };
 
-export default App;
+export default withRouter(App);

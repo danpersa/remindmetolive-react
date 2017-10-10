@@ -28,23 +28,20 @@ class LoveAtTheGardensOfTheWorldStory extends React.Component {
           say, wow, they REALLY love each other!
         </StoryIntro>
         <StoryTextBlock>
-          <p>
-            After many long months of waiting... cherry trees announced their peak
-            bloom time in April. The best place to capture this moment in Berlin
-            is at the <a href="https://en.wikipedia.org/wiki/Erholungspark_Marzahn">Gardens
-            of the World</a>. No, we are  not talking about the Audrey
-            Hepburn <a href="https://en.wikipedia.org/wiki/Gardens_of_the_World_with_Audrey_Hepburn">documentary</a>,
-            but about one of the greenest places in Berlin, with traditional theme
-            gardens from Asia, Europe and the Orient.
-          </p>
-          <p>
-            We were planning to go there for a while but never found the time for it.
-            But that was about to change, because the perfect moment arrived soon:
-            Adela and Cristi came to Berlin exactly when cherry trees were flowering.
-            We went there together, walked through beautiful Chinese, Balinese, Oriental
-            and Italian gardens, celebrated the promise of spring and witnessed love,
-            happiness, playing, harmony and unity. See and judge for yourself.
-          </p>
+          After many long months of waiting... cherry trees announced their peak
+          bloom time in April. The best place to capture this moment in Berlin
+          is at the <a href="https://en.wikipedia.org/wiki/Erholungspark_Marzahn">Gardens
+          of the World</a>. No, we are  not talking about the Audrey
+          Hepburn <a href="https://en.wikipedia.org/wiki/Gardens_of_the_World_with_Audrey_Hepburn">documentary</a>,
+          but about one of the greenest places in Berlin, with traditional theme
+          gardens from Asia, Europe and the Orient.
+          <br/><br/>
+          We were planning to go there for a while but never found the time for it.
+          But that was about to change, because the perfect moment arrived soon:
+          Adela and Cristi came to Berlin exactly when cherry trees were flowering.
+          We went there together, walked through beautiful Chinese, Balinese, Oriental
+          and Italian gardens, celebrated the promise of spring and witnessed love,
+          happiness, playing, harmony and unity. See and judge for yourself.
         </StoryTextBlock>
         <StoryImages>
           <PostImage dirPath={imgDirPath} number="01" />
