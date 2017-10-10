@@ -3,7 +3,7 @@
 # See https://github.com/phusion/passenger-docker/blob/master/Changelog.md for
 # a list of version numbers.
 
-FROM danpersa/passenger-nodejs7:0.9.19
+FROM danpersa/passenger-nodejs:0.9.25
 
 # Use baseimage-docker's init process.
 CMD ["/sbin/my_init"]
@@ -28,8 +28,10 @@ ENV HOME /home/app
 
 # copy the app and give permissions
 RUN mkdir -p /home/app/webapp/public
+RUN mkdir -p /home/app/webapp/meta
 COPY ./dist/client /home/app/webapp/public
 COPY ./dist/server /home/app/webapp/
+COPY ./meta /home/app/webapp/meta
 WORKDIR /home/app/webapp
 
 CMD passenger start
