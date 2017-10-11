@@ -1,0 +1,16 @@
+FROM node:8.6.0-alpine
+
+RUN mkdir -p /home/app/webapp
+WORKDIR /home/app/webapp
+RUN npm install newrelic
+
+RUN mkdir -p /home/app/webapp/dist/client
+RUN mkdir -p /home/app/webapp/meta
+
+COPY ./meta /home/app/webapp/meta
+COPY ./dist/client /home/app/webapp/dist/client
+COPY ./dist/server /home/app/webapp/
+COPY ./newrelic.js /home/app/webapp/newrelic.js
+
+EXPOSE 3000
+CMD [ "node", "/home/app/webapp/app.js" ]

@@ -34,10 +34,12 @@
   "author": "Dan Persa",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "2.131.0",
     "ejs": "2.5.3",
     "express": "4.16.0",
     "express-handlebars": "3.0.0",
     "handlebars": "4.0.6",
+    "newrelic": "2.2.2",
     "object-assign": "4.1.0",
     "open": "0.0.5",
     "properties": "1.2.1",

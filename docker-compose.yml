@@ -1,0 +1,20 @@
+nginx:
+    image: danpersa/remindmetolive-nginx:latest
+    links:
+        - node1:node1
+        - node2:node2
+        - skrop:skrop
+    ports:
+        - "8080:8080"
+node1:
+    image: danpersa/remindmetolive-app:latest
+    ports:
+        - "3000"
+node2:
+    image: danpersa/remindmetolive-app:latest
+    ports:
+        - "3000"
+skrop:
+    image: danpersa/remindmetolive-skrop:latest
+    ports:
+        - "9090"

@@ -1,4 +1,4 @@
-
+require('newrelic');
 import express from 'express';
 import exphbs from 'express-handlebars';
 
@@ -43,9 +43,6 @@ export default function startExpress() {
   });
 
   theapp.get('*', (req, res) => {
-
-    console.log("request url: ");
-    console.log(req.url);
 
     const context = {};
     const markup = renderToString(
