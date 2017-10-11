@@ -1,14 +1,14 @@
 import React from 'react';
-import PostImage from '../components/story/PostImage';
-import TwoPostImages from '../components/story/TwoPostImages';
-import WideFullImage from '../components/story/WideFullImage';
+import PostImageResp from '../components/story/PostImageResp';
+import TwoPostImageResp from '../components/story/TwoPostImageResp';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
+import buildSrcResp from '../components/story/buildSrcResp';
+import FullImageResp from '../components/story/FullImageResp';
 
-const imgDirPath = "/images/stories/2017-06-17-summer-in-amsterdam/";
+const imgDirPath = "stories/2017-06-17-summer-in-amsterdam";
 
 class SummerInAmsterdamStory extends React.Component {
 
@@ -18,7 +18,7 @@ class SummerInAmsterdamStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "wide", "03", "2048")}
+      <StoryPage logo={buildSrcResp(imgDirPath, "L", "image", "36")}
                  title="Summer In Amsterdam"
                  author="Dan"
                  location="Amsterdam, Netherlands"
@@ -41,13 +41,13 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="01" />
-          <PostImage dirPath={imgDirPath} number="02" />
-          <PostImage dirPath={imgDirPath} number="03" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="01" />
+          <PostImageResp dirPath={imgDirPath} number="02" />
+          <PostImageResp dirPath={imgDirPath} number="03" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="04"
                          number2="05" />
-          <PostImage dirPath={imgDirPath} number="06" />
+          <PostImageResp dirPath={imgDirPath} number="06" />
         </StoryImages>
 
         <StoryTextBlock title="Canals of Amsterdam">
@@ -58,14 +58,19 @@ class SummerInAmsterdamStory extends React.Component {
           from one part of the city to another. Or to throw a boat party!
         </StoryTextBlock>
 
+        <FullImageResp dirPath={imgDirPath}
+                       prefix="image"
+                       number="07"
+                       alt="Amsterdam Canals" />
+
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="07" />
-          <PostImage dirPath={imgDirPath} number="08" />
-          <PostImage dirPath={imgDirPath} number="09" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="07" />
+          <PostImageResp dirPath={imgDirPath} number="08" />
+          <PostImageResp dirPath={imgDirPath} number="09" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="10"
                          number2="11" />
-          <PostImage dirPath={imgDirPath} number="12" />
+          <PostImageResp dirPath={imgDirPath} number="12" />
         </StoryImages>
 
         <StoryTextBlock title="The Bicyles in Amsterdam">
@@ -80,16 +85,16 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="13"
                          number2="14" />
-          <PostImage dirPath={imgDirPath} number="15" />
-          <PostImage dirPath={imgDirPath} number="16" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="15" />
+          <PostImageResp dirPath={imgDirPath} number="16" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="17"
                          number2="18" />
-          <PostImage dirPath={imgDirPath} number="19" />
-          <PostImage dirPath={imgDirPath} number="20" />
+          <PostImageResp dirPath={imgDirPath} number="19" />
+          <PostImageResp dirPath={imgDirPath} number="20" />
         </StoryImages>
 
         <StoryTextBlock title="The Architecture">
@@ -101,23 +106,25 @@ class SummerInAmsterdamStory extends React.Component {
           makes them look funny.
         </StoryTextBlock>
 
-        <WideFullImage dirPath={imgDirPath} number="02" />
+        <FullImageResp dirPath={imgDirPath}
+                       prefix="image"
+                       number="21" />
 
         <StoryImages>
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="22"
                          number2="23" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="24"
                          number2="25" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="26"
                          number2="27" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="28"
                          number2="29" />
-          <PostImage dirPath={imgDirPath} number="30" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="30" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="31"
                          number2="32" />
         </StoryImages>
@@ -134,9 +141,9 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="33" />
-          <PostImage dirPath={imgDirPath} number="34" />
-          <PostImage dirPath={imgDirPath} number="35" />
+          <PostImageResp dirPath={imgDirPath} number="33" />
+          <PostImageResp dirPath={imgDirPath} number="34" />
+          <PostImageResp dirPath={imgDirPath} number="35" />
         </StoryImages>
       </StoryPage>);
   }
