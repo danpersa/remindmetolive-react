@@ -1,4 +1,4 @@
 FROM danpersa/skrop:latest
 
 ADD skrop/routes.eskip skrop.eskip
-COPY ./dist/client/images images
+COPY ./dist/images images

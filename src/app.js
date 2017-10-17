@@ -30,10 +30,12 @@ export default function startExpress() {
   const meta = new Meta();
 
   const staticDir = path.join(currentDir, 'dist/client');
+  const imagesDir = path.join(currentDir, 'dist/images');
 
   console.log('Static dir: ' + staticDir);
 
   theapp.use(express.static(staticDir));
+  theapp.use("/images", express.static(imagesDir));
 
   const sitemap = new SitemapBuilder(meta.getMetaPaths()).getSitemap();
 

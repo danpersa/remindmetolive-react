@@ -20,7 +20,7 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run clean-dist && npm run lint && npm run test",
-    "build:prod:client": "babel-node tools/build.js && cp -R src/images dist/client",
+    "build:prod:client": "babel-node tools/build.js && cp -R src/images dist",
     "build:prod:server": "babel-node tools/buildExpress.js && cp -R views dist/server",
     "build": "babel-node tools/build.js && npm run open:dist",
     "test": "jest",
