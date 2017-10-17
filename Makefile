@@ -23,8 +23,7 @@ run-prod-docker-node-2:
 		-t danpersa/remindmetolive-app:latest
 
 run-prod-docker-skrop:
-	docker run --rm -d --name skrop -p 9090:9090 \
-		-t danpersa/remindmetolive-skrop:latest
+	docker run --rm --name skrop -p 9090:9090 -t danpersa/remindmetolive-skrop:latest -verbose
 
 run-prod-docker-nginx: run-prod-docker-node-1 run-prod-docker-node-2 run-prod-docker-skrop
 	docker run --rm -d --name nginx -p 8080:8080 \
