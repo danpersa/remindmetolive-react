@@ -9,7 +9,7 @@ const FullImageResp = (props) => {
   };
 
   const buildSrcSet = (number) => {
-    return `${buildSrc(number, "S")} 1200w, ${buildSrc(number, "M")} 1600w, ${buildSrc(number, "L")} 2048w, ${buildSrc(number, "H")} 4096w`;
+    return `${buildSrc(number, "M")} 1200w, ${buildSrc(number, "N")} 1600w, ${buildSrc(number, "L")} 1920w, ${buildSrc(number, "H")} 4096w`;
   };
 
   return (

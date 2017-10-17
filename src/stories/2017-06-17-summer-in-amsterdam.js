@@ -64,7 +64,6 @@ class SummerInAmsterdamStory extends React.Component {
                        alt="Amsterdam Canals" />
 
         <StoryImages>
-          <PostImageResp dirPath={imgDirPath} number="07" />
           <PostImageResp dirPath={imgDirPath} number="08" />
           <PostImageResp dirPath={imgDirPath} number="09" />
           <TwoPostImageResp dirPath={imgDirPath}

@@ -38,6 +38,9 @@ docker-run:
 	docker run -p 3000:3000\
 		-t danpersa/remindmetolive-app:latest
 
- docker-push:
+docker-push:
 	docker push danpersa/remindmetolive-nginx
 	docker push danpersa/remindmetolive-app
+
+remove-docker-images:
+	docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
