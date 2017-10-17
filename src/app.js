@@ -55,6 +55,10 @@ export default function startExpress() {
       res.status(404);
     }
 
+    if (context.status === 302) {
+      return res.redirect(302, context.url);
+    }
+
     // render the index template with the embedded React markup
     return res.render('path', {
       reactOutput: markup,
