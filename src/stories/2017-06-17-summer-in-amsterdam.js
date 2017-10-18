@@ -42,12 +42,15 @@ class SummerInAmsterdamStory extends React.Component {
 
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="01" />
-          <PostImageResp dirPath={imgDirPath} number="02" />
-          <PostImageResp dirPath={imgDirPath} number="03" />
+          <PostImageResp dirPath={imgDirPath} number="02"
+                         alt="National Monument on Dam Square in Amsterdam" />
+          <PostImageResp dirPath={imgDirPath} number="03"
+                         alt="Dam Square in Amsterdam" />
           <TwoPostImageResp dirPath={imgDirPath}
                          number1="04"
                          number2="05" />
-          <PostImageResp dirPath={imgDirPath} number="06" />
+          <PostImageResp dirPath={imgDirPath} number="06"
+                         alt="Amsterdam Central Station"/>
         </StoryImages>
 
         <StoryTextBlock title="Canals of Amsterdam">
@@ -87,12 +90,14 @@ class SummerInAmsterdamStory extends React.Component {
           <TwoPostImageResp dirPath={imgDirPath}
                          number1="13"
                          number2="14" />
-          <PostImageResp dirPath={imgDirPath} number="15" />
+          <PostImageResp dirPath={imgDirPath} number="15"
+                         alt="Rijksmuseum in Amsterdam"/>
           <PostImageResp dirPath={imgDirPath} number="16" />
           <TwoPostImageResp dirPath={imgDirPath}
                          number1="17"
                          number2="18" />
-          <PostImageResp dirPath={imgDirPath} number="19" />
+          <PostImageResp dirPath={imgDirPath} number="19"
+                         alt="Amsterdam Bikes"/>
           <PostImageResp dirPath={imgDirPath} number="20" />
         </StoryImages>
 
@@ -107,7 +112,8 @@ class SummerInAmsterdamStory extends React.Component {
 
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
-                       number="21" />
+                       number="21"
+                       alt="Amsterdam architecture" />
 
         <StoryImages>
           <TwoPostImageResp dirPath={imgDirPath}
@@ -140,9 +146,11 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImageResp dirPath={imgDirPath} number="33" />
+          <PostImageResp dirPath={imgDirPath} number="33"
+                         alt="Relax on Amstel bank"/>
           <PostImageResp dirPath={imgDirPath} number="34" />
-          <PostImageResp dirPath={imgDirPath} number="35" />
+          <PostImageResp dirPath={imgDirPath} number="35"
+                         alt="Amsterdam from above"/>
         </StoryImages>
       </StoryPage>);
   }
