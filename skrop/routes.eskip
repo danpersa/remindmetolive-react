@@ -45,14 +45,14 @@ smallBlurred: Path("/images/Sb/**:image")
 
 mediumSharp: Path("/images/Ms/**:image")
   -> modPath("^/images/Ms", "/images")
-  -> longerEdgeResize(1600)
+  -> longerEdgeResize(1200)
   -> sharpen(1, 2, 10, 20, 0, 3)
   -> quality(69)
   -> "http://localhost:9090";
 
 mediumBlurred: Path("/images/Mb/**:image")
   -> modPath("^/images/Mb", "/images")
-  -> longerEdgeResize(1600)
+  -> longerEdgeResize(1200)
   -> blur(2, 2)
   -> quality(69)
   -> "http://localhost:9090";
