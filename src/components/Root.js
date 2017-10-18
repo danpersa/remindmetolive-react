@@ -4,15 +4,19 @@ import { ConnectedRouter } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import ScrollToTop from './ScrollToTop';
 import App from './App';
+import GoogleAnalytics from './GoogleAnalytics';
 
 export default class Root extends Component {
+
   render() {
     const { store, history } = this.props;
     return (
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <ScrollToTop>
-            <App />
+            <GoogleAnalytics>
+              <App />
+            </GoogleAnalytics>
           </ScrollToTop>
         </ConnectedRouter>
       </Provider>
