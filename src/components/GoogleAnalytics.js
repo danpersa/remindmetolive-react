@@ -11,9 +11,11 @@ class GoogleAnalytics extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      ReactGA.set({ page: window.location.pathname + window.location.search });
-      ReactGA.pageview(window.location.pathname + window.location.search);
+    const thisUrl = this.props.location.pathname + this.props.location.search;
+    const prevUrl = prevProps.location.pathname + prevProps.location.search;
+    if (thisUrl !== prevUrl) {
+      ReactGA.set({ page: thisUrl });
+      ReactGA.pageview(thisUrl);
     }
   }
 
