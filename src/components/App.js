@@ -32,6 +32,15 @@ import LunarLandscapesOfLanzaroteStory from '../stories/2015-09-29-lunar-landsca
 // version of hot reloading won't hot reload a stateless
 // component at the top-level.
 class App extends React.Component {
+  redirect(to) {
+    return ({ staticContext }) => {
+      if (staticContext) {
+        staticContext.status = 302;
+      }
+      return <Redirect to={to} />;
+    };
+  }
+
   render() {
     return (
       <div>
@@ -78,15 +87,6 @@ class App extends React.Component {
         <Footer />
       </div>
     );
-  }
-
-  redirect(to) {
-    return ({ staticContext }) => {
-      if (staticContext) {
-        staticContext.status = 302;
-      }
-      return <Redirect to={to} />;
-    };
   }
 }
 

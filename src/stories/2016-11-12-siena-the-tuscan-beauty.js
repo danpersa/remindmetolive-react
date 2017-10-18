@@ -72,21 +72,18 @@ class SienaTheTuscanBeautyStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="The Cathedral">
-          <p>
-            Another sight for the eyes is the beautiful <a href="https://en.wikipedia.org/wiki/Siena_Cathedral">Siena Cathedral</a>.
-            The facade of the cathedral is intricate and full of detail. The
-            whole cathedral was painted, sculpted, and decorated by the most celebrated
-            Italian artists of that time. It is just beautiful and I’m afraid
-            these words and photos just don’t give it justice.
-          </p>
-          <p>
-            The interior is absolutely jaw dropping, yet another marvel in itself.
-            It is like a museum, with its black and white marble pillars, marble
-            floor panels, beautiful renaissance frescos, a huge bronze dome, a
-            sculpture of St. Peter by Michelangelo. It definitely gives the cathedral
-            a luxurious feel, with no expense spared in displaying the historical
-            wealth of Siena.
-          </p>
+          Another sight for the eyes is the beautiful <a href="https://en.wikipedia.org/wiki/Siena_Cathedral">Siena Cathedral</a>.
+          The facade of the cathedral is intricate and full of detail. The
+          whole cathedral was painted, sculpted, and decorated by the most celebrated
+          Italian artists of that time. It is just beautiful and I’m afraid
+          these words and photos just don’t give it justice.
+          <br/><br/>
+          The interior is absolutely jaw dropping, yet another marvel in itself.
+          It is like a museum, with its black and white marble pillars, marble
+          floor panels, beautiful renaissance frescos, a huge bronze dome, a
+          sculpture of St. Peter by Michelangelo. It definitely gives the cathedral
+          a luxurious feel, with no expense spared in displaying the historical
+          wealth of Siena.
         </StoryTextBlock>
 
         <StoryImages>
