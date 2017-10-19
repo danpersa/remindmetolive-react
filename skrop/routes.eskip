@@ -1,121 +1,121 @@
-// http://localhost:9090/images/S/image-2k.jpg
+// http://0.0.0.0:9090/images/S/image-2k.jpg
 small: Path("/images/S/**:image")
   -> modPath("^/images/S", "/images")
   -> longerEdgeResize(800)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 medium: Path("/images/M/**:image")
   -> modPath("^/images/M", "/images")
   -> longerEdgeResize(1200)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 normal: Path("/images/N/**:image")
   -> modPath("^/images/N", "/images")
   -> longerEdgeResize(1600)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 large: Path("/images/L/**:image")
   -> modPath("^/images/L", "/images")
   -> longerEdgeResize(1920)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 huge: Path("/images/H/**:image")
   -> modPath("^/images/H", "/images")
   -> longerEdgeResize(4096)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 smallSharp: Path("/images/Ss/**:image")
   -> modPath("^/images/Ss", "/images")
   -> longerEdgeResize(800)
   -> sharpen(1, 2, 10, 20, 0, 3)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 smallBlurred: Path("/images/Sb/**:image")
   -> modPath("^/images/Sb", "/images")
   -> longerEdgeResize(800)
   -> blur(2, 2)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 mediumSharp: Path("/images/Ms/**:image")
   -> modPath("^/images/Ms", "/images")
   -> longerEdgeResize(1200)
   -> sharpen(1, 2, 10, 20, 0, 3)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 mediumBlurred: Path("/images/Mb/**:image")
   -> modPath("^/images/Mb", "/images")
   -> longerEdgeResize(1200)
   -> blur(2, 2)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 normalSharp: Path("/images/Ns/**:image")
   -> modPath("^/images/Ns", "/images")
   -> longerEdgeResize(1600)
   -> sharpen(1, 2, 10, 20, 0, 3)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 normalBlurred: Path("/images/Nb/**:image")
   -> modPath("^/images/Nb", "/images")
   -> longerEdgeResize(1600)
   -> blur(2, 2)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 smallWide: Path("/images/S-wide/**:image")
   -> modPath("^/images/S-wide", "/images")
   -> longerEdgeResize(800)
   -> crop(800, 423)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 mediumWide: Path("/images/M-wide/**:image")
   -> modPath("^/images/M-wide", "/images")
   -> longerEdgeResize(1200)
   -> crop(1200, 635)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 normalWide: Path("/images/N-wide/**:image")
   -> modPath("^/images/N-wide", "/images")
   -> longerEdgeResize(1600)
   -> crop(1600, 847)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 largeWide: Path("/images/L-wide/**:image")
   -> modPath("^/images/L-wide", "/images")
   -> longerEdgeResize(1920)
   -> crop(1920, 1016)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 hugeWide: Path("/images/H-wide/**:image")
   -> modPath("^/images/H-wide", "/images")
   -> longerEdgeResize(4096)
   -> crop(4096, 1110)
   -> quality(69)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 withVioletBackground: Path("/images/vio/:image")
   -> modPath("^/images/vio", "/images")
   -> addBackground(255, 25, 255)
   -> width(1000)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 video: Path("/images/vid/:image")
   -> modPath("^/images/vid", "/images")
   -> overlayImage("images/video.png", 1.0, "CC")
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 //imageOverlay(<filename>, <opacity>, <gravity>, <top_margin>, <right_margin>, <bottom_margin>, <left_margin>)
 social: Path("/images/social/**:image")
@@ -123,41 +123,41 @@ social: Path("/images/social/**:image")
   -> overlayImage("images/logo-social-200px.png", 1.0, "NE", 20, 20, 20, 20)
   -> quality(85)
   -> longerEdgeResize(1200)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 socialSE: Path("/images/social-se/**:image")
   -> modPath("^/images/social-se", "/images")
   -> overlayImage("images/logo-social-200px.png", 1.0, "SE", 20, 20, 20, 20)
   -> quality(85)
   -> longerEdgeResize(1200)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 socialNW: Path("/images/social-nw/**:image")
   -> modPath("^/images/social-nw", "/images")
   -> overlayImage("images/logo-social-200px.png", 1.0, "NW", 20, 20, 20, 20)
   -> quality(85)
   -> longerEdgeResize(1200)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 socialSW: Path("/images/social-sw/**:image")
   -> modPath("^/images/social-sw", "/images")
   -> overlayImage("images/logo-social-200px.png", 1.0, "SW", 20, 20, 20, 20)
   -> quality(85)
   -> longerEdgeResize(1200)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 socialS: Path("/images/social-s/**:image")
   -> modPath("^/images/social-s", "/images")
   -> overlayImage("images/logo-social-200px.png", 1.0, "SC", 20, 20, 20, 20)
   -> quality(85)
   -> longerEdgeResize(1200)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 socialN: Path("/images/social-n/**:image")
   -> modPath("^/images/social-n", "/images")
   -> overlayImage("images/logo-social-200px.png", 1.0, "NC", 20, 20, 20, 20)
   -> quality(85)
   -> longerEdgeResize(1200)
-  -> "http://localhost:9090";
+  -> "http://0.0.0.0:9090";
 
 static: * -> static("/", ".") -> <shunt>;
