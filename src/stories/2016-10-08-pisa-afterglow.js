@@ -1,13 +1,14 @@
 import React from 'react';
-import PostImage from '../components/story/PostImage';
-import TwoPostImages from '../components/story/TwoPostImages';
+import PostImageResp from '../components/story/PostImageResp';
+import TwoPostImageResp from '../components/story/TwoPostImageResp';
+import FullImageResp from '../components/story/FullImageResp';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
+import buildSrcResp from '../components/story/buildSrcResp';
 
-const imgDirPath = "/images/stories/2016-10-08-pisa-afterglow/";
+const imgDirPath = "stories/2016-10-08-pisa-afterglow";
 
 class PisaAfterglowStory extends React.Component {
 
@@ -17,7 +18,7 @@ class PisaAfterglowStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "02", "2048")}
+      <StoryPage logo={buildSrcResp(imgDirPath, "L", "image", "01")}
                  title="Pisa Afterglow"
                  author="Dan & Ade"
                  location="Pisa, Italy"
@@ -35,19 +36,23 @@ class PisaAfterglowStory extends React.Component {
         </StoryIntro>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="01" />
-          <PostImage dirPath={imgDirPath} number="02" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="01" />
+        </StoryImages>
+
+        <FullImageResp dirPath={imgDirPath} prefix="wide" number="01" />
+
+        <StoryImages>
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="03"
                          number2="04" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="05"
                          number2="06" />
-          <PostImage dirPath={imgDirPath} number="07" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="07" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="08"
                          number2="09" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="10"
                          number2="11" />
         </StoryImages>
@@ -65,14 +70,14 @@ class PisaAfterglowStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="12" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="12" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="13"
                          number2="14" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="15"
                          number2="16" />
-          <PostImage dirPath={imgDirPath} number="17" />
+          <PostImageResp dirPath={imgDirPath} number="17" />
         </StoryImages>
 
         <StoryTextBlock title="Climb up the Tower">
@@ -89,16 +94,16 @@ class PisaAfterglowStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="18" />
-          <PostImage dirPath={imgDirPath} number="19" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="18" />
+          <PostImageResp dirPath={imgDirPath} number="19" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="20"
                          number2="21" />
-          <PostImage dirPath={imgDirPath} number="22" />
-          <TwoPostImages dirPath={imgDirPath}
-                         number1="25"
+          <PostImageResp dirPath={imgDirPath} number="22" />
+          <TwoPostImageResp dirPath={imgDirPath}
+                         number1="23"
                          number2="24" />
-          <PostImage dirPath={imgDirPath} number="23" />
+          <PostImageResp dirPath={imgDirPath} number="25" />
         </StoryImages>
       </StoryPage>);
   }
