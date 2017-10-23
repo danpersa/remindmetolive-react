@@ -35,6 +35,17 @@ class PisaAfterglowStory extends React.Component {
           city in <a href="https://en.wikipedia.org/wiki/Tuscany">Tuscany</a>.
         </StoryIntro>
 
+        <StoryTextBlock>
+          Yes, the <a href="https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa">Leaning Tower</a> is
+          spectacular — even more so in person than in pictures and has
+          made <a href="https://en.wikipedia.org/wiki/Pisa">Pisa</a> famous all over the world, but
+          there’s much more to Pisa than that. The medieval city boasts of 11th century gorgeous
+          art, like the elaborate <a href="https://en.wikipedia.org/wiki/Pisa_Baptistery">Baptistery</a> and
+          other beautiful palaces. Most of them are in the famous <a href="https://en.wikipedia.org/wiki/Piazza_dei_Miracoli">Square
+          of Miracles (Piazza dei Miracoli)</a>. The square is surrounded by a beautiful green
+          lawn where tourists lie down and relax admiring the amazing setting.
+        </StoryTextBlock>
+
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="01" />
         </StoryImages>
@@ -57,16 +68,10 @@ class PisaAfterglowStory extends React.Component {
                          number2="11" />
         </StoryImages>
 
-        <StoryTextBlock>
-          Yes, the <a href="https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa">Leaning Tower</a> is
-          spectacular — even more so in person than in pictures and has made
-          <a href="https://en.wikipedia.org/wiki/Pisa">Pisa</a> famous all over the world, but
-          there’s much more to Pisa than that. The medieval city boasts of 11th century gorgeous
-          art, like the elaborate <a href="https://en.wikipedia.org/wiki/Pisa_Baptistery">Baptistery</a>
-          and other beautiful palaces. Most of them are in the famous
-          <a href="https://en.wikipedia.org/wiki/Piazza_dei_Miracoli">Square of Miracles (Piazza dei
-          Miracoli)</a>. The square is surrounded by a beautiful green lawn where tourists lie down
-          and relax admiring the amazing setting.
+        <StoryTextBlock title="Climb up the Tower">
+          Don’t just admire the square from below: the climb up the tower is a once in a lifetime
+          opportunity that I highly encourage you to experience. You will enjoy both the incredible
+          climb as well as the amazing views from the top.
         </StoryTextBlock>
 
         <StoryImages>
@@ -79,12 +84,6 @@ class PisaAfterglowStory extends React.Component {
                          number2="16" />
           <PostImageResp dirPath={imgDirPath} number="17" />
         </StoryImages>
-
-        <StoryTextBlock title="Climb up the Tower">
-          Don’t just admire the square from below: the climb up the tower is a once in a lifetime
-          opportunity that I highly encourage you to experience. You will enjoy both the incredible
-          climb as well as the amazing views from the top.
-        </StoryTextBlock>
 
 
         <StoryTextBlock title="Much more than the Tower">
