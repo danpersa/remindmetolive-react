@@ -1,20 +1,21 @@
 import React from 'react';
-import PostImage from '../components/story/PostImage';
-import TwoPostImages from '../components/story/TwoPostImages';
+import PostImageResp from '../components/story/PostImageResp';
+import TwoPostImageResp from '../components/story/TwoPostImageResp';
+import FullImageResp from '../components/story/FullImageResp';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
+import buildSrcResp from '../components/story/buildSrcResp';
 import { Link } from 'react-router-dom';
 
-const imgDirPath = "/images/stories/2016-06-30-bridges-of-florence/";
+const imgDirPath = "stories/2016-06-30-bridges-of-florence";
 
 class BridgesOfFlorenceStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "05", "2048")}
+      <StoryPage logo={buildSrcResp(imgDirPath, "L", "wide", "02")}
                  title="Bridges of Florence"
                  author="Dan & Ade"
                  location="Florence, Italy"
@@ -35,7 +36,7 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="01" />
+          <PostImageResp dirPath={imgDirPath} number="01" />
         </StoryImages>
 
         <StoryTextBlock title="Ponte Vecchio">
@@ -46,13 +47,14 @@ class BridgesOfFlorenceStory extends React.Component {
           where you can buy luxury goods, like jewelry and expensive watches.
         </StoryTextBlock>
 
+        <FullImageResp dirPath={imgDirPath} prefix="wide" number="01" />
+
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="02" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="03"
                          number2="04" />
 
-          <PostImage dirPath={imgDirPath} number="05" />
+          <PostImageResp dirPath={imgDirPath} number="05" />
         </StoryImages>
 
         <StoryTextBlock title="Ponte Santa Trinita">
@@ -64,12 +66,16 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="06" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="06" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="07"
                          number2="08" />
-          <PostImage dirPath={imgDirPath} number="09" />
-          <TwoPostImages dirPath={imgDirPath}
+        </StoryImages>
+
+        <FullImageResp dirPath={imgDirPath} prefix="wide" number="03" />
+
+        <StoryImages>
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="10"
                          number2="11" />
         </StoryImages>
@@ -80,14 +86,14 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="12" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="12" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="13"
                          number2="14" />
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="15"
                          number2="16" />
-          <PostImage dirPath={imgDirPath} number="17" />
+          <PostImageResp dirPath={imgDirPath} number="17" />
         </StoryImages>
         <StoryTextBlock title="Ponte Amerigo Vespucci">
           It seems that drivers prefer this bridge, as there are always lots of
@@ -95,13 +101,13 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="18" />
+          <PostImageResp dirPath={imgDirPath} number="18" />
         </StoryImages>
 
         <StoryTextBlock title="Ponte alle Grazie" />
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="19" />
-          <PostImage dirPath={imgDirPath} number="20" />
+          <PostImageResp dirPath={imgDirPath} number="19" />
+          <PostImageResp dirPath={imgDirPath} number="20" />
         </StoryImages>
 
         <StoryTextBlock title="Other Bridges">
@@ -110,7 +116,7 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="21"
                          number2="22" />
         </StoryImages>
@@ -123,7 +129,7 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="23" />
+          <PostImageResp dirPath={imgDirPath} number="23" />
         </StoryImages>
       </StoryPage>);
   }
