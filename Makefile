@@ -1,3 +1,5 @@
+images_dir ?= ~/Prog/node/remindmetolive-react/src/images
+
 dist/server/app.js:
 	npm run build:prod
 
@@ -21,7 +23,7 @@ run-prod-docker-node-2:
 	docker run --rm -d --name node2 -p 3000 -t danpersa/remindmetolive-app:latest
 
 run-prod-docker-skrop:
-	docker run --rm -d --name skrop -p 9090:9090 -t danpersa/remindmetolive-skrop:latest -verbose
+	docker run --rm -d --name skrop -v $(images_dir):/images -p 9090:9090 -t danpersa/remindmetolive-skrop:latest -verbose
 
 run-prod-docker-nginx: run-prod-docker-node-1 run-prod-docker-node-2 run-prod-docker-skrop
 	docker run --rm -d --name nginx -p 80:8080 --link node1:node1 --link node2:node2 --link skrop:skrop -t danpersa/remindmetolive-nginx:latest
