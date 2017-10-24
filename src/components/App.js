@@ -80,6 +80,7 @@ class App extends React.Component {
               <Route exact path="/streets-of-berlin/surprised-in-the-park.html" render={this.redirect("/stories/")}/>
               <Route exact path="/streets-of-berlin/snow-and-kids.html" render={this.redirect("/stories/")}/>
               <Route exact path="/streets-of-berlin/bike-parked-by-fence.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/gendarmenmarkt.html" render={this.redirect("/stories/")}/>
               <Route path="*" component={NotFoundPage}/>
             </Switch>
           </CSSTransition>
