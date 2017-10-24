@@ -160,4 +160,4 @@ socialN: Path("/images/social-n/**:image")
   -> longerEdgeResize(1200)
   -> "http://0.0.0.0:9090";
 
-static: * -> static("/", ".") -> <shunt>;
+static: Path("/images/**") -> static("/images", "./images") -> <shunt>;
