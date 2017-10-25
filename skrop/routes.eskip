@@ -5,6 +5,12 @@ small: Path("/images/S/**:image")
   -> quality(50)
   -> "http://0.0.0.0:9090";
 
+smallWidth: Path("/images/SW/**:image")
+  -> modPath("^/images/SW", "/images")
+  -> width(800)
+  -> quality(50)
+  -> "http://0.0.0.0:9090";
+
 medium: Path("/images/M/**:image")
   -> modPath("^/images/M", "/images")
   -> longerEdgeResize(1200)

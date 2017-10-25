@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 
 const TwoPostImageResp = (props) => {
   return (
-    <TwoImages src1={buildSrcResp(props.dirPath, "S", "image", props.number1)}
-               src2={buildSrcResp(props.dirPath, "S", "image", props.number2)} />
+    <TwoImages src1={buildSrcResp(props.dirPath, "SW", "image", props.number1)}
+               src2={buildSrcResp(props.dirPath, "SW", "image", props.number2)} />
   );
 };
 
