@@ -39,6 +39,7 @@ docker-run:
 docker-push:
 	docker push danpersa/remindmetolive-nginx
 	docker push danpersa/remindmetolive-app
+	docker push danpersa/remindmetolive-skrop
 
 remove-docker-images:
 	docker rmi $(docker images | grep "^<none>" | awk "{print $3}")

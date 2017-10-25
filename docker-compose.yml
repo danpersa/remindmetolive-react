@@ -18,3 +18,5 @@ skrop:
     image: danpersa/remindmetolive-skrop:latest
     ports:
         - "9090"
+    volumes:
+        - "~/Prog/node/remindmetolive-react/src/images:/images"

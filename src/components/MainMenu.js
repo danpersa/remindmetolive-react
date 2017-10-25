@@ -16,8 +16,7 @@ const MainMenu = () => {
         <div className="nav-bar">
             <div className="module left">
               <Link to="/">
-                <img className="logo logo-light" alt="remindmetolive" src="/images/logo.svg" />
-                <img className="logo logo-dark" alt="remindmetolive" src="/images/logo.svg" />
+                <img className="logo logo-dark" alt="remindmetolive" src="/images/logo.png" />
               </Link>
             </div>
             <div className="module-group right hidden-xs">
