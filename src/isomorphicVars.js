@@ -7,7 +7,7 @@ export default function isomorphicVars() {
     // Running on server.
     if (process.env.NODE_ENV === 'production') {
       return {
-        imageHost: "http://585911473.r.cdnsun.net",
+        imageHost: process.env.IMAGE_HOST,
       };
     } else {
       return devVars;
