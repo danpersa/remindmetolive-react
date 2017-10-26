@@ -23,8 +23,8 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
                  tags="travel, city, Florence, Italy">
 
         <StoryIntro title="Florence Cathedral">
-          It's hard to find the right words when writing about the magnificent
-          <a href="https://en.wikipedia.org/wiki/Florence">Florence</a>.
+          It's hard to find the right words when writing about the
+          magnificent <a href="https://en.wikipedia.org/wiki/Florence">Florence</a>.
           It is such a special place that it is hard to find the right words that
           would give it justice.
           That's why, I will quote the Italian writer Tondelli, that describes
@@ -147,8 +147,8 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
         <StoryTextBlock title="Palazzo Pitti and the gardens">
           <a href="https://en.wikipedia.org/wiki/Palazzo_Pitti">The Palazzo Pitti</a> it
           is a stunning Renaissance palace, almost always overshadowed by its more
-          famous counterparts, the <a href="https://en.wikipedia.org/wiki/Uffizi">Uffizi</a>,
-          <a href="https://en.wikipedia.org/wiki/Galleria_dell'Accademia">Accademia</a> (where
+          famous counterparts,
+          the <a href="https://en.wikipedia.org/wiki/Uffizi">Uffizi</a>, <a href="https://en.wikipedia.org/wiki/Galleria_dell'Accademia">Accademia</a> (where
           the David Statue is located), and the <a href="https://en.wikipedia.org/wiki/Palazzo_Vecchio">Palazzo Vecchio</a>.
           It has an impressive collection of art and the building was the royal
           residence of the Medici, and even Napoleon stayed there for a bit.

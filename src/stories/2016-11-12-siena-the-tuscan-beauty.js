@@ -32,8 +32,8 @@ class SienaTheTuscanBeautyStory extends React.Component {
           In the center of the town, you will
           find <a href="https://en.wikipedia.org/wiki/Piazza_del_Campo">Piazza del Campo</a>,
           a spectacular shell-shaped piazza that is simply mesmerizing.
-          It is famous for the
-          <a href="https://en.wikipedia.org/wiki/Palio_di_Siena">Palio</a>,
+          It is famous for
+          the <a href="https://en.wikipedia.org/wiki/Palio_di_Siena">Palio</a>,
           which is a horse race running here twice a year,
           in the summer time. These races put the 17 different neighborhoods of
           Siena against each other.
@@ -53,8 +53,8 @@ class SienaTheTuscanBeautyStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Climb up the Tower">
-          The uniquely round-shaped Piazza del Campo is overlooked by the majestic
-          <a href="https://en.wikipedia.org/wiki/Torre_del_Mangia">Torre del Mangia</a>.
+          The uniquely round-shaped Piazza del Campo is overlooked by the
+          majestic <a href="https://en.wikipedia.org/wiki/Torre_del_Mangia">Torre del Mangia</a>.
           Dare to climb the 400 steps to reach the top of the tower because the
           views over the city are absolutely incredible.
         </StoryTextBlock>
@@ -72,7 +72,8 @@ class SienaTheTuscanBeautyStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="The Cathedral">
-          Another sight for the eyes is the beautiful <a href="https://en.wikipedia.org/wiki/Siena_Cathedral">Siena Cathedral</a>.
+          Another sight for the eyes is the
+          beautiful <a href="https://en.wikipedia.org/wiki/Siena_Cathedral">Siena Cathedral</a>.
           The facade of the cathedral is intricate and full of detail. The
           whole cathedral was painted, sculpted, and decorated by the most celebrated
           Italian artists of that time. It is just beautiful and I’m afraid
