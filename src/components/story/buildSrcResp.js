@@ -1,6 +1,4 @@
-import isomorphicVars from '../../isomorphicVars';
-
-const imageHost = isomorphicVars().imageHost;
+import { imageHost } from '../../isomorphicVars';
 
 const buildSrcResp = (dirPath, size, prefix, number) => {
   return `${imageHost}/images/${size}/${dirPath}/${prefix}-${number}.jpg`;

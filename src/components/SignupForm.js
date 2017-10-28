@@ -12,7 +12,7 @@ const SignupForm = () => {
                   method="post"
                   className="halves" target="_blank">
               <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="your email" />
-              <input type="submit" value="Subscribe" name="subscribe" className="button" />
+              <input type="submit" value="Subscribe" name="subscribe" className="btn" />
               <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
                 <input type="text" name="b_b0b8fa52dd681e157b4d48592_02cb3e19d7" tabIndex="-1" value="" />
               </div>

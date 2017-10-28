@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { imageHost } from '../isomorphicVars';
 
 class SampleGallery extends React.Component {
 
@@ -27,7 +28,7 @@ class SampleGallery extends React.Component {
          <div className="image-gallery-image">
            {
                <div>
-                 <img src={item.original}/>
+                 <img src={imageHost + item.original}/>
                  {
                    item.title &&
                    <span

@@ -4,6 +4,7 @@ import Col from '../base/Col';
 import Container from '../base/Container';
 import TeaserImage from './TeaserImage';
 import PropTypes from 'prop-types';
+import { imageHost } from '../../isomorphicVars';
 
 class StoryPage extends React.Component {
 
@@ -49,7 +50,7 @@ class StoryPage extends React.Component {
         <Container>
           <Row>
             <Col>
-              <img src="/images/cocos.png" />
+              <img src={`${imageHost}/images/cocos.png`} />
             </Col>
           </Row>
         </Container>

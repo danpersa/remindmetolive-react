@@ -1,4 +1,5 @@
 import React from 'react';
+import { imageHost } from '../isomorphicVars';
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
             <div className="col-sm-12 text-center">
-                <img alt="remindmetolive logo" className="mrare mb24" src="/images/logo-white.png" />
+                <img alt="remindmetolive logo" className="mrare mb24" src={`${imageHost}/images/logo-white.png`} />
                 <h5 className="mb0 sub">&copy; Copyright 2017 - remindmetolive</h5>
             </div>
             <div className="col-sm-12 text-center">

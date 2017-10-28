@@ -2,16 +2,19 @@ import React from 'react';
 import { Parallax } from 'react-parallax';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { imageHost } from '../isomorphicVars';
 
 const ParallaxTeaser = (props) => {
+  const imageSrc = `${imageHost}${props.img}`;
+
   return (
-    <Parallax bgImage={props.img}
+    <Parallax bgImage={imageSrc}
               strength={200}
               blur={1}>
       <div className="parallax-image">
         <div className="parallax-image-description text-center image-bg">
-            <h2>{props.title}</h2>
-            <Link className="btn btn-white btn-lg" to={props.href}>{props.button}</Link>
+          <h2>{props.title}</h2>
+          <Link className="btn btn-white btn-lg" to={props.href}>{props.button}</Link>
         </div>
       </div>
     </Parallax>

@@ -2,7 +2,7 @@ const devVars = {
   imageHost: "http://localhost:9090",
 };
 
-export default function isomorphicVars() {
+export default function computeIsomorphicVars() {
   if(typeof(window) == 'undefined') {
     // Running on server.
     if (process.env.NODE_ENV === 'production') {
@@ -20,3 +20,6 @@ export default function isomorphicVars() {
     }
   }
 }
+
+export const isomorphicVars = computeIsomorphicVars();
+export const imageHost = isomorphicVars.imageHost;
