@@ -41,7 +41,8 @@ stop-docker:
 	docker container rm nginx node1 node2 skrop
 
 docker-run:
-	docker run -p 3000:3000\
+	docker run -p 3000:3000 \
+	  -e IMAGE_HOST='http://localhost:9090' \
 		-t danpersa/remindmetolive-app:latest
 
 docker-push:

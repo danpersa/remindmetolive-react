@@ -14,7 +14,7 @@
     "build:prod": "npm run build:prod:client && npm run build:prod:server",
     "start:prod": "npm run build:prod && npm run open:prod",
     "open:src": "babel-node tools/srcServer.js",
-    "open:prod": "node dist/server/app.js",
+    "open:prod": "IMAGE_HOST='http://localhost:9090' node dist/server/app.js",
     "lint": "esw webpack.config.* src tools/*.js --color",
     "lint:watch": "npm run lint -- --watch",
     "clean-dist": "npm run remove-dist && mkdir dist",

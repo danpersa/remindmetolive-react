@@ -45,6 +45,11 @@ export default function startExpress() {
     res.send( sitemap.toString() );
   });
 
+  theapp.get('/robots.txt', function(req, res) {
+    res.header('Content-Type', 'text/plain');
+    res.send('Sitemap: http://www.remindmetolive.com/sitemap.xml');
+  });
+
   theapp.get('*', (req, res) => {
 
     const context = {};
