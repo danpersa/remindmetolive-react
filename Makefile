@@ -14,7 +14,7 @@ build-docker-skrop:
 build-docker-nginx:
 	docker build -f Dockerfile-Nginx -t danpersa/remindmetolive-nginx:latest .
 
-build-docker: build-docker-app build-docker-nginx build-docker-skrop
+docker: build-docker-app build-docker-nginx build-docker-skrop
 
 run-docker-node-1:
 	docker run --rm -d --name node1 \

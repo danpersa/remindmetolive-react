@@ -463,7 +463,7 @@ a {
   opacity: 1;
 }
 a:hover {
-  color: #398f5d;
+  color: #c40b16;
   text-decoration: none;
 }
 .label {
@@ -2569,7 +2569,7 @@ button[type="submit"] .form-loading {
   background: #40a269;
 }
 .feature-color:nth-of-type(3) {
-  background: #398f5d;
+  background: #c40b16;
 }
 .feature-5 {
   height: 33.333333vw;
