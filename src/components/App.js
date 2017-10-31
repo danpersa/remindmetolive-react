@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import MainMenu from './MainMenu';
 import Footer from './Footer';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import HomePage from '../containers/HomePage';
 import AboutPage from '../containers/AboutPage';
@@ -43,8 +44,25 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <MainMenu />
+      <StickyContainer>
+        <Sticky>
+          {
+            ({
+              style,
+
+              // the following are also available but unused in this example
+              isSticky,
+              wasSticky,
+              distanceFromTop,
+              distanceFromBottom,
+              calculatedHeight
+            }) => {
+              return (
+                <MainMenu style={style} />
+              );
+            }
+          }
+        </Sticky>
         <TransitionGroup>
           <CSSTransition key={this.props.location.key} timeout={500} classNames="fade">
             <Switch location={this.props.location}>
@@ -86,7 +104,7 @@ class App extends React.Component {
           </CSSTransition>
         </TransitionGroup>
         <Footer />
-      </div>
+      </StickyContainer>
     );
   }
 }

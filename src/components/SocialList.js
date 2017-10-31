@@ -3,7 +3,7 @@ import React from 'react';
 const SocialList = () => {
   return (
     <div>
-      <h6 className="uppercase">Share The Love</h6>
+      <h6 className="uppercase">Discover More</h6>
       <ul className="social-list list-inline">
         <li>
           <a href="https://www.twitter.com/remindmetolive" target="_blank">

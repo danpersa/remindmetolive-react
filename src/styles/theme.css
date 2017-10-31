@@ -862,10 +862,26 @@ nav {
 nav ul {
   margin-bottom: 0;
 }
-.module {
-  display: inline-block;
-  padding: 0 32px;
+
+@media all and (min-width: 767px) {
+  .module {
+    display: inline-block;
+    padding: 0 32px;
+  }
 }
+
+@media all and (max-width: 767px) {
+  .module {
+    display: inline-block;
+    padding: 0 0 0 10px;
+  }
+
+  .module.right {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+  }
+}
+
 .module-group {
   display: inline-block;
 }
@@ -1207,9 +1223,14 @@ nav .cart-overview a {
 .nav-open .mobile-toggle {
   border-bottom: 1px solid #ccc;
 }
-@media all and (max-width: 1120px) {
+@media all and (min-width: 768px) and (max-width: 1120px) {
   .menu > li {
     margin-right: 24px;
+  }
+}
+@media all and (max-width: 768px) {
+  .menu > li {
+    margin-right: 14px;
   }
 }
 .has-offscreen-nav .main-container {
@@ -1290,22 +1311,22 @@ nav .cart-overview a {
 }
 @media all and (max-width: 990px) {
   .nav-bar {
-    height: 80px;
-    max-height: 80px;
+    height: 70px;
+    max-height: 70px;
     min-width: 400px;
-    line-height: 75px;
+    line-height: 68px;
     border-bottom: 1px solid #ccc;
   }
   .nav-bar .module,
   .nav-bar .module-group {
-    height: 80px;
+    height: 70px;
   }
   .nav-bar a {
     display: inline-block;
-    height: 80px;
+    height: 70px;
   }
   .logo {
-    max-height: 90%;
+    max-height: 60%;
   }
   .logo-light {
     display: none;

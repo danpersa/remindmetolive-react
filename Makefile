@@ -51,4 +51,4 @@ docker-push:
 	docker push danpersa/remindmetolive-skrop
 
 remove-docker-images:
-	docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+	docker rmi $$(docker images | grep "^<none>" | tr -s ' ' | cut -d ' ' -f 3)
