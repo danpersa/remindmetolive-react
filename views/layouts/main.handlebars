@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="/{{ cssFileName }}">
 
   {{> meta }}
 
@@ -10,6 +10,6 @@
 </head>
 <body>
   <div id="app">{{{ body }}}</div>
-  <script src='/main.js'></script>
+  <script src='/{{ jsFileName }}'></script>
 </body>
 </html>

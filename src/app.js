@@ -13,6 +13,7 @@ import Meta from './server/meta';
 import SitemapBuilder from './server/sitemapBuilder';
 import App from './components/App';
 import { isomorphicVars } from './isomorphicVars';
+import AssetsMapper from './server/AssetsMapper';
 
 /* eslint-disable no-console */
 export default function startExpress() {
@@ -32,6 +33,10 @@ export default function startExpress() {
 
   const staticDir = path.join(currentDir, 'dist/client');
   const imagesDir = path.join(currentDir, 'dist/images');
+
+  // assets map
+  const manifestDir = path.join(currentDir, 'dist/client');
+  const assetsMapper = new AssetsMapper(manifestDir);
 
   console.log('Static dir: ' + staticDir);
 
@@ -71,7 +76,9 @@ export default function startExpress() {
     return res.render('path', {
       reactOutput: markup,
       meta: meta.getMetaForPath(req.url),
-      isomorphicVars: JSON.stringify(isomorphicVars)
+      isomorphicVars: JSON.stringify(isomorphicVars),
+      cssFileName: assetsMapper.getCssFileName(),
+      jsFileName: assetsMapper.getJsFileName(),
     });
 
   });
