@@ -47,16 +47,7 @@ class App extends React.Component {
       <StickyContainer>
         <Sticky>
           {
-            ({
-              style,
-
-              // the following are also available but unused in this example
-              isSticky,
-              wasSticky,
-              distanceFromTop,
-              distanceFromBottom,
-              calculatedHeight
-            }) => {
+            ({ style }) => {
               return (
                 <MainMenu style={style} />
               );

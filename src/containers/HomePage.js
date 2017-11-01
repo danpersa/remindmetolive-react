@@ -1,6 +1,6 @@
 import React from 'react';
 import SampleGallery from '../components/SampleGallery';
-import SignupForm from '../components/SignupForm';
+import SubscribeForm from '../components/SubscribeForm';
 import StoryHover from '../components/stories/StoryHover';
 import SocialList from '../components/SocialList';
 import ParallaxTeaser from '../components/ParallaxTeaser';
@@ -26,7 +26,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <SignupForm />
+      <SubscribeForm />
 
       <section className="pt0 pb0">
         <ParallaxTeaser img="/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-2048.jpg"

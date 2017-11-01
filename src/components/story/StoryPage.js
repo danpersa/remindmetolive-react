@@ -5,6 +5,7 @@ import Container from '../base/Container';
 import TeaserImage from './TeaserImage';
 import PropTypes from 'prop-types';
 import { imageHost } from '../../isomorphicVars';
+import SubscribeForm from '../../components/SubscribeForm';
 
 class StoryPage extends React.Component {
 
@@ -46,7 +47,7 @@ class StoryPage extends React.Component {
 
       {this.props.children}
 
-      <section className="pt0 pb40 text-center" >
+      <section className="pt0 pb32 text-center" >
         <Container>
           <Row>
             <Col>
@@ -55,6 +56,7 @@ class StoryPage extends React.Component {
           </Row>
         </Container>
       </section>
+      <SubscribeForm />
     </div>);
   }
 }

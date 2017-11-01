@@ -2,6 +2,7 @@ import { imageHost } from '../isomorphicVars';
 import React, { PureComponent } from 'react';
 import {Link} from 'react-router-dom';
 import MainMenuLinks from './MainMenuLinks';
+import PropTypes from 'prop-types';
 
 class MainMenu extends PureComponent {
   render() {
@@ -25,5 +26,9 @@ class MainMenu extends PureComponent {
     );
   }
 }
+
+MainMenu.propTypes = {
+  style: PropTypes.string.isRequired
+};
 
 export default MainMenu;

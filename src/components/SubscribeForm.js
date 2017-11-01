@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SignupForm = () => {
+const SubscribeForm = () => {
   return (
     <section className="pt64 pb64 pt-xs-32 pb-xs-32 bg-secondary">
       <div className="container">
@@ -24,4 +24,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default SubscribeForm;

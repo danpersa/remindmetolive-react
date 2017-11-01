@@ -11,8 +11,8 @@ const StoryHover = (props) => {
         <div className="image-tile hover-tile text-center mb24 border">
           <img alt="image" className="background-image" src={imageHost + props.src} />
           <div className="hover-state">
-            <h3 className="uppercase mb8">{props.title}</h3>
-            <h6 className="uppercase">Read the story</h6>
+            <h3 className="uppercase mb8" style={{cursor: 'pointer'}}>{props.title}</h3>
+            <h6 className="uppercase" style={{cursor: 'pointer'}}>Read the story</h6>
           </div>
         </div>
       </Link>
