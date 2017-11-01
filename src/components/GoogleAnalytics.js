@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 
 class GoogleAnalytics extends React.Component {
   componentDidMount() {
-    ReactGA.initialize('UA-000000-01', {
+    ReactGA.initialize('UA-65302999-1', {
       debug: true
     });
   }
