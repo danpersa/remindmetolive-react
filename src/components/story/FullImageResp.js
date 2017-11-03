@@ -13,12 +13,13 @@ const FullImageResp = (props) => {
   };
 
   return (
-    <section className="pt24 pb48">
-        <img alt={props.alt}
-             className="col-xs-12 p0 border-top-bottom"
-             src={buildSrc(props.number, "M")}
-             srcSet={buildSrcSet(props.number)} />
-    </section>
+    <div className="row pt24 pb48">
+      <img alt={props.alt}
+           className="col-xs-12 p0 border-top-bottom"
+           src={buildSrc(props.number, "M")}
+           srcSet={buildSrcSet(props.number)}
+           sizes="100vw" />
+    </div>
   );
 };
 

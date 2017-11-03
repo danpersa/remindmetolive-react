@@ -7,18 +7,16 @@ import PropTypes from 'prop-types';
 const StoryTextBlock = (props) => {
 
   return (
-    <section className="pt16 pb16">
-      <Container>
-        <Row mb={0} mbXs={0}>
-          <Col md={8} mdOffset={2} sm={10} smOffset={1}>
-            {props.title && <h2 className="uppercase mb16 text-center">{props.title}</h2>}
-            <p className="lead">
-                {props.children}
-            </p>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Container pt={16} pb={16}>
+      <Row mb={0} mbXs={0}>
+        <Col md={8} mdOffset={2} sm={10} smOffset={1}>
+          {props.title && <h2 className="uppercase mb16 text-center">{props.title}</h2>}
+          <p className="lead">
+            {props.children}
+          </p>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
