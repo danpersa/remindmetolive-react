@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 class MainMenu extends PureComponent {
   render() {
     return (
-      <div style={{ ...this.props.style, 'z-index': '6'}}>
+      <div style={{ ...this.props.style, zIndex: '6'}}>
         <nav>
           <div className="nav-bar">
             <div className="module left">
@@ -28,7 +28,7 @@ class MainMenu extends PureComponent {
 }
 
 MainMenu.propTypes = {
-  style: PropTypes.string.isRequired
+  style: PropTypes.object.isRequired
 };
 
 export default MainMenu;
