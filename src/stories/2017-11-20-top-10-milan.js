@@ -26,19 +26,20 @@ class SummerInAmsterdamStory extends React.Component {
                  tags="travel, city, Italy">
 
         <StoryIntro>
-           I usually need a few days to take a few good photos in a new city. I took
-           me 3 hours to take the ones in Amsterdam. That says a lot! The weather was
-           great, the sky was blue and perfect—with mushy clouds—and the light was nice.
-           In the summer, the sun stays up on the sky until late and as the city center
-           is round, there are always a few sunny streets, with good light!
-           You only have to search for them!
+           A few weeks ago, I had the unique chance to visit Milan. I did
+           a <a href="https://www.youtube.com/watch?v=FdJ_-4v2CzE">tech talk</a> here,
+           at the Codemotion conference and I had a few hours to go around the city.
+
+           As my time here was limited, I had to prioritize what I want to visit. Here is
+           my top 10 favorite places in Milan.
         </StoryIntro>
 
         <StoryTextBlock title="The Milan Cathedral">
-          Amsterdam is in continuous movement! Tourists and locals are swarming the
-          small streets of Netherlands' capital. At every corner there is something
-          happening. Here is a nice square, with people resting in the sun and here
-          is another one, where somebody is entertaining the toursits with a show!
+          The Milan Cathedral, (Duomo di Milano) is located in in the center of the city.
+          It's built in the Gothic style and took nearly six centuries to complete.
+          It is the largest church in Italy and the third largest in the world.
+          Looking at the tall arches and towers you get a religious feeling of greatness,
+          as everything points upwards to the skyes and god.
         </StoryTextBlock>
 
         <StoryImages>
@@ -51,10 +52,11 @@ class SummerInAmsterdamStory extends React.Component {
                          alt2="The Milan Cathedral Square" />
         </StoryImages>
         <StoryTextBlock title="Galleria Vittorio Emanuele II">
-          Amsterdam is in continuous movement! Tourists and locals are swarming the
-          small streets of Netherlands' capital. At every corner there is something
-          happening. Here is a nice square, with people resting in the sun and here
-          is another one, where somebody is entertaining the toursits with a show!
+          Galleria Vittorio Emanuele is the oldest shopping mall in Milan. Here is you can
+          find luxury brands like Prada and Gucci.
+          You can enter the "Galleria" though a huge arch. The entrance is in the same crowded
+          square together with the Milan Cathedral.
+          The roof is build out of glass and iron. The attention to detail is amazing.
         </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath}
                        prefix="wide"
@@ -73,11 +75,10 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Basilica of Sant'Eustorgio">
-          It's no surprise that Amsterdam has lots of <a target="blank" href="https://en.wikipedia.org/wiki/Canals_of_Amsterdam">canals</a>.
-          There are kilometers of canals, about 90 islands and 1,500 bridges here.
-          Plenty of space for the tourists to do cruises around the city. Considering
-          how many canals there are, boats can be a good option for getting
-          from one part of the city to another. Or to throw a boat party!
+           <a href="https://en.wikipedia.org/wiki/Basilica_of_Sant%27Eustorgio" target="_blank">Basilica of Sant'Eustorgio</a> was
+           for many years an important stop for pilgrims on their journey to Rome
+           or to the Holy Land, because it was said to contain the tomb of the
+           Three Magi or Three Kings.
         </StoryTextBlock>
 
         <StoryImages>
@@ -85,8 +86,9 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Basilica di San Lorenzo">
-          It's no surprise that Amsterdam has lots of <a target="blank" href="https://en.wikipedia.org/wiki/Canals_of_Amsterdam">canals</a>.
-          There are kilometers of canals, about 90 islands and 1,500 bridges here.
+          In front the church you can see the the statue Constantine the Great.
+          The tall arches in front are impressive! As it was rebuilt several times,
+          the architectural styles mix here.
         </StoryTextBlock>
 
         <FullImageResp dirPath={imgDirPath}
@@ -99,7 +101,10 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Sforza Castle">
-          Amsterdam is the most bicycle friendly capital of Europe.
+          In the 16th century the Castle was one of the biggest citadels in Europe.
+          Nowdays the are tall walls are surrounding many museums, a cafe and a park.
+          There is a nice fountain at the entrance, where people can rest and eat the
+          amazing Italian gelato!
         </StoryTextBlock>
 
         <StoryImages>
@@ -116,8 +121,8 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Porta Sempione">
-          When it comes to architecture, Amsterdam is full of surprises. You can find
-          small houses from the 17th century as well as large museums, palaces or cathedrals.
+          From the Sforza Castle you can go through the Simplon Park, the main city park of Milan,
+          and reach the impressive Porta Sempione.
         </StoryTextBlock>
 
         <FullImageResp dirPath={imgDirPath}
@@ -130,8 +135,9 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Porta Ticinese">
-          When it comes to architecture, Amsterdam is full of surprises. You can find
-          small houses from the 17th century as well as large museums, palaces or cathedrals.
+          Porta Ticinese is a former gate of Milan. It was first built together with
+          the Spanish walls of the city. And around it you can find really nice
+          restaurants.
         </StoryTextBlock>
 
         <StoryImages>
@@ -139,8 +145,8 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="San Bernardino alle Ossa">
-          When it comes to architecture, Amsterdam is full of surprises. You can find
-          small houses from the 17th century as well as large museums, palaces or cathedrals.
+          San Bernardino alle Ossa is best known for its ossuary, a small side chapel
+          decorated with numerous human skulls and bones.
         </StoryTextBlock>
 
         <StoryImages>
@@ -148,8 +154,8 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Santa Maria delle Grazie">
-          When it comes to architecture, Amsterdam is full of surprises. You can find
-          small houses from the 17th century as well as large museums, palaces or cathedrals.
+          Santa Maria delle Grazie is a church dedicated to Virgin Mary. It has a really nice
+          inner yard with trees.
         </StoryTextBlock>
 
         <StoryImages>
@@ -157,15 +163,18 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="The Patterns">
-          When it comes to architecture, Amsterdam is full of surprises. You can find
-          small houses from the 17th century as well as large museums, palaces or cathedrals.
+          The number ten on my list is not a specific landmark, but it is the attention
+          to details the whole city has. I want to encourage you look around, up and down,
+          left and right and discover the columns, arches, windows and patterns around the city.
+
+          I find that this is one of the hidden treasures of the city and I just
+          can't stop looking around!
         </StoryTextBlock>
 
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="24"
                        alt="Milan windows" />
-
 
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="25" alt="Milan arches" />
