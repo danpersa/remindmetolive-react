@@ -30,7 +30,7 @@ class SummerInAmsterdamStory extends React.Component {
            a <a href="https://www.youtube.com/watch?v=FdJ_-4v2CzE">tech talk</a> here,
            at the Codemotion conference and I had a few hours to go around the city.
 
-           As my time here was limited, I had to prioritize what I want to visit. Here is
+           As my time here was limited, I had to prioritize what I want to visit. Here are
            my top 10 favorite places in Milan.
         </StoryIntro>
 
