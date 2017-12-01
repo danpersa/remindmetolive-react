@@ -8,6 +8,9 @@ class GoogleAnalytics extends React.Component {
     ReactGA.initialize('UA-65302999-1', {
       debug: true
     });
+    const thisUrl = this.props.location.pathname + this.props.location.search;
+    ReactGA.set({ page: thisUrl });
+    ReactGA.pageview(thisUrl);
   }
 
   componentDidUpdate(prevProps) {
