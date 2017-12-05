@@ -61,6 +61,14 @@ class SampleGallery extends React.Component {
 
        const images = [
            {
+             original: '/images/L/stories/2017-11-20-top-10-milan/wide-04.jpg',
+             title: 'Top 10',
+             subTitle: 'Milan',
+             href: '/stories/top-10-milan.html',
+             hrefTitle: 'Discover Milan',
+             renderItem: this._renderItem.bind(this)
+           },
+           {
              original: '/images/stories/2017-08-20-midsummer-in-helsinki/wide-02-2048.jpg',
              title: 'Midsummer',
              subTitle: 'in Helsinki',
@@ -81,14 +89,6 @@ class SampleGallery extends React.Component {
              subTitle: "A Charming City",
              href: '/stories/lisbon-a-charming-city.html',
              hrefTitle: 'Take a Look',
-             renderItem: this._renderItem.bind(this)
-           },
-           {
-             original: '/images/stories/2017-01-15-florence-theme-park-of-renaissance/wide-09-2048.jpg',
-             title: 'Florence',
-             subTitle: 'Theme Park Of Renaissance',
-             href: '/stories/florence-theme-park-of-renaissance.html',
-             hrefTitle: 'Discover Florence',
              renderItem: this._renderItem.bind(this)
            }
          ];
