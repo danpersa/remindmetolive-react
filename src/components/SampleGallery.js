@@ -61,6 +61,14 @@ class SampleGallery extends React.Component {
 
        const images = [
            {
+             original: '/images/L/stories/2017-12-15-cretan-sunsets/image-39.jpg',
+             title: 'Cretan',
+             subTitle: 'Sunsets',
+             href: '/stories/cretan-sunsets.html',
+             hrefTitle: 'See The Sunsets',
+             renderItem: this._renderItem.bind(this)
+           },
+           {
              original: '/images/L/stories/2017-11-20-top-10-milan/wide-04.jpg',
              title: 'Top 10',
              subTitle: 'Milan',
