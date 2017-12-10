@@ -32,7 +32,7 @@ class StoriesPage extends React.Component {
         <section className="pb0">
           <StoryHover title="Cretan Sunsets"
                       href="/stories/cretan-sunsets.html"
-                      src="/images/M/stories/2017-12-15-cretan-sunsets/image-20.jpg" />
+                      src="/images/M/stories/2017-12-15-cretan-sunsets/image-09.jpg" />
 
           <StoryHover title="Top 10 Milan"
                       href="/stories/top-10-milan.html"
