@@ -30,7 +30,7 @@ class PisaAfterglowStory extends React.Component {
           feeling, it is a constant desire for more, more of the beautiful skylines, sunrises,
           sunsets, delicious food, different culture and new adventures. And the more you take in,
           the deeper you fall and the more you wish to see. It all started with Rome, continued with
-          Venice, then mesmarizing <a href="https://en.wikipedia.org/wiki/Tuscany">Tuscany</a>. Now
+          Venice, then mesmerizing <a href="https://en.wikipedia.org/wiki/Tuscany">Tuscany</a>. Now
           it is time for <a href="https://en.wikipedia.org/wiki/Pisa">Pisa</a>, a small and enchanting
           city in <a href="https://en.wikipedia.org/wiki/Tuscany">Tuscany</a>.
         </StoryIntro>

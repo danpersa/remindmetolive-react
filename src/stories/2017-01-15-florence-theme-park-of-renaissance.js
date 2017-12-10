@@ -113,7 +113,7 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
           the center of the city is scattered with Dante’s verses: the walls of
           medieval buildings become pages of the Divine Comedy! Therefore, everywhere
           you look, there is a beautiful medieval building, an art gallery
-          or a beautiful sculpture. <Link to="/stories/bridges-of-florence.html">The birdges of Florence</Link> have
+          or a beautiful sculpture. <Link to="/stories/bridges-of-florence.html">The bridges of Florence</Link> have
           an important role in Florence's cityscape, therefore we dedicated an entire story for them.
           Check it out <Link to="/stories/bridges-of-florence.html">here</Link>!
         </StoryTextBlock>
@@ -129,7 +129,7 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
 
         <StoryTextBlock title="Piazzale Michelangelo">
           You must come to the famous <a href="https://en.wikipedia.org/wiki/Piazzale_Michelangelo">Piazzale Michelangelo</a> for
-          a magnificent panormaric view of Florence.
+          a magnificent panoramic view of Florence.
           It is dedicated to the great Renaissance artist Michelangelo and has
           copies of his famous works.
           It takes a little legwork and there are a few easy ways to get there,

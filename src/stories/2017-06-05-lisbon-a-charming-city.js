@@ -29,7 +29,7 @@ class LisbonACharmingCityStory extends React.Component {
          describes Lisbon as the coolest city in Europe. The editor of the magazine,
          Steve King says that Lisbon’s character is unique, and that you’ll find
          none of “Berlin’s angst or Paris’s hauteur or Rome’s braggadocio” in the city.
-         Expect instead to find “a modesty that borders on reticence, a wistful humour
+         Expect instead to find “a modesty that borders on reticence, a wistful humor
          tinged with melancholy”. We found Lisbon a charming city and we will invite
          you to see it through our eyes.
         </StoryIntro>
@@ -62,7 +62,7 @@ class LisbonACharmingCityStory extends React.Component {
         <WideFullImage dirPath={imgDirPath} number="02" />
 
         <StoryTextBlock title="The Trams">
-          Bla bla One advantage of the hilliness of the city is that it is one of the
+          One advantage of the hilliness of the city is that it is one of the
           quietest capital in Europe. Another one, if you can call it like that,
           is that you will end up being really fit, as wherever you set out to walk,
           you will end up in stairs or walking up and down. As it is such a

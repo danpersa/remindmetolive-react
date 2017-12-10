@@ -39,7 +39,7 @@ class SummerInAmsterdamStory extends React.Component {
           It's built in the Gothic style and took nearly six centuries to complete.
           It is the largest church in Italy and the third largest in the world.
           Looking at the tall arches and towers you get a religious feeling of greatness,
-          as everything points upwards to the skyes and god.
+          as everything points upwards to the skies and god.
         </StoryTextBlock>
 
         <StoryImages>
@@ -102,7 +102,7 @@ class SummerInAmsterdamStory extends React.Component {
 
         <StoryTextBlock title="Sforza Castle">
           In the 16th century the Castle was one of the biggest citadels in Europe.
-          Nowdays the are tall walls are surrounding many museums, a cafe and a park.
+          Nowadays the are tall walls are surrounding many museums, a cafe and a park.
           There is a nice fountain at the entrance, where people can rest and eat the
           amazing Italian gelato!
         </StoryTextBlock>

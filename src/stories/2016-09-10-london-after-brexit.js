@@ -49,7 +49,7 @@ class LondonAfterBrexitStory extends React.Component {
 
         <StoryTextBlock title="The Brexit Protests">
           In front of Westminster Abbey there was a crowd of people protesting
-          against the brexit. They had banners stating that "Unity is strength".
+          against the BREXIT. They had banners stating that "Unity is strength".
         </StoryTextBlock>
 
         <StoryImages>
@@ -85,7 +85,7 @@ class LondonAfterBrexitStory extends React.Component {
 
         <StoryTextBlock title="Pride in London">
           In a different part of the city people were happy because of the Pride Parade.
-          This attracted a higher number of participants compared to the Brexit protesters.
+          This attracted a higher number of participants compared to the BREXIT protesters.
           The <a href="http://prideinlondon.org/">Pride Festival</a> took place from 10-26 June,
           with the main weekend on 25-26 June.
         </StoryTextBlock>

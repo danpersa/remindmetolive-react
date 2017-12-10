@@ -27,7 +27,7 @@ class LunarLandscapesOfLanzaroteStory extends React.Component {
           This is a story about a captivating place, approximately 125 km off
           the coast of Africa. A place you would choose to see for various reasons:
           its arid volcanic landscapes, the wild and stunning beaches, the taste
-          of a wine with a bit of an ash flavour, the small white villages washed
+          of a wine with a bit of an ash flavor, the small white villages washed
           by the Atlantic Ocean. It's the story of Lanzarote, an amazing island
           in the Canaries.
         </StoryIntro>
@@ -43,7 +43,7 @@ class LunarLandscapesOfLanzaroteStory extends React.Component {
           Lanzarote welcomed us with a jaw-dropping spectacle of nature:
           the ocean waves dramatically whipping the bizarre-shaped cliffs forcing
           water into the labyrinth of caves. This is “Los Hervideros”, a breathtaking
-          place you will instantly fall in love. It is our favourite place from
+          place you will instantly fall in love. It is our favorite place from
           the island and words are not enough to describe it.
         </StoryTextBlock>
         <StoryImages>
@@ -79,12 +79,12 @@ class LunarLandscapesOfLanzaroteStory extends React.Component {
           Here, the clock stops and the silence reigns; lairs of the devils seems
           to be build into the rivers of lava. Here is what the French author,
           Michel Houellebecq wrote about these bizarre lunar landscapes:
-          "In front of us a huge fissure, several metres wide, snaked as far as
+          "In front of us a huge fissure, several meters wide, snaked as far as
           the horizon, cutting through the grey surface of the earth's crust.
           The silence was absolute. This, I thought, is what the world will look
           like when it dies." Words can hardly describe the view here. You have to
           be there and experience it for yourself! And when you do, don’t forget
-          to stop to salute the camels and eat an icecream.
+          to stop to salute the camels and eat an ice cream.
         </StoryTextBlock>
         <StoryImages>
           <PostImage dirPath={imgDirPath} number="12" />

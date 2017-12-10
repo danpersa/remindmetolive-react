@@ -77,7 +77,7 @@ class MidsummerInHelsinkiStory extends React.Component {
         <StoryTextBlock title="Suomenlinna">
           If you love nature, you'll love <a href="https://en.wikipedia.org/wiki/Suomenlinna">Suomenlinna</a>.
           It's part of the UNESCO’s World Heritage List together with the Great Wall of
-          China and the Grand Canyon. The fortress here served in the defence of three countries:
+          China and the Grand Canyon. The fortress here served in the defense of three countries:
           Sweden, Russia and Finland.
         </StoryTextBlock>
 
