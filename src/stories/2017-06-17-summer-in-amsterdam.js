@@ -38,7 +38,7 @@ class SummerInAmsterdamStory extends React.Component {
           Amsterdam is in continuous movement! Tourists and locals are swarming the
           small streets of Netherlands' capital. At every corner there is something
           happening. Here is a nice square, with people resting in the sun and here
-          is another one, where somebody is entertaining the toursits with a show!
+          is another one, where somebody is entertaining the tourists with a show!
         </StoryTextBlock>
 
         <StoryImages>
