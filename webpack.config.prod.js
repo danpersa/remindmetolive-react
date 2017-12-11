@@ -3,6 +3,7 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
+import ManifestPlugin from 'webpack-manifest-plugin';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
@@ -21,7 +22,7 @@ export default {
   output: {
     path: path.resolve(__dirname, 'dist/client'),
     publicPath: '/',
-    filename: '[name].js'
+    filename: '[name].[chunkhash].js'
   },
   plugins: [
     // Hash the files using MD5 so that their names change when the content changes.
@@ -30,8 +31,10 @@ export default {
     // Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
     new webpack.DefinePlugin(GLOBALS),
 
+    new ManifestPlugin(),
+
     // Generate an external css file with a hash in the filename
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin('[name].[contenthash].css'),
 
     // Minify JS
     new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),

@@ -10,11 +10,17 @@ node1:
     image: danpersa/remindmetolive-app:latest
     ports:
         - "3000"
+    environment:
+        - IMAGE_HOST=http://localhost:8080
 node2:
     image: danpersa/remindmetolive-app:latest
     ports:
         - "3000"
+    environment:
+        - IMAGE_HOST=http://localhost:8080
 skrop:
     image: danpersa/remindmetolive-skrop:latest
     ports:
         - "9090"
+    volumes:
+        - "~/Prog/node/remindmetolive-react/src/images:/images"

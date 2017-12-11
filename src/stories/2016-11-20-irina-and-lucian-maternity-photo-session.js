@@ -32,7 +32,7 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
 
         <StoryTextBlock title="The Charlottenburg Palace">
           The impressive palace is a great place to take photos and this time is
-          coverd with scaffolding, which somehow gives a symbolic hint to our photo shoot:
+          covered with scaffolding, which somehow gives a symbolic hint to our photo shoot:
           "work in progress!" We start our photo session here,
           taking advantage of the bright sun. I'm using a polarizer filter here,
           to make the colors pop!

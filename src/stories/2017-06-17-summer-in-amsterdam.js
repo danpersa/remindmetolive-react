@@ -1,14 +1,14 @@
 import React from 'react';
-import PostImage from '../components/story/PostImage';
-import TwoPostImages from '../components/story/TwoPostImages';
-import WideFullImage from '../components/story/WideFullImage';
+import PostImageResp from '../components/story/PostImageResp';
+import TwoPostImageResp from '../components/story/TwoPostImageResp';
 import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
+import buildSrcResp from '../components/story/buildSrcResp';
+import FullImageResp from '../components/story/FullImageResp';
 
-const imgDirPath = "/images/stories/2017-06-17-summer-in-amsterdam/";
+const imgDirPath = "stories/2017-06-17-summer-in-amsterdam";
 
 class SummerInAmsterdamStory extends React.Component {
 
@@ -18,7 +18,8 @@ class SummerInAmsterdamStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "wide", "03", "2048")}
+      <StoryPage logo={buildSrcResp(imgDirPath, "L", "image", "36")}
+                 altLogo="Amsterdam panorama"
                  title="Summer In Amsterdam"
                  author="Dan"
                  location="Amsterdam, Netherlands"
@@ -37,17 +38,23 @@ class SummerInAmsterdamStory extends React.Component {
           Amsterdam is in continuous movement! Tourists and locals are swarming the
           small streets of Netherlands' capital. At every corner there is something
           happening. Here is a nice square, with people resting in the sun and here
-          is another one, where somebody is entertaining the toursits with a show!
+          is another one, where somebody is entertaining the tourists with a show!
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="01" />
-          <PostImage dirPath={imgDirPath} number="02" />
-          <PostImage dirPath={imgDirPath} number="03" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="01"
+                         alt="Amsterdam Church"/>
+          <PostImageResp dirPath={imgDirPath} number="02"
+                         alt="National Monument on Dam Square in Amsterdam" />
+          <PostImageResp dirPath={imgDirPath} number="03"
+                         alt="Dam Square in Amsterdam" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="04"
-                         number2="05" />
-          <PostImage dirPath={imgDirPath} number="06" />
+                         alt1="Amsterdam shopping street"
+                         number2="05"
+                         alt2="Amsterdam Central Station" />
+          <PostImageResp dirPath={imgDirPath} number="06"
+                         alt="Amsterdam Central Station"/>
         </StoryImages>
 
         <StoryTextBlock title="Canals of Amsterdam">
@@ -58,14 +65,20 @@ class SummerInAmsterdamStory extends React.Component {
           from one part of the city to another. Or to throw a boat party!
         </StoryTextBlock>
 
+        <FullImageResp dirPath={imgDirPath}
+                       prefix="image"
+                       number="07"
+                       alt="Amsterdam Canals" />
+
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="07" />
-          <PostImage dirPath={imgDirPath} number="08" />
-          <PostImage dirPath={imgDirPath} number="09" />
-          <TwoPostImages dirPath={imgDirPath}
+          <PostImageResp dirPath={imgDirPath} number="08" alt="Amsterdam cruise boats" />
+          <PostImageResp dirPath={imgDirPath} number="09" alt="Amsterdam houses and boats" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="10"
-                         number2="11" />
-          <PostImage dirPath={imgDirPath} number="12" />
+                         alt1="Hermitage museum, Amsterdam"
+                         number2="11"
+                         alt2="Amsterdam National Opera" />
+          <PostImageResp dirPath={imgDirPath} number="12" alt="Motor boat moving on an Amsterdam canal" />
         </StoryImages>
 
         <StoryTextBlock title="The Bicyles in Amsterdam">
@@ -80,16 +93,20 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="13"
-                         number2="14" />
-          <PostImage dirPath={imgDirPath} number="15" />
-          <PostImage dirPath={imgDirPath} number="16" />
-          <TwoPostImages dirPath={imgDirPath}
+                         alt1="Man riding bike in Amsterdam"
+                         number2="14"
+                         alt2="Amsterdam building with bikes in front"/>
+          <PostImageResp dirPath={imgDirPath} number="15" alt="Rijksmuseum in Amsterdam"/>
+          <PostImageResp dirPath={imgDirPath} number="16" alt="Woman riding bike in Amsterdam"/>
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="17"
-                         number2="18" />
-          <PostImage dirPath={imgDirPath} number="19" />
-          <PostImage dirPath={imgDirPath} number="20" />
+                         alt1="Bikes parked near Amsterdam canal"
+                         number2="18"
+                         alt2="Lots of bikes parked in Amsterdam" />
+          <PostImageResp dirPath={imgDirPath} number="19" alt="Amsterdam bikes" />
+          <PostImageResp dirPath={imgDirPath} number="20" alt="Amsterdam boats and bikes" />
         </StoryImages>
 
         <StoryTextBlock title="The Architecture">
@@ -101,25 +118,38 @@ class SummerInAmsterdamStory extends React.Component {
           makes them look funny.
         </StoryTextBlock>
 
-        <WideFullImage dirPath={imgDirPath} number="02" />
+        <FullImageResp dirPath={imgDirPath}
+                       prefix="image"
+                       number="21"
+                       alt="Amsterdam architecture" />
 
         <StoryImages>
-          <TwoPostImages dirPath={imgDirPath}
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="22"
-                         number2="23" />
-          <TwoPostImages dirPath={imgDirPath}
+                         alt1="Amsterdam building facade"
+                         number2="23"
+                         alt2="Amsterdam building and bikes" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="24"
-                         number2="25" />
-          <TwoPostImages dirPath={imgDirPath}
+                         alt1="Amsterdam building facade"
+                         number2="25"
+                         alt2="Amsterdam building facade" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="26"
-                         number2="27" />
-          <TwoPostImages dirPath={imgDirPath}
+                         alt1="Amsterdam building facade"
+                         number2="27"
+                         alt2="Amsterdam shop" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="28"
-                         number2="29" />
-          <PostImage dirPath={imgDirPath} number="30" />
-          <TwoPostImages dirPath={imgDirPath}
+                         alt1="Amsterdam building facade"
+                         number2="29"
+                         alt2="Amsterdam building facade"/>
+          <PostImageResp dirPath={imgDirPath} number="30" alt="Amsterdam building over canal with boats" />
+          <TwoPostImageResp dirPath={imgDirPath}
                          number1="31"
-                         number2="32" />
+                         alt1="Amsterdam building facade"
+                         number2="32"
+                         alt2="Amsterdam building facade" />
         </StoryImages>
 
         <StoryTextBlock title="Enjoying Amsterdam">
@@ -134,9 +164,12 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImage dirPath={imgDirPath} number="33" />
-          <PostImage dirPath={imgDirPath} number="34" />
-          <PostImage dirPath={imgDirPath} number="35" />
+          <PostImageResp dirPath={imgDirPath} number="33"
+                         alt="Relax on Amstel bank in Amsterdam" />
+          <PostImageResp dirPath={imgDirPath} number="34"
+                         alt="Relax on Amstel bank in Amsterdam" />
+          <PostImageResp dirPath={imgDirPath} number="35"
+                         alt="Amsterdam panorama from above"/>
         </StoryImages>
       </StoryPage>);
   }

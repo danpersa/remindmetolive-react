@@ -21,7 +21,7 @@ class CasinoOfConstantaStory extends React.Component {
 
         <StoryIntro>
           The Casino, the landmark of my hometown, Constanta, once an animated
-          uilding hosting joyful events and gamblers from all over the world,
+          building hosting joyful events and gamblers from all over the world,
           is now a ruin.
         </StoryIntro>
 
@@ -78,7 +78,7 @@ class CasinoOfConstantaStory extends React.Component {
           this the cheapest place in town where we can play pool. We are getting
           inside the left wing of the Casino and the first thing I notice is the
           smell of smoke emanating from the walls. We are the only clients here.
-          There is a bar with lots of alchohol bottles, but we don't drink. The
+          There is a bar with lots of alcohol bottles, but we don't drink. The
           pool table is really old, the cues are old as well and we are barely
           able to play. After half an hour we get pissed and leave.
         </StoryTextBlock>

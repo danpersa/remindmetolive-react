@@ -2,9 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import MainMenu from './MainMenu';
 import Footer from './Footer';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import HomePage from '../containers/HomePage';
 import AboutPage from '../containers/AboutPage';
@@ -12,6 +13,8 @@ import ContactPage from '../containers/ContactPage';
 import StoriesPage from '../components/StoriesPage';
 import NotFoundPage from '../components/NotFoundPage';
 
+import CretanSunsetsStory from '../stories/2017-12-15-cretan-sunsets';
+import Top10MilanStory from '../stories/2017-11-20-top-10-milan';
 import MidsummerInHelsinkiStory from '../stories/2017-08-20-midsummer-in-helsinki';
 import SummerInAmsterdamStory from '../stories/2017-06-17-summer-in-amsterdam';
 import LisbonACharmingCityStory from '../stories/2017-06-05-lisbon-a-charming-city';
@@ -32,39 +35,71 @@ import LunarLandscapesOfLanzaroteStory from '../stories/2015-09-29-lunar-landsca
 // version of hot reloading won't hot reload a stateless
 // component at the top-level.
 class App extends React.Component {
+  redirect(to) {
+    return ({ staticContext }) => {
+      if (staticContext) {
+        staticContext.status = 302;
+      }
+      return <Redirect to={to} />;
+    };
+  }
+
   render() {
     return (
-      <div>
-        <MainMenu />
+      <StickyContainer>
+        <Sticky>
+          {
+            ({ style }) => {
+              return (
+                <MainMenu style={style} />
+              );
+            }
+          }
+        </Sticky>
         <TransitionGroup>
           <CSSTransition key={this.props.location.key} timeout={500} classNames="fade">
             <Switch location={this.props.location}>
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/stories/" component={StoriesPage}/>
-              <Route path="/stories/midsummer-in-helsinki.html" component={MidsummerInHelsinkiStory}/>
-              <Route path="/stories/summer-in-amsterdam.html" component={SummerInAmsterdamStory}/>
-              <Route path="/stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
-              <Route path="/stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
-              <Route path="/stories/irina-and-lucian-maternity-photo-session.html" component={IrinaAndLucianMaternityPhotoSessionStory}/>
-              <Route path="/stories/siena-the-tuscan-beauty.html" component={SienaTheTuscanBeautyStory}/>
-              <Route path="/stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
-              <Route path="/stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
-              <Route path="/stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
-              <Route path="/stories/tenerife-the-land-of-eternal-spring.html" component={TenerifeTheLandOfEternalSpringStory}/>
-              <Route path="/stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
-              <Route path="/stories/winter-fairy-tale-in-salzburg.html" component={WinterFairyTaleInSalzburgStory}/>
-              <Route path="/stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
-              <Route path="/stories/love-at-the-gardens-of-the-world.html" component={LoveAtTheGardensOfTheWorldStory}/>
-              <Route path="/stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
+              <Route exact path="/stories/cretan-sunsets.html" component={CretanSunsetsStory}/>
+              <Route exact path="/stories/top-10-milan.html" component={Top10MilanStory}/>
+              <Route exact path="/stories/midsummer-in-helsinki.html" component={MidsummerInHelsinkiStory}/>
+              <Route exact path="/stories/summer-in-amsterdam.html" component={SummerInAmsterdamStory}/>
+              <Route exact path="/stories/lisbon-a-charming-city.html" component={LisbonACharmingCityStory}/>
+              <Route exact path="/stories/florence-theme-park-of-renaissance.html" component={FlorenceStory}/>
+              <Route exact path="/stories/irina-and-lucian-maternity-photo-session.html" component={IrinaAndLucianMaternityPhotoSessionStory}/>
+              <Route exact path="/stories/siena-the-tuscan-beauty.html" component={SienaTheTuscanBeautyStory}/>
+              <Route exact path="/stories/pisa-afterglow.html" component={PisaAfterglowStory}/>
+              <Route exact path="/stories/london-after-brexit.html" component={LondonAfterBrexitStory}/>
+              <Route exact path="/stories/bridges-of-florence.html" component={BridgesOfFlorenceStory}/>
+              <Route exact path="/stories/tenerife-the-land-of-eternal-spring.html" component={TenerifeTheLandOfEternalSpringStory}/>
+              <Route exact path="/stories/lanzarote-beaches.html" component={LanzaroteBeachesStory}/>
+              <Route exact path="/stories/winter-fairy-tale-in-salzburg.html" component={WinterFairyTaleInSalzburgStory}/>
+              <Route exact path="/stories/the-casino-of-constanta.html" component={CasinoOfConstantaStory}/>
+              <Route exact path="/stories/love-at-the-gardens-of-the-world.html" component={LoveAtTheGardensOfTheWorldStory}/>
+              <Route exact path="/stories/lunar-landscapes-of-lanzarote.html" component={LunarLandscapesOfLanzaroteStory}/>
 
-              <Route path="/about" component={AboutPage}/>
-              <Route path="/contact" component={ContactPage}/>
+              <Route exact path="/about" component={AboutPage}/>
+              <Route exact path="/contact" component={ContactPage}/>
+              <Route exact path="/cats/" render={this.redirect("/stories/")}/>
+              <Route exact path="/cats/christmas-cat.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/cats/whitey.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/cats/shumy-is-one-year-old.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/lady-in-red-with-white-dog.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/teufelsberg.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/charlottenburg-bridge-in-autumn.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/resting-in-mauerpark.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/surprised-in-the-park.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/snow-and-kids.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/bike-parked-by-fence.html" render={this.redirect("/stories/")}/>
+              <Route exact path="/streets-of-berlin/gendarmenmarkt.html" render={this.redirect("/stories/")}/>
               <Route path="*" component={NotFoundPage}/>
             </Switch>
           </CSSTransition>
         </TransitionGroup>
         <Footer />
-      </div>
+      </StickyContainer>
     );
   }
 }

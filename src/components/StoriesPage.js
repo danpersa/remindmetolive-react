@@ -4,7 +4,7 @@ import Row from './base/Row';
 import Col from './base/Col';
 import StoryIntro from './story/StoryIntro';
 import StoryHover from './stories/StoryHover';
-import SocialList from './SocialList';
+import SubscribeForm from './SubscribeForm';
 
 class StoriesPage extends React.Component {
 
@@ -29,7 +29,15 @@ class StoriesPage extends React.Component {
           flow in your veins!
         </StoryIntro>
 
-        <section>
+        <section className="pb0">
+          <StoryHover title="Cretan Sunsets"
+                      href="/stories/cretan-sunsets.html"
+                      src="/images/M/stories/2017-12-15-cretan-sunsets/image-09.jpg" />
+
+          <StoryHover title="Top 10 Milan"
+                      href="/stories/top-10-milan.html"
+                      src="/images/M/stories/2017-11-20-top-10-milan/image-01.jpg" />
+
           <StoryHover title="Midsummer in Helsinki"
                       href="/stories/midsummer-in-helsinki.html"
                       src="/images/stories/2017-08-20-midsummer-in-helsinki/teaser-02-800.jpg" />
@@ -90,9 +98,7 @@ class StoriesPage extends React.Component {
                       href="/stories/lunar-landscapes-of-lanzarote.html"
                       src="/images/stories/2015-09-29-lunar-landscapes-of-lanzarote/teaser-01-800.jpg" />
         </section>
-        <section className="pt32 pb48 text-center" >
-          <SocialList/>
-        </section>
+        <SubscribeForm />
       </section>
     );
   }

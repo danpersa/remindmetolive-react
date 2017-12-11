@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" type="text/css" href="/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/{{ cssFileName }}">
 
   {{> meta }}
 
   <title>{{ meta.title }}</title>
+  <script>window.isomorphicVars = {{{ isomorphicVars }}}</script>
 </head>
 <body>
   <div id="app">{{{ body }}}</div>
-  <script src='/main.js'></script>
+  <script src='/{{ jsFileName }}'></script>
 </body>
 </html>

@@ -7,15 +7,13 @@ import PropTypes from 'prop-types';
 const StoryIntro = (props) => {
 
   return (
-    <section className="pt24 pb24">
-      <Container>
-          <Row mb={0} mbXs={0}>
-            <Col md={8} mdOffset={2} sm={10} smOffset={1}>
-              <h6 className="lead">{props.children}</h6>
-            </Col>
-          </Row>
-      </Container>
-    </section>
+    <Container pt={24} ptXs={0} pb={24} pbXs={0}>
+      <Row mb={0} mbXs={0}>
+        <Col md={8} mdOffset={2} sm={10} smOffset={1}>
+          <div className="lead">{props.children}</div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

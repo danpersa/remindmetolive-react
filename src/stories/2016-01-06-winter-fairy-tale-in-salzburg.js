@@ -119,9 +119,9 @@ class WinterFairyTaleInSalzburgStory extends React.Component {
 
         <StoryTextBlock title="Happy New Year!">
           With an amazing firework display from the Hohensalzburg Fortress, highlighting
-          the picturesque, splendid Baroque buildings in sparkling colours, Salzburg
+          the picturesque, splendid Baroque buildings in sparkling colors, Salzburg
           welcomes the New Year with style. We went for the countdown with the countless
-          merry revellers on ‘Staatsbrücke’ bridge where we got a fantastic view of the
+          merry revealers on ‘Staatsbrücke’ bridge where we got a fantastic view of the
           New Year’s spectacle. Ten, nine, eight … Happy New Year!
         </StoryTextBlock>
 

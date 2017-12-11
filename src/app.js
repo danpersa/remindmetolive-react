@@ -12,6 +12,8 @@ import { StaticRouter } from 'react-router-dom';
 import Meta from './server/meta';
 import SitemapBuilder from './server/sitemapBuilder';
 import App from './components/App';
+import { isomorphicVars } from './isomorphicVars';
+import AssetsMapper from './server/AssetsMapper';
 
 /* eslint-disable no-console */
 export default function startExpress() {
@@ -30,16 +32,27 @@ export default function startExpress() {
   const meta = new Meta();
 
   const staticDir = path.join(currentDir, 'dist/client');
+  const imagesDir = path.join(currentDir, 'dist/images');
+
+  // assets map
+  const manifestDir = path.join(currentDir, 'dist/client');
+  const assetsMapper = new AssetsMapper(manifestDir);
 
   console.log('Static dir: ' + staticDir);
 
   theapp.use(express.static(staticDir));
+  theapp.use("/images", express.static(imagesDir));
 
   const sitemap = new SitemapBuilder(meta.getMetaPaths()).getSitemap();
 
   theapp.get('/sitemap.xml', function(req, res) {
     res.header('Content-Type', 'application/xml');
     res.send( sitemap.toString() );
+  });
+
+  theapp.get('/robots.txt', function(req, res) {
+    res.header('Content-Type', 'text/plain');
+    res.send('Sitemap: http://www.remindmetolive.com/sitemap.xml');
   });
 
   theapp.get('*', (req, res) => {
@@ -55,10 +68,17 @@ export default function startExpress() {
       res.status(404);
     }
 
+    if (context.status === 302) {
+      return res.redirect(302, context.url);
+    }
+
     // render the index template with the embedded React markup
     return res.render('path', {
       reactOutput: markup,
-      meta: meta.getMetaForPath(req.url)
+      meta: meta.getMetaForPath(req.url),
+      isomorphicVars: JSON.stringify(isomorphicVars),
+      cssFileName: assetsMapper.getCssFileName(),
+      jsFileName: assetsMapper.getJsFileName(),
     });
 
   });

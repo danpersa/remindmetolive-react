@@ -4,6 +4,8 @@ import Col from '../base/Col';
 import Container from '../base/Container';
 import TeaserImage from './TeaserImage';
 import PropTypes from 'prop-types';
+import { imageHost } from '../../isomorphicVars';
+import SubscribeForm from '../../components/SubscribeForm';
 
 class StoryPage extends React.Component {
 
@@ -14,46 +16,42 @@ class StoryPage extends React.Component {
   render() {
     return (
     <div className="main-container">
-      <TeaserImage src={this.props.logo}/>
-      <section className="pt0 pb0 mb32 mb-xs-32 mt32 mt-xs-16 text-center">
-        <Container>
-          <Row>
-            <Col sm={8} smOffset={2} someClass="text-center">
-              <h1 className="uppercase">{this.props.title}</h1>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className="pt0 pb0 text-center">
-        <Container>
-          <ul className="post-meta">
-            <li>
-              <i className="ti-user"/>
-              <span>Author: {this.props.author}</span>
-            </li>
-            <li>
-              <i className="ti-tag"/>
-              <span>Tags: {this.props.tags}</span>
-            </li>
-            <li>
-              <i className="ti-map"/>
-              <span>Location: {this.props.location}</span>
-            </li>
-          </ul>
-        </Container>
-      </section>
+      <TeaserImage src={this.props.logo} alt={this.props.altLogo} />
+      <Container pt={48} pb={32} pbXs={0} someClass="text-center">
+        <Row>
+          <Col sm={8} smOffset={2} someClass="text-center">
+            <h1 className="uppercase">{this.props.title}</h1>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container pt={0} pb={0} someClass="text-center">
+        <ul className="post-meta">
+          <li>
+            <i className="ti-user"/>
+            <span>Author: {this.props.author}</span>
+          </li>
+          <li>
+            <i className="ti-tag"/>
+            <span>Tags: {this.props.tags}</span>
+          </li>
+          <li>
+            <i className="ti-map"/>
+            <span>Location: {this.props.location}</span>
+          </li>
+        </ul>
+      </Container>
 
       {this.props.children}
 
-      <section className="pt0 pb40 text-center" >
-        <Container>
-          <Row>
-            <Col>
-              <img src="/images/cocos.png" />
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <Container pt={0} pb={32} someClass="text-center">
+        <Row>
+          <Col>
+            <img src={`${imageHost}/images/cocos.png`} alt="Remindmetolive Story Logo" />
+          </Col>
+        </Row>
+      </Container>
+      <SubscribeForm />
     </div>);
   }
 }
@@ -64,6 +62,7 @@ StoryPage.propTypes = {
     PropTypes.element
   ]).isRequired,
   logo: PropTypes.string.isRequired,
+  altLogo: PropTypes.string,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,

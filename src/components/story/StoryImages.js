@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 
 const StoryImages = (props) => {
   return (
-    <section className="pt0 pb0">
-      <Container>{props.children}</Container>
-    </section>
+    <Container pt={0} pb={0}>{props.children}</Container>
   );
 };
 

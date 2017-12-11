@@ -1,6 +1,6 @@
 import React from 'react';
 import SampleGallery from '../components/SampleGallery';
-import SignupForm from '../components/SignupForm';
+import SubscribeForm from '../components/SubscribeForm';
 import StoryHover from '../components/stories/StoryHover';
 import SocialList from '../components/SocialList';
 import ParallaxTeaser from '../components/ParallaxTeaser';
@@ -26,7 +26,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <SignupForm />
+      <SubscribeForm />
 
       <section className="pt0 pb0">
         <ParallaxTeaser img="/images/stories/2016-01-06-winter-fairy-tale-in-salzburg/teaser-01-2048.jpg"
@@ -36,45 +36,45 @@ const HomePage = () => {
       </section>
 
       <section className="pt32 pb0 bg-secondary">
-          <div className="container">
-              <div className="row pb0">
-                  <div className="col-md-8 col-md-offset-2 col-sm-12 text-center mb32 mb-xs-24">
-                      <h3>Our Vision</h3>
-                  </div>
-              </div>
-              <div className="row">
-                  <div className="col-sm-4 text-center">
-                      <div className="feature">
-                          <h4>Passion</h4>
-                          <p>
-                            We are passionate about photography and stories. We enjoy
-                            every bit of our work and we want to share our passion with you!
-                          </p>
-                      </div>
-                  </div>
-                  <div className="col-sm-4 text-center">
-                      <div className="feature">
-                          <h4>Creativity</h4>
-                          <p>
-                            We always challenge ourselves to come up with new
-                            ideas and new projects. We try to look at the world
-                            with fresh eyes, to discover new perspectives and to
-                            share that with you.
-                          </p>
-                      </div>
-                  </div>
-                  <div className="col-sm-4 text-center">
-                      <div className="feature">
-                          <h4>Quality</h4>
-                          <p>
-                            We don't like compromises on quality! From our daily jobs
-                            we learned that quality is not negotiable and we strive
-                            to create excellent work!
-                          </p>
-                      </div>
-                  </div>
-              </div>
+        <div className="container">
+          <div className="row pb0">
+            <div className="col-md-8 col-md-offset-2 col-sm-12 text-center mb32 mb-xs-24">
+              <h3>Our Vision</h3>
+            </div>
           </div>
+          <div className="row">
+            <div className="col-sm-4 text-center">
+              <div className="feature">
+                <h4>Passion</h4>
+                <p>
+                  We are passionate about photography and stories. We enjoy
+                  every bit of our work and we want to share our passion with you!
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-4 text-center">
+              <div className="feature">
+                <h4>Creativity</h4>
+                <p>
+                  We always challenge ourselves to come up with new
+                  ideas and new projects. We try to look at the world
+                  with fresh eyes, to discover new perspectives and to
+                  share that with you.
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-4 text-center">
+              <div className="feature">
+                <h4>Quality</h4>
+                <p>
+                  We don't like compromises on quality! From our daily jobs
+                  we learned that quality is not negotiable and we strive
+                  to create excellent work!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="pt72 pb80 pt-xs-80 pb-xs-80">
@@ -102,12 +102,10 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="pt32 pb48 text-center" >
+      <section className="pt32 pb48 text-center">
         <SocialList/>
       </section>
     </section>
-
-    // http://foundry.mediumra.re/home-adventure.html
   );
 };
 

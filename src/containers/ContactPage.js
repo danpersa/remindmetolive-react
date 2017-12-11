@@ -20,7 +20,7 @@ class ContactPage extends React.Component {
           <Row>
             <i className="ti-map"/> Berlin, Germany
           </Row>
-          <Row mb="32">
+          <Row mb={32}>
             <i className="ti-email"/> contact@remindmetolive.com
           </Row>
           <hr />
