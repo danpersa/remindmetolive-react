@@ -1,5 +1,6 @@
 const devVars = {
   imageHost: "http://localhost:9090",
+  isDevelopment: true
 };
 
 export default function computeIsomorphicVars() {
@@ -8,6 +9,7 @@ export default function computeIsomorphicVars() {
     if (process.env.NODE_ENV === 'production') {
       return {
         imageHost: process.env.IMAGE_HOST,
+        isDevelopment: false
       };
     } else {
       return devVars;
@@ -23,3 +25,4 @@ export default function computeIsomorphicVars() {
 
 export const isomorphicVars = computeIsomorphicVars();
 export const imageHost = isomorphicVars.imageHost;
+export const isDevelopment = isomorphicVars.isDevelopment;
