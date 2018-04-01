@@ -12,7 +12,7 @@ describe('DirWalker', () => {
         foundFiles.push(filePath);
       });
       dirWalker.walk(metaDirPath);
-      expect(foundFiles.length).toEqual(19);
+      expect(foundFiles.length).toEqual(21);
     });
   });
 });

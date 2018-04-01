@@ -13,7 +13,7 @@ describe('Meta', () => {
     it('should return all of the meta paths', () => {
       const meta = new Meta();
       expect(meta.getMetaPaths()).toContain('/');
-      expect(meta.getMetaPaths()).toContain('/about');
+      expect(meta.getMetaPaths()).toContain('/about/');
     });
   });
 });

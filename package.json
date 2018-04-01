@@ -35,7 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "2.131.0",
-    "ejs": "2.5.3",
+    "ejs": "2.5.8",
     "express": "4.16.0",
     "express-handlebars": "3.0.0",
     "handlebars": "4.0.6",
