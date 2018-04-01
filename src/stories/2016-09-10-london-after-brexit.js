@@ -156,7 +156,7 @@ class LondonAfterBrexitStory extends React.Component {
           <TwoPostImages dirPath={imgDirPath}
                          number1="50"
                          number2="51" />
-          <PostImage dirPath={imgDirPath} number="51" />
+          <PostImage dirPath={imgDirPath} number="52" />
           <PostImage dirPath={imgDirPath} number="53" />
         </StoryImages>
       </StoryPage>);
