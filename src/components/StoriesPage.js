@@ -30,6 +30,10 @@ class StoriesPage extends React.Component {
         </StoryIntro>
 
         <section className="pb0">
+          <StoryHover title="Trendy Stockholm"
+                      href="/stories/trendy-stockholm.html"
+                      src="/images/M/stories/2018-09-05-trendy-stockholm/image-01.jpg" />
+
           <StoryHover title="Cretan Sunsets"
                       href="/stories/cretan-sunsets.html"
                       src="/images/M/stories/2017-12-15-cretan-sunsets/image-09.jpg" />

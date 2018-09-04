@@ -37,12 +37,12 @@ class LisbonACharmingCityStory extends React.Component {
         <StoryTextBlock title="The Seven Hills of Lisbon">
           Lisbon is located in a mountainous region of Portugal. It is claimed
           to be the city of seven hills (you can observe the similarities with
-            Rome). They are peppered across the cityscape offering stupendous
-            horizons for the curious traveler. What it is fascinating is that
-            the city had a tram systems consisted of 27 tram lines, being one
-            of the most complex tram networks in Europe. Now, the only lines
-            that are preserved are the ones in the Old Town. No wonder they
-            are a splash among tourists.
+          Rome). They are peppered across the cityscape offering stupendous
+          horizons for the curious traveler. What it is fascinating is that
+          the city had a tram systems consisted of 27 tram lines, being one
+          of the most complex tram networks in Europe. Now, the only lines
+          that are preserved are the ones in the Old Town. No wonder they
+          are a splash among tourists.
         </StoryTextBlock>
 
         <StoryImages>
