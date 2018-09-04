@@ -11,6 +11,31 @@ Copy the images from google drive to `src/images`
 
     npm start
 
+## Create a Story
+
+ - Write the story
+   - Add it on the home page carousel
+   - Add it to the stories page
+   - Create the metadata (in the `meta` folder)
+ - Copy the images on the production instance
+ - Backup the images to Google Drive
+ - Create the docker image and push it
+
+    make docker
+    make docker-push
+
+- On the production instance
+
+    docker pull danpersa/remindmetolive-app
+    docker kill node1
+    docker run --rm -d --name node1   -e IMAGE_HOST='http://585911473.r.cdnsun.net' -t danpersa/remindmetolive-app:latest
+    docker kill node2
+    docker run --rm -d --name node2   -e IMAGE_HOST='http://585911473.r.cdnsun.net' -t danpersa/remindmetolive-app:latest
+    docker kill nginx
+    docker run --rm -d --name nginx -p 80:8080   --link node1:node1 --link node2:node2 --link skrop:skrop   -t danpersa/remindmetolive-nginx:latest
+
+ - Send the newsletter
+
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/3129129/22811426/bb69dc06-ef0c-11e6-8092-a0bea9060b35.png"/></p>
 
 [![Build status: Linux](https://img.shields.io/travis/coryhouse/react-slingshot.svg?style=flat-square)](https://travis-ci.org/coryhouse/react-slingshot)
