@@ -28,9 +28,9 @@ Copy the images from google drive to `src/images`
 
     docker pull danpersa/remindmetolive-app
     docker kill node1
-    docker run --rm -d --name node1   -e IMAGE_HOST='http://585911473.r.cdnsun.net' -t danpersa/remindmetolive-app:latest
+    docker run --rm -d --name node1   -e IMAGE_HOST='http://static2.remindmetolive.com' -t danpersa/remindmetolive-app:latest
     docker kill node2
-    docker run --rm -d --name node2   -e IMAGE_HOST='http://585911473.r.cdnsun.net' -t danpersa/remindmetolive-app:latest
+    docker run --rm -d --name node2   -e IMAGE_HOST='http://static2.remindmetolive.com' -t danpersa/remindmetolive-app:latest
     docker kill nginx
     docker run --rm -d --name nginx -p 80:8080   --link node1:node1 --link node2:node2 --link skrop:skrop   -t danpersa/remindmetolive-nginx:latest
 
