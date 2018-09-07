@@ -29,6 +29,7 @@ run-docker-node-2:
 run-docker-skrop:
 	docker run --rm -d --name skrop \
 		-v $(images_dir):/images -p 9090:9090 \
+		-e STRIP_METADATA='TRUE' \
 		-t danpersa/remindmetolive-skrop:latest -verbose
 
 run-docker-nginx: run-docker-node-1 run-docker-node-2 run-docker-skrop

@@ -1,3 +1,3 @@
-FROM danpersa/skrop:latest
+FROM danpersa/skrop:v1.1.0-2-g0c24761
 
 ADD skrop/routes.eskip skrop.eskip
