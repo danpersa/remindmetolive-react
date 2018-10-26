@@ -28,7 +28,9 @@ run-docker-node-2:
 
 run-docker-skrop:
 	docker run --rm -d --name skrop \
-		-v $(images_dir):/images -p 9090:9090 \
+		-v "$$(pwd)"/src/images:/images \
+    -v "$$(pwd)"/.image-cache:/image-cache \
+    -p 9090:9090 \
 		-e STRIP_METADATA='TRUE' \
 		-t danpersa/remindmetolive-skrop:latest -verbose
 
