@@ -26,7 +26,7 @@ class PisaAfterglowStory extends React.Component {
 
         <StoryIntro>
           When I close my eyes and visualize our time in Italy, I see everything in slow-motion.
-          It's definitely a place that I am in love with. Falling in love with a place it's a unique
+          It&apos;s definitely a place that I am in love with. Falling in love with a place it&apos;s a unique
           feeling, it is a constant desire for more, more of the beautiful skylines, sunrises,
           sunsets, delicious food, different culture and new adventures. And the more you take in,
           the deeper you fall and the more you wish to see. It all started with Rome, continued with

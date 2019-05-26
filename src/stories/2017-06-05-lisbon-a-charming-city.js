@@ -111,7 +111,7 @@ class LisbonACharmingCityStory extends React.Component {
 
         <StoryTextBlock title="Belem District">
           Belem is a picturesque district to the west of Lisbon, which is the
-          location of many of the city's attractions. For example, the famous
+          location of many of the city&apos;s attractions. For example, the famous
           Belem tower with its breathtaking design. This is no ordinary tower,
           but an icon of Portuguese maritime discoveries. Because its significance
           the Belem Tower is a UNESCO World Heritage monument.

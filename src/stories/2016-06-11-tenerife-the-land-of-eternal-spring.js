@@ -21,17 +21,17 @@ class TenerifeTheLandOfEternalSpringStory extends React.Component {
 
         <StoryIntro>
           This is a story about the largest and captivating island in the Canaries,
-          "the land of eternal spring", Tenerife. From 2300m altitude to the sea
+          &quot;the land of eternal spring&quot;, Tenerife. From 2300m altitude to the sea
           level, from the desert and volcanic landscapes to the subtropical forests,
           beaches with black sand with spectacular cliffs, all living together.
           The “blessed isles” indeed!
         </StoryIntro>
 
         <StoryTextBlock>
-          In March, winter is still present in the northern hemisphere and it's
+          In March, winter is still present in the northern hemisphere and it&apos;s
           that time of the year when you eagerly want to see the sun. We definitely
           felt that way. This time we had an extra incentive: to celebrate our dear
-          friend and sister in law, Adela's 30th birthday. It's hard to imagine a better
+          friend and sister in law, Adela&apos;s 30th birthday. It&apos;s hard to imagine a better
           place to be during the long winter in Europe than Tenerife, with its lunar
           landscapes, desert areas and subtropical forests. I will let you enjoy the
           great variety of unique and uneven landscapes, by starting out story with
@@ -73,10 +73,10 @@ class TenerifeTheLandOfEternalSpringStory extends React.Component {
 
         <StoryTextBlock title="Teide National Park & Lunar Landscape">
           Created after massive volcanic explosions, parts of the island’s landscape
-          are often described as "lunar". This is especially obvious in the centre
+          are often described as &quot;lunar&quot;. This is especially obvious in the centre
           of the island, dominated by The Teide National Park, a Unesco World Heritage
           site containing volcanic craters. Is the largest National Park of Canary
-          Islands, and it's a definitely a must see.
+          Islands, and it&apos;s a definitely a must see.
         </StoryTextBlock>
 
         <StoryImages>
@@ -105,7 +105,7 @@ class TenerifeTheLandOfEternalSpringStory extends React.Component {
           picturesque villages in Tenerife is set in a superb mountainous
           location, called La Masca. Reaching it could be an adventure, because
           it’s definitely exhilarating to drive: the road is full of twisting turns.
-          To be honest I was bit scared of the road, but there's no
+          To be honest I was bit scared of the road, but there&apos;s no
           need really, because ironically, the road to La Masca is actually one of
           the safest roads on Tenerife where accidents are a rarity, and that’s
           because everyone is driving so slowly.

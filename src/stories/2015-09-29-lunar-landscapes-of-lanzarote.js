@@ -28,7 +28,7 @@ class LunarLandscapesOfLanzaroteStory extends React.Component {
           the coast of Africa. A place you would choose to see for various reasons:
           its arid volcanic landscapes, the wild and stunning beaches, the taste
           of a wine with a bit of an ash flavor, the small white villages washed
-          by the Atlantic Ocean. It's the story of Lanzarote, an amazing island
+          by the Atlantic Ocean. It&apos;s the story of Lanzarote, an amazing island
           in the Canaries.
         </StoryIntro>
         <StoryTextBlock>
@@ -79,10 +79,10 @@ class LunarLandscapesOfLanzaroteStory extends React.Component {
           Here, the clock stops and the silence reigns; lairs of the devils seems
           to be build into the rivers of lava. Here is what the French author,
           Michel Houellebecq wrote about these bizarre lunar landscapes:
-          "In front of us a huge fissure, several meters wide, snaked as far as
-          the horizon, cutting through the grey surface of the earth's crust.
+          &quot;In front of us a huge fissure, several meters wide, snaked as far as
+          the horizon, cutting through the grey surface of the earth&apos;s crust.
           The silence was absolute. This, I thought, is what the world will look
-          like when it dies." Words can hardly describe the view here. You have to
+          like when it dies.&quot; Words can hardly describe the view here. You have to
           be there and experience it for yourself! And when you do, don’t forget
           to stop to salute the camels and eat an ice cream.
         </StoryTextBlock>

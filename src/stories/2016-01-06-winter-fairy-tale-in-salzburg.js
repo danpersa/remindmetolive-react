@@ -35,7 +35,7 @@ class WinterFairyTaleInSalzburgStory extends React.Component {
           discover the city and meet our friends. It was still snowing and big
           snowflakes were dancing everywhere, similar to the night we arrived.
           This was too good to be true: the streets of the Old Town looked like
-          they're covered with sugar icing and alive with the sound of Mozart, the
+          they&apos;re covered with sugar icing and alive with the sound of Mozart, the
           remaining Christmas markets full of merry shoppers, Glühwein, gingerbread
           and glitter.
         </StoryTextBlock>
@@ -68,7 +68,7 @@ class WinterFairyTaleInSalzburgStory extends React.Component {
 
         <StoryTextBlock title="Disovering buildings in Salzburg">
           And so we started discovering Salzburg with its grey stone buildings and
-          dark river. We walked through Mozart Square, along The Getreidegasse—Salzburg's
+          dark river. We walked through Mozart Square, along The Getreidegasse—Salzburg&apos;s
           most famous shopping street and then Residence Square, a magnificent
           forecourt between the two residential palaces of the archbishops of
           Salzburg. The square is bordered by a Catholic Cathedral, also known

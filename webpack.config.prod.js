@@ -4,6 +4,7 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import ManifestPlugin from 'webpack-manifest-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
@@ -19,6 +20,7 @@ export default {
   devtool: 'source-map', // more info:https://webpack.js.org/guides/production/#source-mapping and https://webpack.js.org/configuration/devtool/
   entry: path.resolve(__dirname, 'src/index'),
   target: 'web',
+  mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist/client'),
     publicPath: '/',
@@ -36,8 +38,27 @@ export default {
     // Generate an external css file with a hash in the filename
     new ExtractTextPlugin('[name].[contenthash].css'),
 
-    // Minify JS
-    new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),
+    // Generate HTML file that contains references to generated bundles. See here for how this works: https://github.com/ampedandwired/html-webpack-plugin#basic-usage
+    new HtmlWebpackPlugin({
+      template: 'src/index.ejs',
+      favicon: 'src/favicon.ico',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
+      inject: true,
+      // Note that you can add custom options here if you need to handle other custom logic in index.html
+      // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
+      trackJSToken: ''
+    }),
 
     new webpack.LoaderOptionsPlugin({
       minimize: true,

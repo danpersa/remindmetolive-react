@@ -24,7 +24,7 @@ class AboutPage extends React.Component {
             <p />
             Through our photography and narratives we are sharing a view of the world
             and remind you that living is not just about being alive,
-            it's about experiencing life through all the little ups and downs that
+            it is about experiencing life through all the little ups and downs that
             makes it worth living.
             <p />
             Have a look around, check out the stories and be a part of our journey.
@@ -43,7 +43,7 @@ class AboutPage extends React.Component {
             <p />
             Each and every one of us has a story to tell and by sharing it we can
             make the world a better place, as it can inspire other people living now,
-            or the generations to come. No joke, it's been scientifically proven.
+            or the generations to come. No joke, it has been scientifically proven.
             <p />
             Let us help you shape and <strong>share your story</strong> with the world.
           </h6>

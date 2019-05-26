@@ -33,8 +33,8 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
         <StoryTextBlock title="The Charlottenburg Palace">
           The impressive palace is a great place to take photos and this time is
           covered with scaffolding, which somehow gives a symbolic hint to our photo shoot:
-          "work in progress!" We start our photo session here,
-          taking advantage of the bright sun. I'm using a polarizer filter here,
+          &quot;work in progress!&quot; We start our photo session here,
+          taking advantage of the bright sun. I&apos;m using a polarizer filter here,
           to make the colors pop!
         </StoryTextBlock>
 
@@ -54,7 +54,7 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
         <StoryTextBlock title="The Forest">
           The sun coming through the colorful leaves of the autumn gave the perfect light for the next photos.
           Using a long lens allowed me to isolate my subjects and bring that great shallow depth of field!
-          I'll let you observe the authentic joy on Lucian and Irina's faces, brought by this great moment in their lives,
+          I&apos;ll let you observe the authentic joy on Lucian and Irina&apos;s faces, brought by this great moment in their lives,
           having a baby.
         </StoryTextBlock>
 
@@ -75,9 +75,9 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="The Lake">
-          Moving away from "the forest", we chose the nearby lake is our third location.
+          Moving away from &quot;the forest&quot;, we chose the nearby lake is our third location.
           <br/>
-          In the next photo, the contrast between the blue lake and Irina's orange
+          In the next photo, the contrast between the blue lake and Irina&apos;s orange
           pullover is just amazing.
           <br/>
           You might already know that the bridge in the Charlottenburg Garden is
@@ -97,7 +97,7 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
 
         <StoryTextBlock title="The Autumn">
           The colors of the autumn are just amazing! My favorite photo from this
-          series is the next one. I call it "The Tree of Life", as there are four
+          series is the next one. I call it &quot;The Tree of Life&quot;, as there are four
           colors spreading from each of the corners, one for each of the seasons.
           We have spring and summer to the left, and autumn and winter to the right.
           And of course, pregnant Irina in the middle getting support from her dear

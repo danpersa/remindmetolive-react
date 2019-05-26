@@ -17,7 +17,7 @@ const HomePage = () => {
               <h3>Stories. Adventure. Feelings.</h3>
                 <p className="lead mb0">
                   <strong>Remind Me To Live</strong> is a project born from our passion
-                  for photography and stories. It's our way of sharing our optimistic
+                  for photography and stories. It&apos;s our way of sharing our optimistic
                   point of view about life. This is our way of showing that life is beautiful
                   and share our feelings about it.
                 </p>
@@ -67,7 +67,7 @@ const HomePage = () => {
               <div className="feature">
                 <h4>Quality</h4>
                 <p>
-                  We don't like compromises on quality! From our daily jobs
+                  We don&apos;t like compromises on quality! From our daily jobs
                   we learned that quality is not negotiable and we strive
                   to create excellent work!
                 </p>

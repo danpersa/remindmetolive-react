@@ -36,7 +36,7 @@ class SummerInAmsterdamStory extends React.Component {
 
         <StoryTextBlock title="The Milan Cathedral">
           The Milan Cathedral, (Duomo di Milano) is located in in the center of the city.
-          It's built in the Gothic style and took nearly six centuries to complete.
+          It&apos;s built in the Gothic style and took nearly six centuries to complete.
           It is the largest church in Italy and the third largest in the world.
           Looking at the tall arches and towers you get a religious feeling of greatness,
           as everything points upwards to the skies and god.
@@ -54,7 +54,7 @@ class SummerInAmsterdamStory extends React.Component {
         <StoryTextBlock title="Galleria Vittorio Emanuele II">
           Galleria Vittorio Emanuele is the oldest shopping mall in Milan. Here is you can
           find luxury brands like Prada and Gucci.
-          You can enter the "Galleria" though a huge arch. The entrance is in the same crowded
+          You can enter the &quot;Galleria&quot; though a huge arch. The entrance is in the same crowded
           square together with the Milan Cathedral.
           The roof is build out of glass and iron. The attention to detail is amazing.
         </StoryTextBlock>
@@ -71,18 +71,18 @@ class SummerInAmsterdamStory extends React.Component {
                          number1="07"
                          alt1="Galleria Vittorio Emanuele II"
                          number2="08"
-                         alt2="Basilica of Sant'Eustorgio" />
+                         alt2="Basilica of Sant&apos;Eustorgio" />
         </StoryImages>
 
-        <StoryTextBlock title="Basilica of Sant'Eustorgio">
-           <a href="https://en.wikipedia.org/wiki/Basilica_of_Sant%27Eustorgio" target="_blank">Basilica of Sant'Eustorgio</a> was
+        <StoryTextBlock title="Basilica of Sant&apos;Eustorgio">
+           <a href="https://en.wikipedia.org/wiki/Basilica_of_Sant%27Eustorgio" target="_blank" rel="noopener noreferrer">Basilica of Sant&apos;Eustorgio</a> was
            for many years an important stop for pilgrims on their journey to Rome
            or to the Holy Land, because it was said to contain the tomb of the
            Three Magi or Three Kings.
         </StoryTextBlock>
 
         <StoryImages>
-          <PostImageResp dirPath={imgDirPath} number="09" alt="Basilica of Sant'Eustorgio, Milan" />
+          <PostImageResp dirPath={imgDirPath} number="09" alt="Basilica of Sant&apos;Eustorgio, Milan" />
         </StoryImages>
 
         <StoryTextBlock title="Basilica di San Lorenzo">
@@ -168,7 +168,7 @@ class SummerInAmsterdamStory extends React.Component {
           left and right and discover the columns, arches, windows and patterns around the city.
 
           I find that this is one of the hidden treasures of the city and I just
-          can't stop looking around!
+          can&apos;t stop looking around!
         </StoryTextBlock>
 
         <FullImageResp dirPath={imgDirPath}

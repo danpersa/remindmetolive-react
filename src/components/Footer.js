@@ -13,17 +13,17 @@ const Footer = () => {
             <div className="col-sm-12 text-center">
               <ul className="list-inline social-list">
                 <li>
-                  <a href="http://www.twitter.com/remindmetolive" target="_blank">
+                  <a href="http://www.twitter.com/remindmetolive" target="_blank" rel="noopener noreferrer">
                     <i className="ti-twitter-alt" />
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.facebook.com/remindmetolive" target="_blank">
+                  <a href="http://www.facebook.com/remindmetolive" target="_blank" rel="noopener noreferrer">
                     <i className="ti-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.instagram.com/remindmetolive" target="_blank">
+                  <a href="http://www.instagram.com/remindmetolive" target="_blank" rel="noopener noreferrer">
                     <i className="ti-instagram" />
                   </a>
                 </li>

@@ -69,7 +69,7 @@ class LanzaroteBeachesStory extends React.Component {
           on one side.
           Pedro Almodóvar chose this dramatic setting to shoot some key scenes of
           his last film, Broken Embraces.
-          It's also the perfect playground for surfers or kiters. It’s hard not to
+          It&apos;s also the perfect playground for surfers or kiters. It’s hard not to
           mark this place as your favorite.
         </StoryTextBlock>
 
