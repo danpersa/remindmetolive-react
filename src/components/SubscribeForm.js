@@ -11,10 +11,10 @@ const SubscribeForm = () => {
             <form action="//remindmetolive.us13.list-manage.com/subscribe/post?u=b0b8fa52dd681e157b4d48592&amp;id=02cb3e19d7"
                   method="post"
                   className="halves" target="_blank">
-              <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="your email" />
+              <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="your email"  />
               <input type="submit" value="Subscribe" name="subscribe" className="btn" />
               <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                <input type="text" name="b_b0b8fa52dd681e157b4d48592_02cb3e19d7" tabIndex="-1" value="" />
+                <input type="text" name="b_b0b8fa52dd681e157b4d48592_02cb3e19d7" tabIndex="-1" />
               </div>
             </form>
           </div>
