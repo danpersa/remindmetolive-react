@@ -25,8 +25,8 @@ class MidsummerInHelsinkiStory extends React.Component {
 
         <StoryIntro>
           I visited Helsinki on the Midsummer Day. Midsummer is a special holiday in Finland.
-          Most of the Finns don't spend it in the city, but in waterside cottages, in the countryside,
-          where they can relax, swim and party. Bonfires are something common for this day. It's an
+          Most of the Finns don&apos;t spend it in the city, but in waterside cottages, in the countryside,
+          where they can relax, swim and party. Bonfires are something common for this day. It&apos;s an
           old tradition that continues today.
         </StoryIntro>
 
@@ -75,8 +75,8 @@ class MidsummerInHelsinkiStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Suomenlinna">
-          If you love nature, you'll love <a href="https://en.wikipedia.org/wiki/Suomenlinna">Suomenlinna</a>.
-          It's part of the UNESCO’s World Heritage List together with the Great Wall of
+          If you love nature, you&apos;ll love <a href="https://en.wikipedia.org/wiki/Suomenlinna">Suomenlinna</a>.
+          It&apos;s part of the UNESCO’s World Heritage List together with the Great Wall of
           China and the Grand Canyon. The fortress here served in the defense of three countries:
           Sweden, Russia and Finland.
         </StoryTextBlock>
@@ -99,9 +99,9 @@ class MidsummerInHelsinkiStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="The Longest Day">
-          On the midsummer day, the sun almost doesn't set. I had to wait until 1AM
+          On the midsummer day, the sun almost doesn&apos;t set. I had to wait until 1AM
           to take some night shoots of the Helsinki Cathedral. And even that late,
-          it wasn't perfectly dark.
+          it wasn&apos;t perfectly dark.
         </StoryTextBlock>
 
         <StoryImages>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ReactGA from 'react-ga';
 import { isDevelopment } from '../isomorphicVars';
@@ -41,4 +40,4 @@ GoogleAnalytics.propTypes = {
   children: PropTypes.object.isRequired
 };
 
-export default withRouter(GoogleAnalytics);
+export default GoogleAnalytics;

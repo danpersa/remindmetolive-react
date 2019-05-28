@@ -25,9 +25,9 @@ class BridgesOfFlorenceStory extends React.Component {
         <StoryIntro>
           The <a href="https://en.wikipedia.org/wiki/Arno_River">Arno River</a> naturally
           splits <Link to="/stories/florence-theme-park-of-renaissance.html">Florence</Link> in
-          two sides. It's now surprise that the two sides of the city are linked
-          through bridges. What's interesting is how beautiful most of the bridges
-          are and the way they dominate Florence's cityscape.
+          two sides. It&apos;s now surprise that the two sides of the city are linked
+          through bridges. What&apos;s interesting is how beautiful most of the bridges
+          are and the way they dominate Florence&apos;s cityscape.
         </StoryIntro>
 
         <StoryTextBlock>
@@ -43,7 +43,7 @@ class BridgesOfFlorenceStory extends React.Component {
         <StoryTextBlock title="Ponte Vecchio">
           The most iconic bridge in Florence is Ponte Vecchio, the Old Bridge.
           This bridge is always really crowded, from far away looks like there is perpetual party.
-          What's really happening is that the mass of tourists wants to take selfies
+          What&apos;s really happening is that the mass of tourists wants to take selfies
           with the river and the next bridges. There is also a market on the bridge,
           where you can buy luxury goods, like jewelry and expensive watches.
         </StoryTextBlock>
@@ -124,7 +124,7 @@ class BridgesOfFlorenceStory extends React.Component {
 
         <StoryTextBlock title="Other Bridges">
           Ponte San Niccolo Small is a smaller, one arch bridge. Florence has other
-          bridges for which I wasn't able to find the names.
+          bridges for which I wasn&apos;t able to find the names.
         </StoryTextBlock>
 
         <StoryImages>
@@ -136,7 +136,7 @@ class BridgesOfFlorenceStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Overview">
-          I'll end the story with an overview photo to show how beautifully
+          I&apos;ll end the story with an overview photo to show how beautifully
           everything fits together and how the bridges bring more personality
           to the city. Florence is for sure a city worth visiting, an architectural
           beauty! Read more about Florence <Link to="/stories/florence-theme-park-of-renaissance.html">here</Link>.

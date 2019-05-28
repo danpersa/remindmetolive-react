@@ -49,7 +49,7 @@ class LondonAfterBrexitStory extends React.Component {
 
         <StoryTextBlock title="The Brexit Protests">
           In front of Westminster Abbey there was a crowd of people protesting
-          against the BREXIT. They had banners stating that "Unity is strength".
+          against the BREXIT. They had banners stating that &quot;Unity is strength&quot;.
         </StoryTextBlock>
 
         <StoryImages>

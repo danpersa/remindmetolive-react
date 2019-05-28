@@ -36,7 +36,7 @@ class SummerInAmsterdamStory extends React.Component {
 
         <StoryTextBlock title="Amsterdam—A Lively City">
           Amsterdam is in continuous movement! Tourists and locals are swarming the
-          small streets of Netherlands' capital. At every corner there is something
+          small streets of Netherlands&apos; capital. At every corner there is something
           happening. Here is a nice square, with people resting in the sun and here
           is another one, where somebody is entertaining the tourists with a show!
         </StoryTextBlock>
@@ -58,7 +58,7 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Canals of Amsterdam">
-          It's no surprise that Amsterdam has lots of <a target="blank" href="https://en.wikipedia.org/wiki/Canals_of_Amsterdam">canals</a>.
+          It&apos;s no surprise that Amsterdam has lots of <a target="blank" href="https://en.wikipedia.org/wiki/Canals_of_Amsterdam">canals</a>.
           There are kilometers of canals, about 90 islands and 1,500 bridges here.
           Plenty of space for the tourists to do cruises around the city. Considering
           how many canals there are, boats can be a good option for getting
@@ -88,7 +88,7 @@ class SummerInAmsterdamStory extends React.Component {
           As a tourist, you have to always be careful, to see from which direction is the
           next person riding a bike coming from! They are also fast! As a matter of fact,
           while I was watching the streets, I was almost sure that every biker is millimetrically
-          avoiding the others. I've never seen any collision, but keeping in mind how
+          avoiding the others. I&apos;ve never seen any collision, but keeping in mind how
           close they were, I was expecting one anytime!
         </StoryTextBlock>
 
@@ -153,9 +153,9 @@ class SummerInAmsterdamStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Enjoying Amsterdam">
-          Did I miss anything? "Yes, sure, you did't say anything about the nightlife!"—someone
-          screams from the back. And I immediately answer: "I don't have any photos of that, as
-          what happens in Amsterdam... you know... But trust me, it's great!"
+          Did I miss anything? &quot;Yes, sure, you did&apos;t say anything about the nightlife!&quot;—someone
+          screams from the back. And I immediately answer: &quot;I don&apos;t have any photos of that, as
+          what happens in Amsterdam... you know... But trust me, it&apos;s great!&quot;
         </StoryTextBlock>
 
         <StoryTextBlock>

@@ -26,7 +26,7 @@ export default function startExpress() {
   // view engine setup
   theapp.engine('handlebars', exphbs({defaultLayout: 'main'}));
   theapp.set('view engine', 'handlebars');
-//  theapp.set('views', path.join(__dirname, 'src/views'));
+
   const currentDir = path.resolve(path.dirname(''));
 
   const meta = new Meta();
@@ -85,9 +85,10 @@ export default function startExpress() {
 
   theapp.listen(port, function(err) {
     if (err) {
+      console.log("There was an error");
       console.log(err);
     } else {
-      open(`http://localhost:${port}`);
+      console.log(`Example app listening on port ${port}!`);
     }
   });
 }

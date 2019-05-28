@@ -2,7 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { hot } from "react-hot-loader";
+
 import MainMenu from './MainMenu';
 import Footer from './Footer';
 import { StickyContainer, Sticky } from 'react-sticky';
@@ -58,7 +61,7 @@ class App extends React.Component {
           }
         </Sticky>
         <TransitionGroup>
-          <CSSTransition key={this.props.location.key} timeout={500} classNames="fade">
+          <CSSTransition timeout={500} classNames="fade">
             <Switch location={this.props.location}>
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/stories/" component={StoriesPage}/>
@@ -108,7 +111,8 @@ class App extends React.Component {
 
 App.propTypes = {
   children: PropTypes.element,
-  location: PropTypes.object
+  location: PropTypes.object,
+  history: PropTypes.object
 };
 
-export default withRouter(App);
+export default hot(module)(App);

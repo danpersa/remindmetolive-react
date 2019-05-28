@@ -16,6 +16,10 @@ build-docker-nginx:
 
 docker: build-docker-app build-docker-nginx build-docker-skrop
 
+run-smoketest-prod:
+	docker run -e IMAGE_HOST='http://localhost:9090' \
+		-p 3000:3000 -t danpersa/remindmetolive-app:latest
+
 run-docker-node-1:
 	docker run --rm -d --name node1 \
 		-e IMAGE_HOST='http://localhost:9090' \

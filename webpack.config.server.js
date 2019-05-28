@@ -1,7 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import autoprefixer from 'autoprefixer';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export default {
   resolve: {
@@ -27,31 +26,103 @@ export default {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'), // Tells React to build in either dev or prod modes. https://facebook.github.io/react/downloads.html (See bottom)
       __DEV__: false
-    }),
-    new webpack.NoErrorsPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-      noInfo: true, // set to false to see a list of every file being bundled.
-      options: {
-        sassLoader: {
-          includePaths: [path.resolve(__dirname, 'src', 'scss')]
-        },
-        context: '/',
-        postcss: () => [autoprefixer],
-      }
     })
   ],
   module: {
-    loaders: [
-      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'},
-      {test: /\.eot(\?v=\d+.\d+.\d+)?$/, loader: 'url-loader?name=[name].[ext]'},
-      {test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=[name].[ext]'},
-      {test: /\.[ot]tf(\?v=\d+.\d+.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=application/octet-stream&name=[name].[ext]'},
-      {test: /\.svg(\?v=\d+.\d+.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=image/svg+xml&name=[name].[ext]'},
-      {test: /\.(jpe?g|png|gif)$/i, loader: 'file-loader?name=[name].[ext]'},
-      {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
-      {test: /(\.css|\.scss|\.sass)$/, loader: ExtractTextPlugin.extract('css-loader?sourceMap!postcss-loader!sass-loader?sourceMap')}
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
+      {
+        test: /\.eot(\?v=\d+.\d+.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'application/font-woff',
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.[ot]tf(\?v=\d+.\d+.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'application/octet-stream',
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'image/svg+xml',
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /(\.css|\.scss|\.sass)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          }, {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                require('cssnano'),
+                require('autoprefixer'),
+              ],
+              sourceMap: true
+            }
+          }, {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [path.resolve(__dirname, 'src')],
+              sourceMap: true
+            }
+          }
+        ]
+      }
     ]
   }
 };

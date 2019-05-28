@@ -23,11 +23,11 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
                  tags="travel, city, Florence, Italy">
 
         <StoryIntro title="Florence Cathedral">
-          It's hard to find the right words when writing about the
+          It&apos;s hard to find the right words when writing about the
           magnificent <a href="https://en.wikipedia.org/wiki/Florence">Florence</a>.
           It is such a special place that it is hard to find the right words that
           would give it justice.
-          That's why, I will quote the Italian writer Tondelli, that describes
+          That&apos;s why, I will quote the Italian writer Tondelli, that describes
           Florence as the “Disneyland of the Renaissance”. Because here, it is
           really about getting surprised every day. I hope our pictures can explain
           why we were so blown away by its architecture and charm.
@@ -45,9 +45,9 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
           <br/><br/>
           Its Building commenced in 1296 and the exterior is decorated in pink,
           green and white marble. Entering the cathedral through the tremendous
-          bronze doors that depict the life of "The Madonna" you will find a
+          bronze doors that depict the life of &quot;The Madonna&quot; you will find a
           modest and calm setting where you admire the hand painted Dome showing
-          "The Final Judgement".
+          &quot;The Final Judgement&quot;.
         </StoryTextBlock>
 
         <StoryImages>
@@ -114,7 +114,7 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
           medieval buildings become pages of the Divine Comedy! Therefore, everywhere
           you look, there is a beautiful medieval building, an art gallery
           or a beautiful sculpture. <Link to="/stories/bridges-of-florence.html">The bridges of Florence</Link> have
-          an important role in Florence's cityscape, therefore we dedicated an entire story for them.
+          an important role in Florence&apos;s cityscape, therefore we dedicated an entire story for them.
           Check it out <Link to="/stories/bridges-of-florence.html">here</Link>!
         </StoryTextBlock>
 
@@ -148,7 +148,7 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
           <a href="https://en.wikipedia.org/wiki/Palazzo_Pitti">The Palazzo Pitti</a> it
           is a stunning Renaissance palace, almost always overshadowed by its more
           famous counterparts,
-          the <a href="https://en.wikipedia.org/wiki/Uffizi">Uffizi</a>, <a href="https://en.wikipedia.org/wiki/Galleria_dell'Accademia">Accademia</a> (where
+          the <a href="https://en.wikipedia.org/wiki/Uffizi">Uffizi</a>, <a href="https://en.wikipedia.org/wiki/Galleria_dell&apos;Accademia">Accademia</a> (where
           the David Statue is located), and the <a href="https://en.wikipedia.org/wiki/Palazzo_Vecchio">Palazzo Vecchio</a>.
           It has an impressive collection of art and the building was the royal
           residence of the Medici, and even Napoleon stayed there for a bit.

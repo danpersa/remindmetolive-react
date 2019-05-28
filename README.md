@@ -19,24 +19,41 @@ Copy the images from google drive to `src/images`
    - Create the metadata (in the `meta` folder)
  - Copy the images on the production instance
  - Backup the images to Google Drive
- - Create the docker image and push it
+ - Create the docker image and test it works, then push the image
 
+```
     make docker
+    # test 1
+    npm run start:prod
+    # test 2
+    make run-smoketest-prod
+    # push
     make docker-push
+```
 
 - On the production instance
 
+```
     docker pull danpersa/remindmetolive-app
     docker kill node1
     docker run --rm -d --name node1   -e IMAGE_HOST='http://static2.remindmetolive.com' -t danpersa/remindmetolive-app:latest
     docker kill node2
     docker run --rm -d --name node2   -e IMAGE_HOST='http://static2.remindmetolive.com' -t danpersa/remindmetolive-app:latest
     docker kill skrop
+    docker rm skrop
     docker run --restart=always -d --name skrop   -v /images:/images -e STRIP_METADATA='TRUE'   -p 9090   -t danpersa/remindmetolive-skrop:latest -verbose
     docker kill nginx
     docker run --rm -d --name nginx -p 80:8080   --link node1:node1 --link node2:node2 --link skrop:skrop   -t danpersa/remindmetolive-nginx:latest
+```
 
  - Send the newsletter
+
+## Upgrade Dependencies
+
+    npm i -g npm-check-updates
+    ncu -u
+    npm install
+    npm audit fix
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/3129129/22811426/bb69dc06-ef0c-11e6-8092-a0bea9060b35.png"/></p>
 

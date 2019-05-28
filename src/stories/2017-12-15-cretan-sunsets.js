@@ -30,13 +30,13 @@ class CretanSunsetsStory extends React.Component {
           tourists like us want: great beaches, nice mountains, great towns. We were really
           impressed by the island, but one thing is for sure:
           <br/><br/>
-          <blockquote>In Crete we've seen the best sunsets of our lives!</blockquote>
-          Let's try to recreate our trip and remember all of our favorite places here.
+          <blockquote>In Crete we&apos;ve seen the best sunsets of our lives!</blockquote>
+          Let&apos;s try to recreate our trip and remember all of our favorite places here.
         </StoryIntro>
 
         <StoryTextBlock title="Chania">
           <a href="https://en.wikipedia.org/wiki/Chania" trget="_blank">Chania</a> is
-          a must visit place. It's the second largest city in Crete, it has a nice shopping
+          a must visit place. It&apos;s the second largest city in Crete, it has a nice shopping
           area in the Old Town and a harbor with a Lighthouse. From the pier we were able
           to watch an amazing sunset.
         </StoryTextBlock>
@@ -105,7 +105,7 @@ class CretanSunsetsStory extends React.Component {
 
         <StoryTextBlock title="Agia Galini">
            Agia Galini is another nice town. It has a nice harbor with lots of
-           ships and a pier. It's been built on hill which gives an interesting
+           ships and a pier. It&apos;s been built on hill which gives an interesting
            view when photographed from the pier.
         </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath}
@@ -117,7 +117,7 @@ class CretanSunsetsStory extends React.Component {
         <StoryTextBlock title="Seitan Limania Beach">
           It was really challenging to reach to the Seitan Limania Beach. You have to
           get down on a rocky way which looks really dangerous. We put some effort into
-          getting there. But it's totally worth it.
+          getting there. But it&apos;s totally worth it.
           The water and sand are amazing and you can see goats doing jumps on the rocks around.
         </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath}
@@ -138,7 +138,7 @@ class CretanSunsetsStory extends React.Component {
 
         <StoryTextBlock title="Matala Beach">
           The Matala Beach is really accessible, there is a big parking lot right next to it.
-          I did some snorkeling here and I've seen lots of colorful fishes. The view with the
+          I did some snorkeling here and I&apos;ve seen lots of colorful fishes. The view with the
           yellow rocks is amazing.
         </StoryTextBlock>
 
@@ -158,7 +158,7 @@ class CretanSunsetsStory extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="Balos Beach">
-          The Balos beach is one of the most amazing places I've seen! The lagoon
+          The Balos beach is one of the most amazing places I&apos;ve seen! The lagoon
           has white sand and turquoise water. The contrast is amazing!
           <br/><br/>
           Getting to the beach was not easy, we had to go on a rocky way. Another way

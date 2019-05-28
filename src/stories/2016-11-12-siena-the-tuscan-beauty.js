@@ -109,9 +109,9 @@ class SienaTheTuscanBeautyStory extends React.Component {
           Siena is definitely more than a postcard city stepped in history.
           After spending a day wondering the city and soaking it all in, you can
           easily imagine what life must have been in medieval times.
-          It's a city full of color and wonderful people. I can tell you more
+          It&apos;s a city full of color and wonderful people. I can tell you more
           about what makes Siena extraordinary, but I think it is better
-          to pay it a visit, because each one's experience is unique.
+          to pay it a visit, because each one&apos;s experience is unique.
         </StoryTextBlock>
 
         <StoryImages>
