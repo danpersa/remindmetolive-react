@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import { Switch, Route, Redirect, Router } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { hot } from "react-hot-loader";
 
 import MainMenu from './MainMenu';
@@ -50,7 +50,6 @@ class App extends React.Component {
 
   render() {
     return (
-    <Router history={this.props.history}>
       <StickyContainer>
         <Sticky>
           {
@@ -106,7 +105,6 @@ class App extends React.Component {
         </TransitionGroup>
         <Footer />
       </StickyContainer>
-    </Router>
     );
   }
 }

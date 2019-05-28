@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ConnectedRouter } from 'connected-react-router';
 import { Provider } from 'react-redux';
 import ScrollToTop from './ScrollToTop';
 import App from './App';
 import GoogleAnalytics from './GoogleAnalytics';
+import { Router } from 'react-router-dom';
 
 export default class Root extends Component {
 
@@ -12,13 +12,13 @@ export default class Root extends Component {
     const { store, history } = this.props;
     return (
       <Provider store={store}>
-        <ConnectedRouter history={history}>
+        <Router history={this.props.history}>
           <ScrollToTop location={location}>
             <GoogleAnalytics location={location}>
               <App history={history}/>
             </GoogleAnalytics>
           </ScrollToTop>
-        </ConnectedRouter>
+        </Router>
       </Provider>
     );
   }
