@@ -6,16 +6,16 @@ import { imageHost } from '../../isomorphicVars';
 const StoryHover = (props) => {
 
   return (
-    <div className="col-sm-6 text-center p8">
-      <Link to={props.href}>
-        <div className="image-tile hover-tile text-center mb24 border">
-          <img alt="image" className="background-image" src={imageHost + props.src} />
-          <div className="hover-state">
-            <h3 className="uppercase mb8" style={{cursor: 'pointer'}}>{props.title}</h3>
-            <h6 className="uppercase" style={{cursor: 'pointer'}}>Read the story</h6>
-          </div>
-        </div>
-      </Link>
+    <div className="col-sm-6">
+      <div className="image-tile inner-title title-center text-center">
+        <Link to={props.href}>
+            <img alt={props.title} className="background-image" src={imageHost + props.src} />
+            <div className="title">
+              <h3 className="uppercase" style={{cursor: 'pointer'}}>{props.title}</h3>
+              <h6 className="uppercase" style={{cursor: 'pointer'}}>Read the story</h6>
+            </div>
+        </Link>
+      </div>
     </div>
   );
 };

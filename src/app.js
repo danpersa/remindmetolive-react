@@ -4,8 +4,6 @@ import exphbs from 'express-handlebars';
 
 import path from 'path';
 
-import open from 'open';
-
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
