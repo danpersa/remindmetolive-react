@@ -22,6 +22,7 @@ Copy the images from google drive to `src/images`
  - Create the docker image and test it works, then push the image
 
 ```
+    rm -rf dist
     make docker
     # test 1
     npm run start:prod

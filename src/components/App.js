@@ -16,6 +16,7 @@ import ContactPage from '../containers/ContactPage';
 import StoriesPage from '../components/StoriesPage';
 import NotFoundPage from '../components/NotFoundPage';
 
+import TheMagicOfGranCanaria from '../stories/2019-06-04-the-magic-of-gran-canaria';
 import TrendyStockholmStory from '../stories/2018-09-05-trendy-stockholm';
 import CretanSunsetsStory from '../stories/2017-12-15-cretan-sunsets';
 import Top10MilanStory from '../stories/2017-11-20-top-10-milan';
@@ -65,6 +66,7 @@ class App extends React.Component {
             <Switch location={this.props.location}>
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/stories/" component={StoriesPage}/>
+              <Route exact path="/stories/the-magic-of-gran-canaria.html" component={TheMagicOfGranCanaria}/>
               <Route exact path="/stories/trendy-stockholm.html" component={TrendyStockholmStory}/>
               <Route exact path="/stories/cretan-sunsets.html" component={CretanSunsetsStory}/>
               <Route exact path="/stories/top-10-milan.html" component={Top10MilanStory}/>

@@ -30,7 +30,7 @@ class BridgesOfFlorenceStory extends React.Component {
           are and the way they dominate Florence&apos;s cityscape.
         </StoryIntro>
 
-        <StoryTextBlock>
+        <StoryTextBlock title="">
           I took the next photo from the Michelangelo Square. From here you can
           have a nice overview of the bridges. The colorful Ponte Vecchio is the
           first in line, followed by the others.
@@ -116,7 +116,7 @@ class BridgesOfFlorenceStory extends React.Component {
           <PostImageResp dirPath={imgDirPath} number="18" alt="Ponte Amerigo Vespucci, Florence" />
         </StoryImages>
 
-        <StoryTextBlock title="Ponte alle Grazie" />
+        <StoryTextBlock title="Ponte alle Grazie">Another great bridge</StoryTextBlock>
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="19" alt="Ponte alle Grazie, Florence" />
           <PostImageResp dirPath={imgDirPath} number="20" alt="Ponte alle Grazie, Florence" />
