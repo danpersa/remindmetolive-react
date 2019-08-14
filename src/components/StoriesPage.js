@@ -30,6 +30,10 @@ class StoriesPage extends React.Component {
         </StoryIntro>
 
         <section className="pb0">
+          <StoryHover title="Fuerteventura – The Paradise Island"
+                      href="/stories/fuerteventura-the-paradise-island.html"
+                      src="/images/M/stories/2019-08-17-fuerteventura-the-paradise-island/image-03.jpg" />
+
           <StoryHover title="The Magic Of Gran Canaria"
                       href="/stories/the-magic-of-gran-canaria.html"
                       src="/images/M/stories/2019-06-04-the-magic-of-gran-canaria/image-05.jpg" />

@@ -61,6 +61,14 @@ class SampleGallery extends React.Component {
 
        const images = [
            {
+             original: '/images/L/stories/2019-08-17-fuerteventura-the-paradise-island/image-01.jpg',
+             title: 'Fuerteventura',
+             subTitle: 'The Paradise Island',
+             href: '/stories/fuerteventura-the-paradise-island.html',
+             hrefTitle: 'Discover Fuerteventura',
+             renderItem: this._renderItem.bind(this)
+           },
+           {
              original: '/images/L/stories/2019-06-04-the-magic-of-gran-canaria/image-22.jpg',
              title: 'The Magic',
              subTitle: "Of Gran Canaria",
@@ -90,14 +98,6 @@ class SampleGallery extends React.Component {
              subTitle: 'Milan',
              href: '/stories/top-10-milan.html',
              hrefTitle: 'Discover Milan',
-             renderItem: this._renderItem.bind(this)
-           },
-           {
-             original: '/images/stories/2017-08-20-midsummer-in-helsinki/wide-02-2048.jpg',
-             title: 'Midsummer',
-             subTitle: 'in Helsinki',
-             href: '/stories/midsummer-in-helsinki.html',
-             hrefTitle: 'Discover Helsinki',
              renderItem: this._renderItem.bind(this)
            }
          ];
