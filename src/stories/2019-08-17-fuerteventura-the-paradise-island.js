@@ -26,146 +26,135 @@ class FuerteventuraTheParadiseIsland extends React.Component {
                  tags="travel, island, Fuerteventura, beaches">
 
         <StoryIntro>
-          Gran Canaria is a small paradise: there is sun, there are beaches, there are
-          mountains, wild places but also touristic zones.
-          <br/><br/>
-          The first location which impressed us are the Dunes of Maspalomas: here,
-          although really close to civilization, towns and beaches, you feel
-          like in the desert. You can walk for a long time (and walking through
-          the hot sand is not easy), without seeing anything but the dunes.
-          The sunsets we watched here were amazing!
+          Fuerteventura is one of our favorite Canary Islands because of the great
+          weather the whole year, the blue sky with fluffy clouds and because having
+          the possibility to visit the mountains, beaches, but also the desert landscapes.
         </StoryIntro>
 
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="02"
-                         alt="Maspalomas sunset"/>
+                         alt="Fuerteventura cloudscape"/>
           <PostImageResp dirPath={imgDirPath} number="03"
-                         alt="Sunset in Maspalomas"/>
+                         alt="Fuerteventura old mill"/>
           <PostImageResp dirPath={imgDirPath} number="04"
-                         alt="Sunset in Maspalomas"/>
+                         alt="Cloudscape in Fuerteventura"/>
           <PostImageResp dirPath={imgDirPath} number="05"
-                         alt="Sunset in Maspalomas"/>
+                         alt="Fuerteventura hills panorama"/>
         </StoryImages>
 
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="06"
-                       alt="Palmtrees in Maspalomas during sunset" />
+                       alt="Fuerteventura couds and ocean" />
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="07"
-                         alt="Sunset in Maspalomas"/>
+                         alt="Mountains in Fuerteventura"/>
         </StoryImages>
+        <StoryTextBlock title="The Villages">
+          Some small villages have their own beaches and nice bars or cafes where you can enjoy a coffee or a cup of sangria.
+        </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="08"
-                       alt="Las Palmas, Gran Canaria" />
+                       alt="Village in Fuerteventura" />
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="09"
-                       alt="Las Palmas, Gran Canaria" />
-        <StoryTextBlock title="Las Palmas">
-          Las Palmas is the capital of Gran Canaria. Here are lots of really
-          nice restaurants, cafes and monuments. The Cathedral is really impressive.
-          We recommend higher locations, like the Mirador Cuatro Cañones, where
-          you can see how impressive the city is.
-        </StoryTextBlock>
+                       alt="Village on coast in Fuerteventura" />
+
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="10"
-                         alt="Las Palmas panorama"/>
+                         alt="Beach and town in Fuerteventura"/>
           <PostImageResp dirPath={imgDirPath} number="11"
-                         alt="Cathedral of Las Palmas"/>
+                         alt="Fuerteventura beach"/>
           <TwoPostImageResp dirPath={imgDirPath}
                            number1="12"
-                           alt1="Portrait in Gran Canaria"
+                           alt1="Fuerteventura resort"
                            number2="14"
-                           alt2="Portrait in Gran Canaria" />
+                           alt2="Rock beach in Fuerteventura" />
           <PostImageResp dirPath={imgDirPath} number="13"
-                         alt="Las Palmas monument house"/>
+                         alt="Blue boat on beach"/>
         </StoryImages>
-
-        <StoryTextBlock title="The Mountains">
-          The middle of the island is the wilder part. There is no highway, so
-          getting there even by car is, if you take the wrong route, not easy.
-          Pico de las Nieves is one of the higher locations we enjoyed.
-          <br/><br/>
-          Tejada is small town in the mountains we visited twice, because in the
-          first day we were to early to watch the sunset. When the sun starts to set,
-          the colors here become amazing.
-        </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="15"
-                       alt="Artenara sunset" />
+                       alt="Village and rocks in Fuerteventura" />
+        <StoryTextBlock title="The Desert">
+          Fuerteventura is about wild places as well. The lack of perceived
+          life gives the feeling of loneliness. Walking around here is like I
+          imagine walking on Mars would be. Small animals, like squirrels, give
+          some hope, as not everything around is dead.
+        </StoryTextBlock>
         <StoryImages>
          <PostImageResp dirPath={imgDirPath} number="16"
-                        alt="Pico de las Nieves"/>
+                        alt="Fuerteventura desert and ocean"/>
          <PostImageResp dirPath={imgDirPath} number="17"
-                        alt="Pico de las Nieves"/>
+                        alt="Desert in Fuerteventura"/>
         </StoryImages>
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="19"
-                       alt="Artenara sunset" />
+                       alt="Rocky Fuerteventura" />
         <StoryImages>
-         <PostImageResp dirPath={imgDirPath} number="18"
-                        alt="Pico de las Nieves"/>
-        <PostImageResp dirPath={imgDirPath} number="20"
-                       alt="Portrait in Arte-Gaia"/>
-        <PostImageResp dirPath={imgDirPath} number="21"
-                       alt="Portrait in Arte-Gaia"/>
-        <PostImageResp dirPath={imgDirPath} number="22"
-                       alt="Portrait in Arte-Gaia"/>
-        <PostImageResp dirPath={imgDirPath} number="23"
-                       alt="Portrait in Arte-Gaia"/>
-       </StoryImages>
-
-       <StoryImages>
-
+          <PostImageResp dirPath={imgDirPath} number="18"
+                         alt="Rocks and ocean"/>
+          <PostImageResp dirPath={imgDirPath} number="20"
+                       alt="Deserted landscape"/>
+          <PostImageResp dirPath={imgDirPath} number="21"
+                       alt="Rocks and ocean"/>
+         <PostImageResp dirPath={imgDirPath} number="22"
+                        alt="Squirrel in Fuerteventura"/>
+         <PostImageResp dirPath={imgDirPath} number="23"
+                        alt="Path to Fuerteventura"/>
          <PostImageResp dirPath={imgDirPath} number="24"
-                        alt="Portrait in Arte-Gaia"/>
+                        alt="Road to the beach"/>
+       </StoryImages>
+       <StoryTextBlock title="The Coast of Fuerteventura">
+         The coastal landscapes are amazing, the way the water shaped the rock
+         is breathtaking. Starting with black rocks and ending with the white
+         ones, round shaped or sharp.
+       </StoryTextBlock>
+       <StoryImages>
          <PostImageResp dirPath={imgDirPath} number="25"
-                        alt="Portrait in Arte-Gaia"/>
+                        alt="Waves on beach"/>
          <TwoPostImageResp dirPath={imgDirPath}
                           number1="26"
-                          alt1="Portrait in Gran Canaria"
+                          alt1="Beach in Fuerteventura"
                           number2="27"
-                          alt2="Portrait in Gran Canaria" />
+                          alt2="Sunset in Fuerteventura" />
          <PostImageResp dirPath={imgDirPath} number="28"
-                        alt="Portrait in Arte-Gaia"/>
+                        alt="Rocky coast Fuerteventura"/>
         </StoryImages>
 
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="29"
-                       alt="Beach in Gran Canaria" />
-
-        <StoryTextBlock title="The Beaches in Gran Canaria">
-          Our favorite beach was Taurito. It was slightly less crowded and there
-          was a nice bar where we could enjoy some sangria or cocktails. But we
-          visited many others as well.
-          <br/><br/>
-          Don&apos;t forget to visit &quot;El Bufadero&quot;, the water goes up and down through
-          some rocks creating an amazing effect.
+                       alt="Cave in Fuerteventura" />
+        <StoryTextBlock title="The Beaches in Fuerteventura">
+          Fuerteventura has all kinds of beaches, starting with the touristic ones,
+          with perfect sand and ending with wild, hardly accessible ones. The
+          ocean is calm, present everywhere, having clear, transparent, tropical
+          water.
         </StoryTextBlock>
-
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="30"
-                         alt="Beach in Gran Canaria"/>
+                         alt="Beach in Fuerteventura"/>
           <PostImageResp dirPath={imgDirPath} number="31"
-                         alt="Taurito Beach"/>
+                         alt="Sunet on the beach"/>
           <PostImageResp dirPath={imgDirPath} number="32"
-                         alt="Port in Gran Canaria"/>
+                         alt="Touristic beach in Fuerteventura"/>
         </StoryImages>
         <FullImageResp dirPath={imgDirPath}
                        prefix="image"
                        number="33"
-                       alt="Beach in Gran Canaria" />
+                       alt="Ocean and mountains in Fuerteventura" />
         <StoryImages>
           <PostImageResp dirPath={imgDirPath} number="34"
-                         alt="Taurito Beach"/>
+                         alt="Fuerteventura coast"/>
           <PostImageResp dirPath={imgDirPath} number="35"
-                         alt="Taurito Beach"/>
-          <PostImageResp dirPath={imgDirPath} number="36" alt="Beach" />
+                         alt="Rock in the ocean"/>
+          <PostImageResp dirPath={imgDirPath} number="36"
+                         alt="Lighthouse in Fuerteventura" />
         </StoryImages>
       </StoryPage>);
   }
