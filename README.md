@@ -35,7 +35,10 @@ Copy the images from google drive to `src/images`
 - On the production instance
 
 ```
+    ssh root@xxx
     docker pull danpersa/remindmetolive-app
+    docker pull danpersa/remindmetolive-skrop
+    docker pull danpersa/remindmetolive-nginx
     docker kill node1
     docker run --rm -d --name node1   -e IMAGE_HOST='http://static2.remindmetolive.com' -t danpersa/remindmetolive-app:latest
     docker kill node2
