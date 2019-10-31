@@ -10,7 +10,7 @@ import FullImageResp from '../components/story/FullImageResp';
 
 const imgDirPath = "stories/2019-08-17-fuerteventura-the-paradise-island";
 
-class FuerteventuraTheParadiseIsland extends React.Component {
+class FuerteventuraTheParadiseIslandStory extends React.Component {
 
   constructor() {
     super();
@@ -160,4 +160,4 @@ class FuerteventuraTheParadiseIsland extends React.Component {
   }
 }
 
-export default FuerteventuraTheParadiseIsland;
+export default FuerteventuraTheParadiseIslandStory;

@@ -16,8 +16,11 @@ import ContactPage from '../containers/ContactPage';
 import StoriesPage from '../components/StoriesPage';
 import NotFoundPage from '../components/NotFoundPage';
 
-import FuerteventuraTheParadiseIsland from '../stories/2019-08-17-fuerteventura-the-paradise-island';
-import TheMagicOfGranCanaria from '../stories/2019-06-04-the-magic-of-gran-canaria';
+import AmazingProvencePart3Story from '../stories/2019-11-05-amazing-provence-part-3';
+import AmazingProvencePart2Story from '../stories/2019-11-05-amazing-provence-part-2';
+import AmazingProvencePart1Story from '../stories/2019-11-05-amazing-provence-part-1';
+import FuerteventuraTheParadiseIslandStory from '../stories/2019-08-17-fuerteventura-the-paradise-island';
+import TheMagicOfGranCanariaStory from '../stories/2019-06-04-the-magic-of-gran-canaria';
 import TrendyStockholmStory from '../stories/2018-09-05-trendy-stockholm';
 import CretanSunsetsStory from '../stories/2017-12-15-cretan-sunsets';
 import Top10MilanStory from '../stories/2017-11-20-top-10-milan';
@@ -67,8 +70,11 @@ class App extends React.Component {
             <Switch location={this.props.location}>
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/stories/" component={StoriesPage}/>
-              <Route exact path="/stories/fuerteventura-the-paradise-island.html" component={FuerteventuraTheParadiseIsland}/>
-              <Route exact path="/stories/the-magic-of-gran-canaria.html" component={TheMagicOfGranCanaria}/>
+              <Route exact path="/stories/amazing-provence-part-3.html" component={AmazingProvencePart3Story}/>
+              <Route exact path="/stories/amazing-provence-part-2.html" component={AmazingProvencePart2Story}/>
+              <Route exact path="/stories/amazing-provence-part-1.html" component={AmazingProvencePart1Story}/>
+              <Route exact path="/stories/fuerteventura-the-paradise-island.html" component={FuerteventuraTheParadiseIslandStory}/>
+              <Route exact path="/stories/the-magic-of-gran-canaria.html" component={TheMagicOfGranCanariaStory}/>
               <Route exact path="/stories/trendy-stockholm.html" component={TrendyStockholmStory}/>
               <Route exact path="/stories/cretan-sunsets.html" component={CretanSunsetsStory}/>
               <Route exact path="/stories/top-10-milan.html" component={Top10MilanStory}/>

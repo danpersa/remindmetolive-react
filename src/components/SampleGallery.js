@@ -61,6 +61,14 @@ class SampleGallery extends React.Component {
 
        const images = [
            {
+             original: '/images/L/stories/2019-11-05-amazing-provence/carcassonne/image-10.jpg',
+             title: 'Amazing',
+             subTitle: 'Provence',
+             href: '/stories/amazing-provence-part-1.html',
+             hrefTitle: 'Discover Provence',
+             renderItem: this._renderItem.bind(this)
+           },
+           {
              original: '/images/L/stories/2019-08-17-fuerteventura-the-paradise-island/image-01.jpg',
              title: 'Fuerteventura',
              subTitle: 'The Paradise Island',
@@ -90,14 +98,6 @@ class SampleGallery extends React.Component {
              subTitle: 'Sunsets',
              href: '/stories/cretan-sunsets.html',
              hrefTitle: 'See The Sunsets',
-             renderItem: this._renderItem.bind(this)
-           },
-           {
-             original: '/images/L/stories/2017-11-20-top-10-milan/wide-04.jpg',
-             title: 'Top 10',
-             subTitle: 'Milan',
-             href: '/stories/top-10-milan.html',
-             hrefTitle: 'Discover Milan',
              renderItem: this._renderItem.bind(this)
            }
          ];

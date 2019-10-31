@@ -30,6 +30,18 @@ class StoriesPage extends React.Component {
         </StoryIntro>
 
         <section className="pb0">
+          <StoryHover title="Amazing Provence - Part 3"
+                      href="/stories/amazing-provence-part-3.html"
+                      src="/images/M/stories/2019-11-05-amazing-provence/abbaye-notre-dame-de-senanque/image-01.jpg" />
+
+          <StoryHover title="Amazing Provence - Part 2"
+                      href="/stories/amazing-provence-part-2.html"
+                      src="/images/M/stories/2019-11-05-amazing-provence/nimes/image-03.jpg" />
+
+          <StoryHover title="Amazing Provence - Part 1"
+                      href="/stories/amazing-provence-part-1.html"
+                      src="/images/M/stories/2019-11-05-amazing-provence/toulouse/image-01.jpg" />
+
           <StoryHover title="Fuerteventura – The Paradise Island"
                       href="/stories/fuerteventura-the-paradise-island.html"
                       src="/images/M/stories/2019-08-17-fuerteventura-the-paradise-island/image-03.jpg" />

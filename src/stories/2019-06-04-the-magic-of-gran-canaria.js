@@ -10,7 +10,7 @@ import FullImageResp from '../components/story/FullImageResp';
 
 const imgDirPath = "stories/2019-06-04-the-magic-of-gran-canaria";
 
-class TheMagicOfGranCanaria extends React.Component {
+class TheMagicOfGranCanariaStory extends React.Component {
 
   constructor() {
     super();
@@ -201,4 +201,4 @@ class TheMagicOfGranCanaria extends React.Component {
   }
 }
 
-export default TheMagicOfGranCanaria;
+export default TheMagicOfGranCanariaStory;
