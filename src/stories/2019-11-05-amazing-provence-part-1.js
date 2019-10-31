@@ -93,22 +93,21 @@ class AmazingProvencePart1Story extends React.Component {
                          alt="Albi, France"/>
           <PostImageResp dirPath={imgDirPath + "/albi"} number="07"
                         alt="Albi Bridge and Cathedral"/>
-          <PostImageResp dirPath={imgDirPath + "/albi"} number="09"
+
+          <PostImageResp dirPath={imgDirPath + "/albi"} number="12"
                         alt="Albi panorama"/>
           <TwoPostImageResp dirPath={imgDirPath + "/albi"}
-                            number1="11"
+                            number1="10"
                             alt1="Inside of the Albi Cathedral"
-                            number2="12"
+                            number2="11"
                             alt2="Inside of the Albi Cathedral" />
-          <PostImageResp dirPath={imgDirPath + "/albi"} number="13"
-                         alt="Albi, France"/>
           <TwoPostImageResp dirPath={imgDirPath + "/albi"}
-                            number1="16"
+                            number1="15"
                             alt1="Statue in Albi"
-                            number2="17"
+                            number2="16"
                             alt2="Statue in Albi" />
-          <PostImageResp dirPath={imgDirPath + "/albi"} number="15"
-                         alt="Albi ultra wide"/>
+          <PostImageResp dirPath={imgDirPath + "/albi"} number="17"
+                         alt="Albi portrait"/>
         </StoryImages>
 
         <StoryTextBlock title="Carcassonne">
