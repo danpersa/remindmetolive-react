@@ -44,7 +44,7 @@ class AmazingProvencePart3Story extends React.Component {
         </StoryImages>
 
         <StoryTextBlock title="L'Isle-sur-la-Sorgue">
-          L'Isle-sur-la-Sorgue is a town famous for its huge amount of water wheels
+          L&apos;Isle-sur-la-Sorgue is a town famous for its huge amount of water wheels
           which supply the town with electricity.
         </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath + "/lisle-sur-la-sorgue"}
@@ -140,7 +140,7 @@ class AmazingProvencePart3Story extends React.Component {
         </StoryImages>
         <StoryTextBlock title="Marignane">
           Marignane is a commune in the Bouches-du-Rhône department in the
-          Provence-Alpes-Côte d'Azur region in southern France.
+          Provence-Alpes-Côte d&apos;Azur region in southern France.
         </StoryTextBlock>
 
         <FullImageResp dirPath={imgDirPath + "/marignane"}
@@ -157,7 +157,7 @@ class AmazingProvencePart3Story extends React.Component {
 
         <StoryTextBlock title="Martigues">
           Martigues is a commune northwest of Marseille. It is part of the
-          Bouches-du-Rhône department in the Provence-Alpes-Côte d'Azur.
+          Bouches-du-Rhône department in the Provence-Alpes-Côte d&apos;Azur.
         </StoryTextBlock>
         <FullImageResp dirPath={imgDirPath + "/martigues"}
                        prefix="image"

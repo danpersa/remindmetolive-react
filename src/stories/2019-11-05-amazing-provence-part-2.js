@@ -29,7 +29,7 @@ class AmazingProvencePart2Story extends React.Component {
         <StoryIntro>
           This is the second part of our story.
           Read the first part of the story <Link to="/stories/amazing-provence-part-1.html">here</Link>.
-          Let's start in Nimes.
+          Let&apos;s start in Nimes.
         </StoryIntro>
         <StoryTextBlock title="Nimes">
           The most iconic landmark in Nimes is the arena of Nimes and the statue
@@ -65,7 +65,7 @@ class AmazingProvencePart2Story extends React.Component {
                         alt="The bullfigher in Nimes"/>
         </StoryImages>
         <StoryTextBlock title="Montpellier">
-          We've spent a couple of days in Montpellier as well. The small town has
+          We&apos;ve spent a couple of days in Montpellier as well. The small town has
           an impressive amount of landmarks. The architecture is both classic and
           modern. Seems like a town of contrasts.
         </StoryTextBlock>
