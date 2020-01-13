@@ -45,7 +45,7 @@ Copy the images from google drive to `src/images`
     docker run --rm -d --name node2   -e IMAGE_HOST='http://static2.remindmetolive.com' -t danpersa/remindmetolive-app:latest
     docker kill skrop
     docker rm skrop
-    docker run --restart=always -d --name skrop   -v /images:/images -e STRIP_METADATA='TRUE'   -p 9090   -t danpersa/remindmetolive-skrop:latest -verbose
+    docker run --restart=always -d --name skrop   -v /images:/images -v /image-cache:/image-cache -e STRIP_METADATA='TRUE'   -p 9090 -t danpersa/remindmetolive-skrop:latest -verbose
     docker kill nginx
     docker run --rm -d --name nginx -p 80:8080   --link node1:node1 --link node2:node2 --link skrop:skrop   -t danpersa/remindmetolive-nginx:latest
 ```
