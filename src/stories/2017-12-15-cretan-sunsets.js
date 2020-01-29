@@ -5,7 +5,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 import FullImageResp from '../components/story/FullImageResp';
 
 const imgDirPath = "stories/2017-12-15-cretan-sunsets";
@@ -18,7 +17,9 @@ class CretanSunsetsStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath, "H", "wide", "11")}
+      <StoryPage logoDirPath={imgDirPath}
+                 logoPrefix="wide"
+                 logoNumber="11"
                  altLogo="Sunset in Crete"
                  title="Cretan Sunsets"
                  author="Dan"

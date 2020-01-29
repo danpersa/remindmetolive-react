@@ -5,7 +5,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 import FullImageResp from '../components/story/FullImageResp';
 
 const imgDirPath = "stories/2017-06-17-summer-in-amsterdam";
@@ -18,7 +17,9 @@ class SummerInAmsterdamStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath, "L", "image", "36")}
+      <StoryPage logoDirPath={imgDirPath}
+                 logoPrefix="image"
+                 logoNumber="36"
                  altLogo="Amsterdam panorama"
                  title="Summer In Amsterdam"
                  author="Dan"

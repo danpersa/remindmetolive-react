@@ -5,19 +5,17 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2015-09-29-lunar-landscapes-of-lanzarote/";
+const imgDirPath1 = "stories/2015-09-29-lunar-landscapes-of-lanzarote";
 
 class LunarLandscapesOfLanzaroteStory extends React.Component {
 
-  constructor() {
-    super();
-  }
-
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "01", "1600")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="01-1600"
                  title="The Lunar Landscapes of Lanzarote"
                  author="Dan & Ade"
                  location="Lanzarote, Spain"

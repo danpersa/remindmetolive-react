@@ -5,15 +5,17 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2015-09-30-love-at-the-gardens-of-the-world/";
+const imgDirPath1 = "stories/2015-09-30-love-at-the-gardens-of-the-world";
 
 class LoveAtTheGardensOfTheWorldStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "02", "1600")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="02-1600"
                  title="Celebrating Love at the Gardens of the World"
                  author="Dan & Ade"
                  location="Berlin, Germany"

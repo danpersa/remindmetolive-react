@@ -5,9 +5,9 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2016-11-20-irina-and-lucian-maternity-photo-session/";
+const imgDirPath1 = "stories/2016-11-20-irina-and-lucian-maternity-photo-session";
 
 class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
 
@@ -17,7 +17,9 @@ class IrinaAndLucianMaternityPhotoSessionStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "08", "2048")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="08-2048"
                  title="Irina & Lucian Maternity Photos"
                  author="Dan"
                  location="Charlottenburg Palace, Berlin"

@@ -5,7 +5,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 import FullImageResp from '../components/story/FullImageResp';
 
 const imgDirPath = "stories/2018-09-05-trendy-stockholm";
@@ -18,7 +17,9 @@ class TrendyStockholmStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath, "H", "wide", "01")}
+      <StoryPage logoDirPath={imgDirPath}
+                 logoPrefix="wide"
+                 logoNumber="01"
                  altLogo="Trendy Stockholm"
                  title="Trendy Stockholm"
                  author="Dan"

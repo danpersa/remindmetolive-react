@@ -5,10 +5,10 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 import { Link } from 'react-router-dom';
 
 const imgDirPath = "/images/stories/2016-05-17-lanzarote-beaches/";
+const imgDirPath1 = "stories/2016-05-17-lanzarote-beaches";
 
 class LanzaroteBeachesStory extends React.Component {
 
@@ -18,7 +18,9 @@ class LanzaroteBeachesStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "02", "1600")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="02-1600"
                  title="Lanzarote—Beaches"
                  author="Dan & Ade"
                  location="Lanzarote, Spain"
