@@ -6,7 +6,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 import { Link } from 'react-router-dom';
 
 const imgDirPath = "stories/2016-06-30-bridges-of-florence";
@@ -15,7 +14,9 @@ class BridgesOfFlorenceStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath, "L", "wide", "02")}
+      <StoryPage logoDirPath={imgDirPath}
+                 logoPrefix="wide"
+                 logoNumber="02"
                  altLogo="Santa Trinita Bridge in Florence"
                  title="Bridges of Florence"
                  author="Dan & Ade"

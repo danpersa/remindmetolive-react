@@ -6,9 +6,9 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2017-06-05-lisbon-a-charming-city/";
+const imgDirPath1 = "stories/2017-06-05-lisbon-a-charming-city";
 
 class LisbonACharmingCityStory extends React.Component {
 
@@ -18,7 +18,9 @@ class LisbonACharmingCityStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "02", "2048")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="02-2048"
                  title="Lisbon, A Charming City"
                  author="Dan & Ade"
                  location="Lisbon, Portugal"

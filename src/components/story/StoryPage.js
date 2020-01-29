@@ -2,10 +2,10 @@ import React from 'react';
 import Row from '../base/Row';
 import Col from '../base/Col';
 import Container from '../base/Container';
-import TeaserImage from './TeaserImage';
 import PropTypes from 'prop-types';
 import { imageHost } from '../../isomorphicVars';
 import SubscribeForm from '../../components/SubscribeForm';
+import Image from './Image';
 
 class StoryPage extends React.Component {
 
@@ -16,7 +16,12 @@ class StoryPage extends React.Component {
   render() {
     return (
     <div className="main-container">
-      <TeaserImage src={this.props.logo} alt={this.props.altLogo} />
+      <Image dirPath={this.props.logoDirPath}
+             prefix={this.props.logoPrefix}
+             number={this.props.logoNumber}
+             alt={this.props.altLogo}
+             someClass="col-xs-12 p0 mb48 border-bottom" />
+
       <Container pt={48} pb={32} pbXs={0} someClass="text-center">
         <Row>
           <Col sm={8} smOffset={2} someClass="text-center">
@@ -61,7 +66,9 @@ StoryPage.propTypes = {
     PropTypes.array,
     PropTypes.element
   ]).isRequired,
-  logo: PropTypes.string.isRequired,
+  logoDirPath: PropTypes.string.isRequired,
+  logoPrefix: PropTypes.string.isRequired,
+  logoNumber: PropTypes.string.isRequired,
   altLogo: PropTypes.string,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,

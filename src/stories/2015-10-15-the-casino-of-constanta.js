@@ -5,15 +5,17 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2015-10-15-the-casino-of-constanta/";
+const imgDirPath1 = "stories/2015-10-15-the-casino-of-constanta";
 
 class CasinoOfConstantaStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "01", "2048")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="01-2048"
                  title="The Casino Of Constanta"
                  author="Dan"
                  location="Constanta, Romania"

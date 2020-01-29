@@ -5,15 +5,17 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2016-06-11-tenerife-the-land-of-eternal-spring/";
+const imgDirPath1 = "stories/2016-06-11-tenerife-the-land-of-eternal-spring";
 
 class TenerifeTheLandOfEternalSpringStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "07", "2048")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="07-2048"
                  title="Tenerife, The Land Of Eternal Spring"
                  author="Dan & Ade"
                  location="Tenerife, Spain"

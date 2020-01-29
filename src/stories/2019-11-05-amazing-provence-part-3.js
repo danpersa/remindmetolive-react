@@ -5,7 +5,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 import FullImageResp from '../components/story/FullImageResp';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +18,9 @@ class AmazingProvencePart3Story extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath + "/pont-du-guard", "H", "image", "03")}
+      <StoryPage logoDirPath={imgDirPath + "/pont-du-guard"}
+                 logoPrefix="image"
+                 logoNumber="03"
                  altLogo="Pont du Guard, France"
                  title="Amazing Provence"
                  author="Dan"

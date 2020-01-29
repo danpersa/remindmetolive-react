@@ -7,7 +7,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 import { Link } from 'react-router-dom';
 
 const imgDirPath = "stories/2017-01-15-florence-theme-park-of-renaissance";
@@ -16,7 +15,9 @@ class FlorenceThemeParkOfRenaissanceStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath, "L", "image", "01")}
+      <StoryPage logoDirPath={imgDirPath}
+                 logoPrefix="image"
+                 logoNumber="01"
                  title="Florence, Theme Park Of Renaissance"
                  author="Dan & Ade"
                  location="Florence, Italy"

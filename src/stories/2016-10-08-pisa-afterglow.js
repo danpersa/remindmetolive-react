@@ -6,7 +6,6 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrcResp from '../components/story/buildSrcResp';
 
 const imgDirPath = "stories/2016-10-08-pisa-afterglow";
 
@@ -18,7 +17,9 @@ class PisaAfterglowStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrcResp(imgDirPath, "L", "image", "01")}
+      <StoryPage logoDirPath={imgDirPath}
+                 logoPrefix="image"
+                 logoNumber="01"
                  title="Pisa Afterglow"
                  author="Dan & Ade"
                  location="Pisa, Italy"

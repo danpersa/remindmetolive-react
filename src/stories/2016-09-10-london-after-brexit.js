@@ -5,9 +5,9 @@ import StoryPage from '../components/story/StoryPage';
 import StoryTextBlock from '../components/story/StoryTextBlock';
 import StoryImages from '../components/story/StoryImages';
 import StoryIntro from '../components/story/StoryIntro';
-import buildSrc from '../components/story/buildSrc';
 
 const imgDirPath = "/images/stories/2016-09-10-london-after-brexit/";
+const imgDirPath1 = "stories/2016-09-10-london-after-brexit";
 
 class LondonAfterBrexitStory extends React.Component {
 
@@ -17,7 +17,9 @@ class LondonAfterBrexitStory extends React.Component {
 
   render() {
     return (
-      <StoryPage logo={buildSrc(imgDirPath, "teaser", "02", "2048")}
+      <StoryPage logoDirPath={imgDirPath1}
+                 logoPrefix="teaser"
+                 logoNumber="02-2048"
                  title="London After Brexit"
                  author="Dan"
                  location="London, UK"
